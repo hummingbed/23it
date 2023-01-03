@@ -15,7 +15,9 @@
 						<li><a class="dropdown-item ms-1 text-white" href="#">ABOUT US</a></li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">EMPLOYER</a></li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">CANDIDATES</a></li>
-						<li><a class="dropdown-item ms-1 text-white" href="#">MEDIA</a></li>
+						<li>
+							<router-link class="dropdown-item ms-1 text-white" :to="'/media'"> MEDIA</router-link>						
+						</li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">BLOG </a></li>
 						<li class="d-flex gap-1">
 							<a class="text-white dropdown-item ms-1" href="#">
