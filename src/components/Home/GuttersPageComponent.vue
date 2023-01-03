@@ -1,0 +1,155 @@
+<template>
+
+    <div class="container py-5 px-4">
+        <div class="px-5 py-2 col fw-bolder" style="color: #F7AEF8;">
+                01
+            </div>
+        <div class="col-md-10 fs-1 fw-bold lh-base px-5">
+            <span class="text-white">We know what we are <br> talking about and will make <br> the</span> <span
+                class="text-blue">difference!</span>
+        </div>
+        <div class="container overflow-hidden pt-5 px-5">
+            <div class="row justify-content-between gy-5 lh-base">
+                <div class="col-md-6">
+                    <div class=" text-break text-white">
+                        We firmly believe in specialization to <br> better understand what the business
+                        <br> needs are and what
+                        the needs are from <br> the candidate.
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="  text-break text-white gutter-left-text">
+                        We do recruit crossboarders. So when <br> needed we will make sure your perfect <br> candidate
+                        will be
+                        selected whenever, <br> wherever!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container p-5 text-md-center">
+            <div class="gutter-background text-white col-md-12 my-3">
+                <div class="row gx-5">
+                    <div class="col position-relative search-and-selection">
+                        <div class="position-absolute top-50 start-50 translate-middle fs-2 fw-bold">
+                            Search & Selection
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="px-5 text-start lh-base py-4">
+                            Software consulting services help plan and implement software improvements as well as staff
+                            software development projects. We architect, build, and deliver robust digital products
+                            entirely in-house, backed by our reputation for quality, stability and support.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gutter-background text-white col-md-12 my-3">
+                <div class="row gx-5 freelance">
+
+                    <div class="col position-relative search-and-selection d-inline d-md-none">
+                        <div class="position-absolute top-50 start-50 translate-middle fs-1 fw-bold">
+                            Freelance
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-7">
+                        <div class="px-5 text-start lh-base py-4">
+                            Take advantage of our outsourcing team to build an effective, external DevOps pipeline to
+                            speed up your software delivery process.
+                        </div>
+                    </div>
+
+                    <div class="col position-relative search-and-selection d-none d-md-inline">
+                        <div class="position-absolute top-50 start-50 translate-middle fs-1 fw-bold">
+                            Freelance
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gutter-background text-white col-md-12 my-3">
+                <div class="row gx-5">
+                    <div class="col position-relative search-and-selection">
+                        <div class="position-absolute top-50 start-50 translate-middle fs-2 fw-bold">
+                            Outsourcing
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="px-5 text-start lh-base py-4">
+                            Take advantage of our outsourcing team to build an effective, external DevOps pipeline to
+                            speed up your software delivery process. We are also able to deliver the right expertise
+                            besides DevOps and Cloud.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gutter-background text-white col-md-12 my-3">
+                <div class="row gx-5 freelance">
+
+                    <div class="col position-relative search-and-selection d-inline d-md-none">
+                        <div class="position-absolute top-50 start-50 translate-middle text-start fs-2 fw-bold">
+                            Trainee Development
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-7">
+                        <div class="px-5 text-start lh-base py-4">
+                            How fast does the IT market will evolve? What does that ask from us in the current
+                            situation? What do the IT specialist and our clients need in the future? With those
+                            questions we are working on these topics together with our clients needs and build
+                            traineeships on the specif demands. With a focus on IT Traineeship Cloud Engineering &
+                            DevOps.
+                        </div>
+                    </div>
+
+                    <div class="col position-relative search-and-selection d-none d-md-inline">
+                        <div class="position-absolute top-50 start-50 translate-middle  text-start fs-2 fw-bold">
+                            Trainee Development
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</template>
+
+<script>
+export default {
+    name: 'GuttersPageComponent',
+}
+</script>
+
+<style scoped>
+@media only screen and (max-width: 767px) {
+
+    .search-and-selection {
+        height: 20vh;
+    }
+
+}
+
+
+.gutter-background {
+    background: rgba(128, 147, 241, 0.52);
+}
+
+@media only screen and (min-width: 767px) {
+    .gutter-left-text {
+        float: right;
+    }
+}
+
+.lh-base {
+    letter-spacing: .1rem;
+}
+
+.text-blue {
+    color: #B388EB;
+}
+</style>

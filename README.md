@@ -9,11 +9,19 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
+### deploy step 1
+```npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### deploy step 2
+```git add dist -f
+```
+
+### deploy step 3
+```git commit -m "deploying"
+```
+
+### deploy step 4
+```git subtree push --prefix dist origin gh-pages
+```
