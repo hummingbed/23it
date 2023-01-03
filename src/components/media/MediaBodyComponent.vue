@@ -15,7 +15,7 @@
 
         <div class="media-top-text pb-5">
             <div class="col fw-bold text-white font-uppercase mb-5">
-                <div>Find some interestings clips regarding our business</div>
+                <div>Find some <span style="background-color: #8093F1;">interestings</span> clips regarding our business</div>
                 <div>or tips which can help you in your
                     <span>career moves, </span>
                 </div>
@@ -380,6 +380,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Slab:wght@200&family=Space+Grotesk:wght@300&display=swap');
+
 .stacked-text {
     top: 60%;
 }
