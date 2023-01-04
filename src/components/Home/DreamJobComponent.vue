@@ -80,7 +80,8 @@ input {
 }
 
 input[type="text"] {
-    background-image: url("../../assets/img/input.png");
+    background-color: #070223;
+    /* background-image: url("../../assets/img/input.png"); */
 }
 
 
@@ -114,7 +115,7 @@ input[type="text"] {
 }
 
 .form-check-input{
-    background: #321953;
+    background-color: #070223;
 }
 
 .dream-job {

@@ -2,7 +2,10 @@
 	<div class="container py-4 mb-4 fixed-top">
 		<div class="row align-items-start">
 			<div class="col text-start">
-				<a href="#"><img src="../assets/logo/23it-logo.png" class="img-fluid mt-2" alt=""></a>
+				<router-link class="dropdown-item ms-1 text-white" :to="'/'"> 
+					<img src="../assets/logo/23it-logo.png" class="img-fluid mt-2" alt="">
+				</router-link>
+
 			</div>
 			<div class="col text-end">
 				<div class="dropdown text-dark">
@@ -10,7 +13,9 @@
 							class="text-dark ">Menu</span>
 					</a>
 					<ul class="dropdown-menu align-items-start border-white row gy-1">
-						<li><a class="dropdown-item ms-1 text-white " href="#">HOME</a></li>
+						<li>
+							<router-link class="dropdown-item ms-1 text-white" :to="'/'"> HOME</router-link>						
+						</li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">JOBS</a></li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">ABOUT US</a></li>
 						<li><a class="dropdown-item ms-1 text-white" href="#">EMPLOYER</a></li>
@@ -18,7 +23,9 @@
 						<li>
 							<router-link class="dropdown-item ms-1 text-white" :to="'/media'"> MEDIA</router-link>						
 						</li>
-						<li><a class="dropdown-item ms-1 text-white" href="#">BLOG </a></li>
+						<li>
+							<router-link class="dropdown-item ms-1 text-white" :to="'/blog'"> BLOG</router-link>						
+						</li>
 						<li class="d-flex gap-1">
 							<a class="text-white dropdown-item ms-1" href="#">
 								en
@@ -52,7 +59,7 @@ export default {
 <style scoped>
 
 .container{
-    background-image: url("../assets/img/back.png");
+	background-color: #070223;
 }
 ul li a {
 	cursor: pointer;
@@ -77,7 +84,7 @@ ul li a span:after {
 
 .dropdown-menu {
 	border: 3px solid #fff;
-	background-image: url("../assets/img/back.png");
+	background-color: #070223;
 }
 
 .dropdown-toggle {

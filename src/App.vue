@@ -12,8 +12,6 @@
 }
 
 body {
-  /* background-color: rgb(32, 32, 61); */
-  background-image: url("./assets/img/back.png");
-
+  background-color: #070223;
 }
 </style>
