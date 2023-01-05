@@ -8,9 +8,11 @@
 
 			</div>
 			<div class="col text-end">
-				<div class="dropdown text-dark">
-					<a class="dropdown-toggle text-decoration-none text-dark" type="" data-bs-toggle="dropdown"><span
-							class="text-dark ">Menu</span>
+				<div class=" text-dark">
+					<a class="dropdown-toggl py-3 px-3 text-decoration-none text-dark" type="" data-bs-toggle="dropdown"><span
+							class="text-dark ">MENU 
+						<img src="../assets/arrow/drop-down.png" class="ps-5 pe-3" alt="">
+						</span>
 					</a>
 					<ul class="dropdown-menu align-items-start border-white row gy-1">
 						<li>
@@ -90,19 +92,23 @@ ul li a span:after {
 	background-color: #070223;
 }
 
-.dropdown-toggle {
+.dropdown-toggl {
 
-	background: #fff;
+	background: #F0E4D9;
 	cursor: pointer;
 	border: none;
 	/* color: white; */
-	padding: 10px 3.5rem;
+	/* padding: 10px 3.5rem; */
+	/* padding-right: 7rem; */
+	/* padding-top: 7px;
+	padding-bottom: 7px; */
+	
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 }
 .dropdown-toggle span{
-	background: #fff;
+	/* background: #fff; */
 }
 
 .switch {
