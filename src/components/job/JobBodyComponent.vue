@@ -223,7 +223,7 @@
 
                         <p class="fw-bold">Duties & Responsibilities</p>
 
-                        <ul class="opacity-50 text-color-white">
+                        <ul class="text-color-white">
                             <li> Ability to write code – HTML & CSS (SCSS flavor of SASS preferred when writing CSS)
                             </li>
                             <li>Proficient in Photoshop, Illustrator, bonus points for familiarity with Sketch (Sketch
@@ -231,7 +231,7 @@
                                 our preferred concepting)</li>
 
                         </ul>
-                        <ul class="opacity-25 text-color-white">
+                        <ul class=" text-color-white">
                             <li>Cross-browser and platform testing as standard practice</li>
                             <li>Experience using Invision a plus </li>
                             <li>Experience in video production a plus or, at a minimum, a willingness to learn</li>
