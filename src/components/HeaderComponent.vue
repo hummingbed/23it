@@ -17,7 +17,7 @@
 							<router-link class="dropdown-item ms-1 text-white" :to="'/'"> HOME</router-link>						
 						</li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/job'"> JOBS</router-link>						
+							<router-link class="dropdown-item ms-1 text-white" :to="'/see-job'"> JOBS</router-link>						
 						</li>
 						
 						<li><a class="dropdown-item ms-1 text-white" href="#">ABOUT US</a></li>
