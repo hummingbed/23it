@@ -2,12 +2,15 @@
     <div class="container my-5">
         <nav class="py-5" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
             <ol class="breadcrumb fw-bold">
-                <li class="breadcrumb-item mt-2">
-                    <router-link style="color: #F7AEF8;" :to="'/'"> HOME</router-link>
+                <li class="breadcrumb-item">
+                    <router-link style="color: rgba(247, 174, 248, 0.5);" :to="'/'"> HOME</router-link>
                 </li>
 
-                <li class="breadcrumb-item"> <i class="bi bi-arrow-left fs-3" style="color: #F7AEF8;"></i></li>
-                <li class="breadcrumb-item active mt-2" aria-current="page">
+                <li class="breadcrumb-item"> 
+                    <img src="../../assets/arrow/arrow-left.png" class="img-fluid" style="height: 15px;" alt="">
+                </li>
+                
+                <li class="breadcrumb-item active " aria-current="page">
                     <a href="" style="color: #F7AEF8;">MEDIA</a>
                 </li>
             </ol>
@@ -15,7 +18,7 @@
 
         <div class="media-top-text pb-5">
             <div class="col fw-bold text-white font-uppercase mb-5">
-                <div>Find some <span style="background-color: #8093F1;">interestings</span> clips regarding our business</div>
+                <div>Find some <span style="background-color: #8093F1; ">interestings</span> clips regarding our business</div>
                 <div>or tips which can help you in your
                     <span>career moves, </span>
                 </div>
@@ -28,13 +31,13 @@
             <div class="row gx-5 g-y border-top border-bottom py-5">
                 <div class="row">
                     <div class="col px-4">
-                        <div class="fs-4  text-center mb-4 border " style="background-color: #F7AEF8; width: 45px;">
+                        <div class="fs-4 px-3 text-center mb-4" style="background-color: #F7AEF8; width: 65px;">
                             HR
                         </div>
                     </div>
                     <div class="col text-end">
                         <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <i class="bi bi-arrow-up-right"></i>
+                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
                         </small>
                     </div>
                 </div>
@@ -82,7 +85,7 @@
                         <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
                             <div>
                                 <small class="col-md-10"
-                                    style="background: #8093F1; width: 40%; letter-spacing: .1rem;">20 HUMAN RESOURCE
+                                    style="background: #8093F1; width: 40%;  opacity: 0.8; letter-spacing: .1rem;">20 HUMAN RESOURCE
                                     TERMS</small>
                             </div>
                             <small class="col-md-10 bg-danger w-50">Every HR hopeful showld know!</small>
@@ -141,13 +144,13 @@
             <div class="row gx-5 g-y border-top border-bottom py-5">
                 <div class="row">
                     <div class="col px-4">
-                        <div class="fs-4  text-center mb-4 border " style="background-color: #B388EB; width: 80px;">
+                        <div class="fs-4  text-center mb-4" style="background-color: #B388EB; width: 80px;">
                             TECH
                         </div>
                     </div>
                     <div class="col text-end">
                         <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <i class="bi bi-arrow-up-right"></i>
+                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
                         </small>
                     </div>
                 </div>
@@ -254,7 +257,7 @@
             </div>
 
 
-            <div class="row gx-5 g-y py-5">
+            <div class="row gx-5 g-y pt-5">
                 <div class="row">
                     <div class="col px-4">
                         <div class="fs-4  text-center mb-4" style="background: #72DDF7; width: 95px;">
@@ -263,7 +266,7 @@
                     </div>
                     <div class="col text-end">
                         <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <i class="bi bi-arrow-up-right"></i>
+                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
                         </small>
                     </div>
                 </div>

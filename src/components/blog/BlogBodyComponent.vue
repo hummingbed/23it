@@ -15,12 +15,14 @@
 
         <nav class="pt" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
             <ol class="breadcrumb fw-bold">
-                <li class="breadcrumb-item mt-2">
-                    <router-link style="color: #F7AEF8;" :to="'/'"> HOME</router-link>
+                <li class="breadcrumb-item">
+                    <router-link style="color: rgba(247, 174, 248, 0.5);" :to="'/'"> HOME</router-link>
                 </li>
 
-                <li class="breadcrumb-item"> <i class="bi bi-arrow-left fs-3" style="color: #F7AEF8;"></i></li>
-                <li class="breadcrumb-item active mt-2" aria-current="page">
+                <li class="breadcrumb-item">
+                    <img src="../../assets/arrow/arrow-left.png" class="img-fluid" style="height: 15px;" alt="">
+                </li>
+                <li class="breadcrumb-item active " aria-current="page">
                     <a href="" style="color: #F7AEF8;">BLOG</a>
                 </li>
             </ol>
@@ -28,10 +30,10 @@
 
 
         <div
-            class="row border-bottom row-cols-1 justify-content-center row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break pt-2 pb-5">
+            class="row border-bottom row-cols-1 row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break pt-2 pb-5">
             <div class="col text-white">
                 <div class="">
-                    <div class="text-md-start text-center">
+                   
                         <div class="col">
                             <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
                         </div>
@@ -47,10 +49,10 @@
                         <div>elementum pharetra ante eget auctor. </div>
                         </p>
                     </div>
-                </div>
+
             </div>
             <div class="col text-white">
-                <div class="text-md-start text-center">
+                
                     <span class="fw-bold text-center px-2 w-25" style="background-color: #72DDF7;">OTHERS</span>
                     <p>
                     <div>The best restaurant where for </div>
@@ -63,11 +65,10 @@
                     <div>feugiat ac odio nec porta. Donec</div>
                     <div>elementum pharetra ante eget auctor. </div>
                     </p>
-                </div>
             </div>
             <div class="col text-white">
-                <div class="text-md-start text-center">
-                    <span class="fw-bold text-center w-25 px-2" style="background-color: #B388EB;">TECH</span>
+                
+                    <span class="fw-bold w-25 px-2" style="background-color: #B388EB;">TECH</span>
                     <p>
                     <div>The best restaurant where for </div>
                     <div>you will be comfy find a job</div>
@@ -80,127 +81,111 @@
                     <div>elementum pharetra ante eget auctor. </div>
                     </p>
                 </div>
-            </div>
-            <div class="col text-md-start text-center">
+            <div class="col">
                 <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
             </div>
         </div>
 
-        <div
-            class="row border-bottom row-cols-1 justify-content-center row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break py-5">
-            <div class="col text-white">
+        <div class="row border-bottom row-cols-1 gx-5 g-lg-3 text-break py-5">
+            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
                 <div class="">
-                    <div class="text-md-start text-center">
-                        <span class="fw-bold py-2 px-4" style="background-color: #FDC5F5;">HR</span>
-                        <p class="mt-3" style="font-size: 12px;"><span href=""
-                                class="fw-bolder text-decoration-underline" style="color: #B388EB;">SEE
-                                ALL <i class="bi bi-arrow-up-right"></i> </span>
-                        </p>
-                    </div>
+                    <span class="fw-bold py-2 px-4" style="background-color: #F7AEF8;">HR</span>
+                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
+                            style="color: #F7AEF8;">SEE
+                            ALL
+                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
+                                alt="">
+                        </span>
+                    </p>
                 </div>
             </div>
-            <div class="col text-white">
 
+            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
+                <p>
+                <div>The best restaurant where for </div>
+                <div>you will be comfy find a job</div>
+                </p>
+                <p>
+                <div>Lorem ipsum dolor sit amet,</div>
+                <div>consectetur adipiscing elit. Aliquam</div>
+                <div>feugiat ac odio nec porta. Donec</div>
+                <div>elementum pharetra ante eget auctor. </div>
+                </p>
+                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
+                        class="bi bi-arrow-up-right"></i>
+                </span>
             </div>
-            <div class="col text-white">
-                <div class="text-md-start text-center">
-
-                    <p>
-                    <div>The best restaurant where for </div>
-                    <div>you will be comfy find a job</div>
-                    </p>
-
-                    <p>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                    <div>consectetur adipiscing elit. Aliquam</div>
-                    <div>feugiat ac odio nec porta. Donec</div>
-                    <div>elementum pharetra ante eget auctor. </div>
-                    </p>
-                    <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                            class="bi bi-arrow-up-right"></i> </span>
-
-                </div>
-            </div>
-            <div class="col text-md-start text-center">
+            <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-2.png" class="img-fluid" alt="">
             </div>
         </div>
 
-        <div
-            class="row border-bottom row-cols-1 justify-content-center row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break py-5">
-            <div class="col text-white">
+        <div class="row row-cols-1 gx-5 g-lg-3 text-break py-5">
+            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
                 <div class="">
-                    <div class="text-md-start text-center">
-                        <span class="fw-bold py-2 px-4" style="background-color: #B388EB;">TECH</span>
-                        <p class="mt-3" style="font-size: 12px;"><span href=""
-                                class="fw-bolder text-decoration-underline" style="color: #B388EB;">SEE
-                                ALL <i class="bi bi-arrow-up-right"></i> </span>
-                        </p>
-                    </div>
+                    <span class="fw-bold py-2 px-4" style="background-color: #B388EB;">TECH</span>
+                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
+                            style="color: #F7AEF8;">SEE
+                            ALL
+                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
+                                alt="">
+                        </span>
+                    </p>
                 </div>
             </div>
-            <div class="col text-white">
 
+            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
+                <p>
+                <div>The best restaurant where for </div>
+                <div>you will be comfy find a job</div>
+                </p>
+                <p>
+                <div>Lorem ipsum dolor sit amet,</div>
+                <div>consectetur adipiscing elit. Aliquam</div>
+                <div>feugiat ac odio nec porta. Donec</div>
+                <div>elementum pharetra ante eget auctor. </div>
+                </p>
+                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
+                        class="bi bi-arrow-up-right"></i>
+                </span>
             </div>
-            <div class="col text-white">
-                <div class="text-md-start text-center">
-
-                    <p>
-                    <div>The best restaurant where for </div>
-                    <div>you will be comfy find a job</div>
-                    </p>
-
-                    <p>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                    <div>consectetur adipiscing elit. Aliquam</div>
-                    <div>feugiat ac odio nec porta. Donec</div>
-                    <div>elementum pharetra ante eget auctor. </div>
-                    </p>
-                    <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                            class="bi bi-arrow-up-right"></i> </span>
-
-                </div>
-            </div>
-            <div class="col text-md-start text-center">
+            <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-3.png" class="img-fluid" alt="">
             </div>
         </div>
 
-        <div class="row row-cols-1 justify-content-center row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break py-5">
-            <div class="col text-white">
+
+
+        <div class="row border-top row-cols-1 gx-5 g-lg-3 text-break py-5">
+            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
                 <div class="">
-                    <div class="text-md-start text-center">
-                        <span class="fw-bold py-2 px-4" style="background-color: #72DDF7;">OTHERS</span>
-                        <p class="mt-3" style="font-size: 12px;"><span href=""
-                                class="fw-bolder text-decoration-underline" style="color: #B388EB;">SEE
-                                ALL <i class="bi bi-arrow-up-right"></i> </span>
-                        </p>
-                    </div>
+                    <span class="fw-bold py-2 px-4" style="background-color: #72DDF7;">OTHERS</span>
+                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
+                            style="color: #F7AEF8;">SEE
+                            ALL
+                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
+                                alt="">
+                        </span>
+                    </p>
                 </div>
             </div>
-            <div class="col text-white">
 
+            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
+                <p>
+                <div>The best restaurant where for </div>
+                <div>you will be comfy find a job</div>
+                </p>
+                <p>
+                <div>Lorem ipsum dolor sit amet,</div>
+                <div>consectetur adipiscing elit. Aliquam</div>
+                <div>feugiat ac odio nec porta. Donec</div>
+                <div>elementum pharetra ante eget auctor. </div>
+                </p>
+                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
+                        class="bi bi-arrow-up-right"></i>
+                </span>
             </div>
-            <div class="col text-white">
-                <div class="text-md-start text-center">
-
-                    <p>
-                    <div>The best restaurant where for </div>
-                    <div>you will be comfy find a job</div>
-                    </p>
-
-                    <p>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                    <div>consectetur adipiscing elit. Aliquam</div>
-                    <div>feugiat ac odio nec porta. Donec</div>
-                    <div>elementum pharetra ante eget auctor. </div>
-                    </p>
-                    <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                            class="bi bi-arrow-up-right"></i> </span>
-
-                </div>
-            </div>
-            <div class="col text-md-start text-center">
+            <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-4.png" class="img-fluid" alt="">
             </div>
         </div>
@@ -243,6 +228,7 @@ export default {
     .blog-banner {
         height: 42vh;
     }
+
     .banner-text {
         position: absolute;
         top: 20%;

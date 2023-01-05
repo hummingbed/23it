@@ -25,8 +25,8 @@
         <div class="row g-5 py-5 ">
             <div class="col">
                 <div class="px-5  d-flex fs-5 gap-4">
-                    <a href=""><i class="bi bi-linkedin py-1 px-2 text-dark"></i></a>
-                    <a href="#"><i class="bi bi-facebook py-1 px-2 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/company/80849894"><i class="bi bi-linkedin py-1 px-2 text-dark"></i></a>
+                    <a href="https://www.instagram.com/23it_company/"><i class="bi bi-instagram py-1 px-2 text-dark"></i></a>
                 </div>
             </div>
             <div class="col">
@@ -72,7 +72,7 @@ export default {
 }
 
 .bi-linkedin,
-.bi-facebook {
+.bi-instagram {
     background: #F7AEF8;
 
 }

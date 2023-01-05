@@ -1,5 +1,5 @@
 <template>
-	<div class="container py-4 mb-4 fixed-top">
+	<div class="container py-3 mb-4 fixed-top">
 		<div class="row align-items-start">
 			<div class="col text-start">
 				<router-link class="dropdown-item ms-1 text-white" :to="'/'"> 
