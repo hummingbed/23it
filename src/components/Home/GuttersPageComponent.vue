@@ -1,12 +1,12 @@
 <template>
 
     <div class="container py-5 px-4">
-        <div class="px-5 py-2 col fw-bolder" style="color: #F7AEF8;">
+        <div class=" py-2 col fw-bolder" style="color: #F7AEF8;">
                 01
             </div>
-        <div class="col-md-10 fs-1 fw-bold lh-base px-5">
-            <span class="text-white">We know what we are <br> talking about and will make <br> the</span> <span
-                class="text-blue">difference!</span>
+        <div class="col fs-1 fw-bold lh-base">
+            <span class="text-white we-know">We know what we are <br> talking about and will make <br> the</span> <span
+                class="text-blue we-know">difference!</span>
         </div>
         <div class="container overflow-hidden pt-5 px-5">
             <div class="row justify-content-between gy-5 lh-base">
@@ -127,7 +127,6 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 767px) {
-
     .search-and-selection {
         height: 20vh;
     }
@@ -144,6 +143,19 @@ export default {
         float: right;
     }
 }
+
+@media only screen and (min-width: 1440px){
+    .we-know{
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 1439px){
+    .we-know{
+        font-size: 5.2vw;
+    }
+}
+
 
 .lh-base {
     letter-spacing: .1rem;

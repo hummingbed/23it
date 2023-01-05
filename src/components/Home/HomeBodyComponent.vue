@@ -2,11 +2,13 @@
     <div class="container py-5 px-4">
         <div class="col-lg-12">
             <div class="row gx-5  mt-5">
-                <b><small class="px-4  pb-5" style="color: #F7AEF8;">This is 23it</small></b>
+                <b><small class="  pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
                 <div class="col-md-11 mt-5 ">
                     <h2>
-                        <div class="px-4  text-white fw-bolder lh-sm home-head-text">
-                            We are a recruitment agency with a focus <br> on <span class="cloud-cyber-text">Cloud,
+                        <div class="text-white fw-bolder lh-sm home-head-text">
+                            <p>We are a recruitment</p> 
+                            <p>agency with a focus</p>
+                             on <span class="cloud-cyber-text">Cloud,
                                 cyber</span> and,
                             <div class="d-flex">
                                 <p class="dev-ops">Dev-ops</p>
@@ -58,55 +60,52 @@ export default {
     color: #F7AEF8;
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1441px) {
     .home-head-text {
-        font-size: 7.2vw;
+        font-size: 90px;
         letter-spacing: .3rem;
     }
 
-    .dev-ops {
-        width: 35vw;
+    .employers-btn{
+        margin-right: 5vw;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .home-head-text {
+        font-size: 7vw;
+        letter-spacing: .3rem;
+    }
+
+    .employers-btn{
+        margin-right: 5vw;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .home-head-text {
+        font-size: 6vw;
+        letter-spacing: .3rem;
+    }
+
+    .employers-btn{
+        margin-right: 5vw;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .home-head-text {
+        font-size: 5vw;
+        letter-spacing: .3rem;
     }
     .employers-btn{
         margin-right: 5vw;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .home-head-text {
-        font-size: 6vw;
-    }
-
-    .dev-ops {
-        width: 30vw;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .home-head-text {
-        font-size: 6vw;
-    }
-
-    .dev-ops {
-        width: 30vw;
-    }
-}
 
 .cloud-cyber-text {
     background: #8093F1;
-}
-
-
-
-@media only screen and (max-width: 424px) {
-
-    .home-head-text {
-        font-size: 7vw;
-    }
-
-    .dev-ops {
-        width: 30vw;
-    }
 }
 
 
