@@ -6,9 +6,13 @@
 </template>
 
 <style>
+
 #app {
-  font-family: 'Inter', sans-serif;
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Roboto Slab', serif; */
+  /* font-family: 'Inter', sans-serif;
+font-family: 'Roboto Slab', serif; */
+font-family: 'Space Grotesk', sans-serif;
 }
 
 body {

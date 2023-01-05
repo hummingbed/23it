@@ -223,6 +223,7 @@ export default {
     position: relative;
 
     background-image: url("../../assets/blog-img/blog-banner.png");
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 991px) {
@@ -232,7 +233,7 @@ export default {
 
     .banner-text {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 8%;
     }
 }
