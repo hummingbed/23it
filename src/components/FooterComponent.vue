@@ -3,7 +3,7 @@
         <div class="row border-top border-secondary">
             <div class="col-md-5 px-5">
                 <div class="p-3 d-grid gap-3 ">
-                    <a href="#" class="text-white text-decoration-none fs-4"> About Us</a>
+                    <router-link class="text-white text-decoration-none fs-4" :to="'/about'"> About Us</router-link>
                     <a href="#" class="text-white text-decoration-none fs-4"> Employer</a>
                     <router-link class="text-white text-decoration-none fs-4" :to="'/contact'"> Contacts</router-link>	
                     <a href="#" class="text-white text-decoration-none fs-4"> Newsletter</a>
