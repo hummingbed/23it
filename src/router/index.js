@@ -4,6 +4,7 @@ import MediaView from '../views/MediaView.vue'
 import BlogView from '../views/BlogView.vue'
 import JobView from '../views/JobView.vue'
 import ShotJobComponent from '../views/ShotJobView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes = [
   {
@@ -37,7 +38,15 @@ const routes = [
     name: 'see-job',
     component: ShotJobComponent
     
-  }
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
+    
+  },
+
+
 ]
 
 const router = createRouter({

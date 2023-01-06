@@ -5,7 +5,7 @@
                 <div class="p-3 d-grid gap-3 ">
                     <a href="#" class="text-white text-decoration-none fs-4"> About Us</a>
                     <a href="#" class="text-white text-decoration-none fs-4"> Employer</a>
-                    <a href="#" class="text-white text-decoration-none fs-4"> Contacts</a>
+                    <router-link class="text-white text-decoration-none fs-4" :to="'/contact'"> Contacts</router-link>	
                     <a href="#" class="text-white text-decoration-none fs-4"> Newsletter</a>
                 </div>
             </div>

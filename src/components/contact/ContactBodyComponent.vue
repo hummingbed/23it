@@ -96,7 +96,7 @@ input {
 }
 
 input[type="text"] {
-    background-image: url("../../assets/img/input.png");
+    background-color: #070223;
 }
 
 
