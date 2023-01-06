@@ -22,13 +22,33 @@
             <div class="col text-uppercase about-us-lead-text">
                 <div>we are a</div>
                 <div>leading</div>
-                <div class="font-monospace recruitment" >recruitment</div>
+                <div class="font-monospace recruitment">recruitment</div>
                 <div>agency</div>
             </div>
         </div>
 
 
-        <div class="row pt-4">
+        <div class="row py-5 g-5">
+            <div class="col-sm-12 col-md-6 ">
+                <img src="../../assets/img/about-us.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3>Orelio lopes</h3>
+                <p>I’ve started my first years within Randstad as a</p>
+                <p> Consultant. Than switch over to YER a recruitmentagency</p>
+                <p>which focuses on IT staffing and Sales & Marketing. After </p>
+                <p>that I’ve started as an entrepreneur. Freelancing in</p>
+                <p>different organizations with detailed strategy on</p>
+                <p>Recruitment and getting the best people in for these</p>
+                <p>organizations.</p>
+                <p>Now with our own company, we can have a focus on</p>
+                <p>specific domains and give the business the attention that </p>
+                <p> they deserve!</p>
+            </div>
+        </div>
+
+
+        <div class="row pt-5">
             <div class="col focused-recruiting">
                 <p>We are <span style="color: #B388EB;"> focused</span> on <span
                         style="background-color: #F7AEF8;">recruiting</span> </p>
@@ -63,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="px-3 pt-3 fs-5" style="background: rgba(128, 147, 241, 0.52);">
                     <div>
@@ -146,12 +166,13 @@ export default {
     .about-us-lead-text {
         font-size: 100px;
     }
+
     .recruitment {
         transform: rotateZ(355deg);
         background: #B388EB;
         width: 700px;
     }
-    
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -160,17 +181,16 @@ export default {
     }
 
     .about-us-lead-text {
-    font-size: 7.2vw;
-}
-.recruitment {
+        font-size: 7.2vw;
+    }
+
+    .recruitment {
         transform: rotateZ(355deg);
         background: #B388EB;
         width: 48vw;
         /* style="background-color: #B388EB; " */
     }
 }
-
-
 </style>
 
 
