@@ -38,8 +38,8 @@
         </div>
 
 
-        <div class="row gx-5">
-            <div class="col">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="px-3 pt-3 fs-5" style="background: rgba(128, 147, 241, 0.52);">
                     <div>
                         From our Dutch head office in
@@ -63,7 +63,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="px-3 pt-3 fs-5" style="background: rgba(128, 147, 241, 0.52);">
                     <div>
                         Are you a manager or specialist
@@ -88,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="px-3 pt-3 fs-5" style="background: rgba(128, 147, 241, 0.52);">
                     <div>
                         If you’re searching for a
