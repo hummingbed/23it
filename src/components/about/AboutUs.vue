@@ -20,21 +20,27 @@
 
         <div class="row mb-5">
             <div class="col text-uppercase about-us-lead-text">
-                <div>we are a</div>
-                <div>leading</div>
-                <div class="font-monospace recruitment">recruitment</div>
-                <div>agency</div>
+                <div>we are a leading</div>
+                <div class="d-flex g-5">
+                    <div class="font-monospace recruitment">
+                        recruitment
+                    </div>
+
+                    <div>agency</div>
+                </div> 
+               
             </div>
         </div>
 
 
         <div class="row py-5 g-5">
             <div class="col-sm-12 col-md-6 ">
-                <img src="../../assets/img/about-us.png" class="img-fluid" alt="">
+                <img src="../../assets/img/about-grp-img.png" class="img-fluid" alt="">
             </div>
-            <div class="col-md-6 col-sm-12">
-                <h3>Orelio lopes</h3>
-                <p>I’ve started my first years within Randstad as a</p>
+            <div class="col-md-6  col-sm-12">
+                <h3 class="fs-1">Orelio lopes</h3>
+                <div class="fs-5 lh-1">
+                    <p>I’ve started my first years within Randstad as a</p>
                 <p> Consultant. Than switch over to YER a recruitmentagency</p>
                 <p>which focuses on IT staffing and Sales & Marketing. After </p>
                 <p>that I’ve started as an entrepreneur. Freelancing in</p>
@@ -44,6 +50,7 @@
                 <p>Now with our own company, we can have a focus on</p>
                 <p>specific domains and give the business the attention that </p>
                 <p> they deserve!</p>
+                </div>
             </div>
         </div>
 
