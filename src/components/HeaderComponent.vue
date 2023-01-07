@@ -110,9 +110,6 @@ ul li a span:after {
 	font-size: 16px;
 }
 
-.dropdown-toggle span {
-	/* background: #fff; */
-}
 
 .switch {
 	position: relative;
