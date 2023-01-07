@@ -1,11 +1,12 @@
 <template>
 
     <div id="HomeEmployerComponent">
+
         <div class="container text-white py-5">
-            <div class=" col fw-bold" style="color: #F7AEF8;">
+            <div class="col fw-bold" style="color: #F7AEF8;">
                 EMPLOYER
             </div>
-            <div class="col fw-bold pb-5 putting-right-people">
+            <div class="col  fw-bold pb-5 putting-right-people">
                 <div> Putting the <span style="color: #B388EB;">right people</span></div>
                 <div>in the right <span style="color: #B388EB;">positions</span> gives</div>
                 <div> us energy.</div>
@@ -28,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col col-lg-6 text-center text-lg-end col-md-12">
-                    <img src="../../assets/img/home-grp-img.png" class="img-fluid" alt="">
+                    <img src="../../assets/img/home-grp-img.png" class="img-fluid img-animation" alt="">
                 </div>
             </div>
             <a class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 " href="#">GET IN TOUCH</a>
@@ -45,6 +46,18 @@ export default {
 
 
 <style scoped>
+
+.img-animation {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.img-animation:hover {
+    transform: rotate(360deg);
+}
+
+
+
+
 @media only screen and (min-width: 1440px) {
     .putting-right-people {
         font-size: 90px;

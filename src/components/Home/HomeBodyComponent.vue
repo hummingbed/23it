@@ -6,11 +6,11 @@
                 <div class="col-md-11 mt-5 ">
                     <h2>
                         <div class="text-white fw-bolder lh-sm home-head-text">
-                            <p>We are a recruitment</p> 
-                            <p>agency with a focus</p>
+                            <div class="slide-left">We are a recruitment</div> 
+                            <div class="slide-left">agency with a focus</div>
                              on <span class="cloud-cyber-text">Cloud,
                                 cyber</span> and,
-                            <div class="d-flex">
+                            <div class="d-flex slide-up">
                                 <p class="dev-ops">Dev-ops</p>
                                 <p>positions.</p>
                             </div>
@@ -40,6 +40,39 @@ export default {
 
 
 <style>
+
+.slide-up  {
+  animation: 10s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+div.slide-left  {
+    animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 50%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 
 .employers-icon {
     background: #fff;
