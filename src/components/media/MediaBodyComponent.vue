@@ -18,9 +18,10 @@
 
         <div class="media-top-text pb-5">
             <div class="col fw-bold text-white font-uppercase mb-5">
-                <div>Find some <span style="background-color: #8093F1; ">interestings</span> clips regarding our business</div>
-                <div>or tips which can help you in your
-                    <span>career moves, </span>
+                <div>
+                    <span class="contour">Find some <span style="background-color: #8093F1; ">interestings</span> clips regarding our business</span></div>
+                <div> <span class="contour">or tips which can help you in your</span>
+                    <span> career moves, </span>
                 </div>
                 <div>from salary negotiations, work permits, </div>
                 <div>understanding Dutch culture and many more!</div>
@@ -372,7 +373,6 @@
             </div>
         </div>
 
-
     </div>
 </template>
 
@@ -385,12 +385,25 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Slab:wght@200&family=Space+Grotesk:wght@300&display=swap');
 
+.contour{
+	color: black;
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color:  #070223;
+}
+
 .stacked-text {
     top: 60%;
 }
 
+@media only screen and (min-width: 1440px) {
+    .media-top-text {
+        font-size: 42px;
+    }
 
-@media only screen and (min-width: 594px) {
+}
+
+
+@media only screen and (max-width: 1439px) {
     .media-top-text {
         font-size: 3vw;
     }
