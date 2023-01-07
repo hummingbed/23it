@@ -1,17 +1,19 @@
 <template>
 
     <div id="HomeEmployerComponent">
-        <div class="container px-4 text-white py-5">
-            <div class="p-3 col fw-bold" style="color: #F7AEF8;">
+        <div class="container text-white py-5">
+            <div class=" col fw-bold" style="color: #F7AEF8;">
                 EMPLOYER
             </div>
-            <div class="col-md-6 fs-1 fw-bold p-3">
-                Putting the right people <br> in the right positions gives us energy.
+            <div class="col fw-bold pb-5 putting-right-people">
+               <div> Putting the <span style="color: #B388EB;">right people</span></div>
+               <div>in the right <span style="color: #B388EB;">positions</span> gives</div>  
+              <div>  us energy.</div>
             </div>
-            <div class="row gy-3 gx-5">
-                <div class="col-lg-5 col-md-12 mt-2">
+            <div class="row py-5 gy-3 gx-5">
+                <div class="col-lg-6 col-md-12 mt-2">
                     <div class="p-3">
-                        <div class="d-grid">
+                        <div class="d-grid fs-4">
                             <p>Covering the Netherlands, Europe and the US, we combine marketing and recruitment
                                 technology </p>
                             <p>We creating a deep candidate pool meaning you have access to the best talent in the
@@ -26,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col col-lg-6 text-center text-lg-end col-md-12">
-                    <img src="../../assets/img/img-step.png" class="img-fluid" alt="">
+                    <img src="../../assets/img/home-grp-img.png" class="img-fluid" alt="">
                 </div>
             </div>
             <a class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 " href="#">GET IN TOUCH</a>
@@ -49,6 +51,10 @@ export default {
         float: right;
     }
 } */
+
+.putting-right-people{
+    font-size: 90px;
+}
 
 .get-in-touch-btn {
     background: #fff;
