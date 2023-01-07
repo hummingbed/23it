@@ -220,11 +220,9 @@ export default {
 
 
 
-<style>
+<style >
 
-.job-openings{
-    font-size: 10vw;
-}
+
 .text-color-white {
     color: #F0E4D9;
 

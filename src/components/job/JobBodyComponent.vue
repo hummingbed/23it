@@ -317,9 +317,20 @@ export default {
 
 <style>
 
-.job-openings{
+@media only screen and (min-width: 1441px) {
+    .job-openings{
+    font-size: 120px;
+}
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .job-openings{
     font-size: 10vw;
 }
+
+}
+
 .text-color-white {
     color: #F0E4D9;
 
