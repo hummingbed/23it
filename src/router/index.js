@@ -6,6 +6,7 @@ import JobView from '../views/JobView.vue'
 import ShotJobComponent from '../views/ShotJobView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutUsView from '../views/AboutUsView.vue'
+import MoreBlogsView from '../views/MoreBlogsView.vue'
 
 const routes = [
   {
@@ -50,6 +51,12 @@ const routes = [
     path: '/about',
     name: 'about',
     component: AboutUsView
+    
+  },
+  {
+    path: '/more-blogs',
+    name: 'more-blogs',
+    component: MoreBlogsView
     
   },
 
