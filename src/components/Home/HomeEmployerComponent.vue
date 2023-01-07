@@ -6,9 +6,9 @@
                 EMPLOYER
             </div>
             <div class="col fw-bold pb-5 putting-right-people">
-               <div> Putting the <span style="color: #B388EB;">right people</span></div>
-               <div>in the right <span style="color: #B388EB;">positions</span> gives</div>  
-              <div>  us energy.</div>
+                <div> Putting the <span style="color: #B388EB;">right people</span></div>
+                <div>in the right <span style="color: #B388EB;">positions</span> gives</div>
+                <div> us energy.</div>
             </div>
             <div class="row py-5 gy-3 gx-5">
                 <div class="col-lg-6 col-md-12 mt-2">
@@ -45,16 +45,18 @@ export default {
 
 
 <style scoped>
-
-/* @media only screen and (min-width: 767px) {
-    .employer-left-text {
-        float: right;
+@media only screen and (min-width: 1440px) {
+    .putting-right-people {
+        font-size: 90px;
     }
-} */
-
-.putting-right-people{
-    font-size: 90px;
 }
+
+@media only screen and (max-width: 1439px) {
+    .putting-right-people {
+        font-size: 6vw;
+    }
+}
+
 
 .get-in-touch-btn {
     background: #fff;

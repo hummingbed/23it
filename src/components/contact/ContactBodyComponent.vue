@@ -95,15 +95,31 @@ input {
     border-bottom-style: groove;
 }
 
+
+
+
 input[type="text"] {
     background-color: #070223;
 }
 
 
-.mainLoginInput {
+@media only screen and (min-width: 1440px) {
+    .mainLoginInput {
     margin: 5px 0px;
     letter-spacing: 5px;
-    font-size: 4vw;
+    font-size: 55px;
+}
+
+}
+
+
+@media only screen and (max-width: 1439px) {
+    .mainLoginInput {
+    margin: 5px 0px;
+    letter-spacing: 5px;
+    font-size: 3.7vw;
+}
+
 }
 
 .mainLoginInput::-webkit-input-placeholder {
