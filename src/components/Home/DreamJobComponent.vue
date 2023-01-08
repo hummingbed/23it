@@ -50,6 +50,13 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="">
+                            <div class="button float-end mt-3 fw-bold text-dark">
+                                FIND A JOB  
+                                <img src="../../assets/arrow/dark-arrow-right.png" class="img-fluid mb-1" style="height: 20px;" alt="">
+                            </div>
+                        </div>
+                       
                     </form>
                 </div>
             </div>
@@ -68,6 +75,19 @@ export default {
 
 <style scoped>
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+
+
+.button {
+    background: #fff;
+    /* border: none; */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 
 @media only screen and (min-width: 1440px) {

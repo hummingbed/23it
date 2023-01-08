@@ -47,15 +47,15 @@ export default {
 }
 
 @keyframes slide-up {
-  from {
-    margin-top: 100%;
-    height: 300%; 
-  }
+    from {
+        margin-left: -40%;
+        width: 100%;
+    }
 
-  to {
-    margin-top: 0%;
-    height: 100%;
-  }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 div.slide-left  {
@@ -73,6 +73,15 @@ div.slide-left  {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
 
 .employers-icon {
     background: #fff;

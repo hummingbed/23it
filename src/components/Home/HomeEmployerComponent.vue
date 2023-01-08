@@ -14,7 +14,7 @@
             <div class="row py-5 gy-3 gx-5">
                 <div class="col-lg-6 col-md-12 mt-2">
                     <div class="p-3">
-                        <div class="d-grid fs-4">
+                        <div class="d-grid fs-5">
                             <p>Covering the Netherlands, Europe and the US, we combine marketing and recruitment
                                 technology </p>
                             <p>We creating a deep candidate pool meaning you have access to the best talent in the

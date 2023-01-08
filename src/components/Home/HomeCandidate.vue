@@ -11,7 +11,7 @@
                             Learn and grow as an
                             <p> IT professional</p>
                         </span>
-                        <p class="fs-4">When you find a new job with an IT staffing service, you can assume that you will land a job
+                        <p class="fs-5">When you find a new job with an IT staffing service, you can assume that you will land a job
                             or assignment full of challenges, job satisfaction and growth. We will guide you through all
                             the processes so that you can fully focus on your work or task.</p>
                     </div>
@@ -22,7 +22,7 @@
                             Moving to the
                             <p> Netherlands.</p>
                         </span>
-                        <p class="fs-4">
+                        <p class="fs-5">
                             Are you currently working in IT in your country and are you willing to work and live in the
                             Netherlands? We will help you find a job and provide the necessary assistance with moving.
                             How to find housing, a social security number and a bank account.
@@ -36,7 +36,7 @@
                             We know our clients
                             <p> inside out.</p>
                         </span>
-                        <p class="fs-4">Their ambitions, company culture and what they are really looking for in a candidate. We
+                        <p class="fs-5">Their ambitions, company culture and what they are really looking for in a candidate. We
                             survey our customers extensively, both technically and functionally. Therefore, we know for
                             sure that your new place of work or destination will really suit you.
                         </p>
@@ -48,7 +48,7 @@
                             we know what you
                             <p> want.</p>
                         </span>
-                        <p class="fs-4">
+                        <p class="fs-5">
                             You're not just taking the next step as an IT professional. You want to be in an
                             organization where you will be given space to further develop your talents. A company with
                             potential, ambition and a corporate culture where you feel at home. We can find these
