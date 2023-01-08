@@ -47,6 +47,15 @@ export default {
 
 <style scoped>
 
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+}
+
 .img-animation {
     transition: width 2s, height 2s, transform 2s;
 }

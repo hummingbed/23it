@@ -142,6 +142,16 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+} 
+
 @media only screen and (max-width: 767px) {
     .search-and-selection {
         height: 20vh;

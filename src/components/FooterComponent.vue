@@ -51,6 +51,18 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+}
+
+
+
 @media screen and (min-width: 1024px) {
     .business-text-body {
         font-size: 70px;

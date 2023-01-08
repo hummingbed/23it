@@ -39,7 +39,16 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
+
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+}
 
 .slide-up  {
   animation: 10s slide-up;

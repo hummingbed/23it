@@ -69,6 +69,16 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+}
+
 .get-in-touch-btn {
     background: #fff;
     border: none;

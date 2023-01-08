@@ -11,7 +11,7 @@
                     <img src="../../assets/blog-img/more-blog-img-1.png" class="img-fluid" alt="">
                 </div>
 
-                <div class="col border">
+                <div class="col">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat ac odio nec porta.
                         Donec elementum pharetra ante eget auctor. Quisque elementum orci ac diam molestie mattis. Etiam
@@ -61,10 +61,10 @@
 
                     <div class="row">
                         <div class="col-6  ">
-                            <div class="d-flex bg-info gap-3 border">
-                                <img src="../../assets/arrow/arrow-left.png" class="img-fluid mt-5" style="height: 20px;" alt="">
-                                <img src="../../assets/blog-img/blog-sm-img.png" class="img-fluid" alt="">
-                                <div class="d-grid">
+                            <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
+                                <img src="../../assets/arrow/arrow-left.png" class="img-fluid mt-5 ms-2" style="height: 20px;" alt="">
+                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;" class="img-fluid mt-3" alt="">
+                                <div class="d-grid mt-3">
                                     <p>Previus post</p>
                                     <p>Way to Better <br> Project Management</p>
                                 </div>
@@ -72,13 +72,15 @@
                         </div>
 
                         <div class="col-6  ">
-                            <div class="d-flex bg-info gap-3 border">
-                                <img src="../../assets/arrow/arrow-left.png" class="img-fluid mt-5" style="height: 20px;" alt="">
-                                <img src="../../assets/blog-img/blog-sm-img.png" class="img-fluid" alt="">
-                                <div class="d-grid">
+                            <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
+                                
+                                <div class="d-grid mt-3 ms-2">
                                     <p>Previus post</p>
                                     <p>Way to Better <br> Project Management</p>
                                 </div>
+                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;" class="img-fluid mt-3" alt="">
+                                <img src="../../assets/arrow/arrow-right.png" class="img-fluid mt-5" style="height: 20px;" alt="">
+                                
                             </div>
                         </div>
                     </div>

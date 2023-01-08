@@ -8,14 +8,13 @@
 <style>
 
 #app {
-  /* font-family: 'Inter', sans-serif;
-  font-family: 'Roboto Slab', serif; */
-  /* font-family: 'Inter', sans-serif;
-font-family: 'Roboto Slab', serif; */
-font-family: 'Space Grotesk', sans-serif;
+/* font-family: 'Space Grotesk', sans-serif; */
 }
 
+
+
 body {
+  font-family: 'Space Grotesk', sans-serif;
   background-color: #070223;
 }
 </style>

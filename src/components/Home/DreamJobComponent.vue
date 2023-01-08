@@ -76,6 +76,15 @@ export default {
 <style scoped>
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.container{
+  font-family: KyivTypeSerif-Bold3;
+}
+
 
 
 .button {
