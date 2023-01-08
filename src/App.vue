@@ -6,13 +6,6 @@
 </template>
 
 <style>
-
-#app {
-/* font-family: 'Space Grotesk', sans-serif; */
-}
-
-
-
 body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: #070223;

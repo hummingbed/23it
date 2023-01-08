@@ -1,7 +1,10 @@
 <template>
-    <div class="container">
-        <div class="row border">
-            <div class="col-7 border fw-bold text-white">
+    <div class="container mt-5">
+        <div class="row justify-content-between py-5">
+            <div class="mb-3">
+                <span class="px-2 text-white fs-5 " style="background: #FDC5F5;">HR</span>
+            </div>
+            <div class="col-lg-7 col-md-6 fw-bold text-white">
                 <p class="text-uppercase">Maintaining Mental Health while Job Hunt</p>
                 <div class="d-flex gap-3">
                     <p class="text-uppercase">2 mins read</p>
@@ -59,11 +62,13 @@
                         neque.
                     </p>
 
-                    <div class="row">
-                        <div class="col-6  ">
+                    <div class="row gy-2">
+                        <div class="col-lg-6 col-md-12 ">
                             <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
-                                <img src="../../assets/arrow/arrow-left.png" class="img-fluid mt-5 ms-2" style="height: 20px;" alt="">
-                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;" class="img-fluid mt-3" alt="">
+                                <img src="../../assets/arrow/arrow-left.png" class="img-fluid mt-5 ms-2"
+                                    style="height: 20px;" alt="">
+                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;"
+                                    class="img-fluid mt-3" alt="">
                                 <div class="d-grid mt-3">
                                     <p>Previus post</p>
                                     <p>Way to Better <br> Project Management</p>
@@ -71,23 +76,79 @@
                             </div>
                         </div>
 
-                        <div class="col-6  ">
+                        <div class="col-lg-6 col-md-12 ">
                             <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
-                                
+
                                 <div class="d-grid mt-3 ms-2">
                                     <p>Previus post</p>
                                     <p>Way to Better <br> Project Management</p>
                                 </div>
-                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;" class="img-fluid mt-3" alt="">
-                                <img src="../../assets/arrow/arrow-right.png" class="img-fluid mt-5" style="height: 20px;" alt="">
-                                
+                                <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;"
+                                    class="img-fluid mt-3" alt="">
+                                <img src="../../assets/arrow/arrow-right.png" class="img-fluid mt-5"
+                                    style="height: 20px;" alt="">
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6  mt-5 text-white">
+                <div class="fw-bold">
+                    <p>CATEGORIES</p>
+                </div>
+                <div>
+                    <ul class="d-grid gap-2 fw-bold">
+                        <li>
+                            <span style="background: #FDC5F5;"> TRAVEL (3)</span>
+                        </li>
 
+                        <li>
+                            <span style="background: #8093F1;">HOTEL (1)</span>
+                        </li>
+                        <li>
+                            <span style="background: #B388EB;">RESTURANT (1)</span>
+                        </li>
+                        <li>
+                            <span style="background: #72DDF7;">SPA & SALON (1)</span>
+                        </li>
+                        <li>
+                            <span style="background: #FDC5F5;">FESTIVAL (1)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fw-bold">
+                    <p>TAGS</p>
+                    <div class="col-7 d-flex gap-3">
+                        <span class="px-2" style="background: #8093F1;">ADVISE</span>
+                        <span class="px-2" style="background: #8093F1;">BALANCE</span>
+                        <span class="px-2" style="background: #8093F1;">EDUCATION</span>
+                    </div>
+
+                    <div class="col-7 d-flex mt-3 gap-3">
+                        <span class="px-2" style="background: #8093F1;">NEWS</span>
+                        <span class="px-2" style="background: #8093F1;">SUGGESSTIONS</span>
+                        <span class="px-2" style="background: #8093F1;">INTROS</span>
+                    </div>
+
+                    <div class="col-7 d-flex mt-3 gap-3">
+                        <span class="px-2" style="background: #8093F1;">REVIEWS</span>
+                        <span class="px-2" style="background: #8093F1;">RECENT POSTS</span>
+                    </div>
+                </div>
+
+                <div class="mt-5 fw-bold">
+                    <p>RECENT POST</p>
+
+                    <ul class="text-uppercase d-grid gap-3">
+                        <li>Maintaining Mental Health while Job Hunt</li>
+                        <li>How To Find the Job that Fits You the Most</li>
+                        <li>What is the Real Future of Virtual Work</li>
+                        <li>Way to Better Project Management</li>
+                        <li>The Guide to Employee On-boarding</li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
