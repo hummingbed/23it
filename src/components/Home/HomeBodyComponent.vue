@@ -2,27 +2,29 @@
     <div class="container py-5 px-4">
         <div class="col-lg-12">
             <div class="row gx-5  mt-5">
-                <b><small class="  pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
+                <b><small class="gotsek-font  pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
                 <div class="col-md-11 mt-5 ">
                     <h2>
                         <div class="text-white fw-bolder lh-sm home-head-text">
-                            <div class="slide-left">We are a recruitment</div> 
-                            <div class="slide-left">agency with a focus</div>
+                            <span><div class="slide-left">We are a recruitment</div> </span>
+                            <span><div class="slide-left">agency with a focus</div></span>
                              on <span class="cloud-cyber-text">Cloud,
                                 cyber</span> and,
-                            <div class="d-flex slide-up">
+                            <span>
+                                <div class="d-flex slide-up">
                                 <p class="dev-ops">Dev-ops</p>
                                 <p>positions.</p>
                             </div>
+                            </span>
                         </div>
                     </h2>
                 </div>
             </div>
             <div class="d-flex gap-5 align-items-center float-end">
-                <a class="text-dark fw-bolder employers-btn" href="#">EMPLOYERS
+                <a class="text-dark fw-bolder employers-btn" href="#HomeEmployerComponent">EMPLOYERS
                     <i class=" employers-icon bi bi-arrow-right"></i></a>
                 <b>
-                    <a class="mt-1 job-btn text-decoration-none" href="#">
+                    <a class="mt-1 job-btn text-decoration-none" href="#dream-job">
                         FIND A JOB
                         <i class="bi bi-arrow-down"></i>
                     </a>
@@ -50,38 +52,42 @@ export default {
   font-family: KyivTypeSerif-Bold3;
 }
 
-.slide-up  {
-  animation: 10s slide-up;
-  margin-top:0%;
+.gotsek-font{
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-@keyframes slide-up {
-    from {
-        margin-left: -40%;
-        width: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
 }
 
-div.slide-left  {
-    animation: slide-left 10s;
+span:nth-child(1) {
+  animation: fade-in 1s .5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-@keyframes slide-left {
-    from {
-        margin-left: 50%;
-        width: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+span:nth-child(2) {
+  animation: fade-in 2s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+span:nth-child(3) {
+  animation: fade-in 3s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 4s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 
 
 
@@ -124,7 +130,7 @@ div.slide-left  {
 
 @media only screen and (max-width: 1440px) {
     .home-head-text {
-        font-size: 7vw;
+        font-size: 6.6vw;
         letter-spacing: .3rem;
     }
 

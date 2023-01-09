@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row border-top border-secondary">
             <div class="col-md-5 px-5">
-                <div class="p-3 d-grid gap-3 ">
+                <div class="p-3 d-grid gap-3 grotesk-font">
                     <router-link class="text-white text-decoration-none fs-4" :to="'/about'"> About Us</router-link>
                     <a href="#" class="text-white text-decoration-none fs-4"> Employer</a>
                     <a href="#" class="text-white text-decoration-none fs-4"> Newsletter</a>
@@ -29,7 +29,7 @@
                     <a href="https://www.instagram.com/23it_company/"><i class="bi bi-instagram py-1 px-2 text-dark"></i></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col grotesk-font">
                 <div class="px-5 d-grid text-white">
                     <p>Copyright 2022 23it</p>
                     <div class="d-flex gap-3">
@@ -61,6 +61,10 @@ export default {
   font-family: KyivTypeSerif-Bold3;
 }
 
+
+.grotesk-font{
+    font-family: 'Space Grotesk', sans-serif;
+}
 
 
 @media screen and (min-width: 1024px) {

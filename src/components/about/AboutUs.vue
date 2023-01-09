@@ -18,7 +18,7 @@
             </ol>
         </nav>
 
-        <div class="row mb-5">
+        <div class="row mb-5 kyiv-font">
             <div class="col text-uppercase about-us-lead-text">
                 <div>we are a leading</div>
                 <div class="d-flex g-5">
@@ -55,7 +55,7 @@
         </div>
 
 
-        <div class="row pt-5">
+        <div class="row pt-5 kyiv-font">
             <div class="col focused-recruiting">
                 <p>We are <span style="color: #B388EB;"> focused</span> on <span
                         style="background-color: #F7AEF8;">recruiting</span> </p>
@@ -165,6 +165,18 @@ export default {
 
 
 <style>
+
+@font-face{
+  font-family: KyivTypeSerif-Bold3;
+  src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.kyiv-font{
+  font-family: KyivTypeSerif-Bold3;
+}
+
+
+
 @media only screen and (min-width: 1441px) {
     .focused-recruiting {
         font-size: 90px;

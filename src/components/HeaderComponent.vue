@@ -3,41 +3,41 @@
 		<div class="row align-items-start">
 			<div class="col text-start">
 				<router-link class="dropdown-item ms-1 text-white" :to="'/'">
-					<img src="../assets/logo/23it-logo.png" class="img-fluid mt-2" alt="">
+					<img src="../assets/logo/23it-logo.png" class="img-fluid mt-2 " style="width: 100px;" alt="">
 				</router-link>
 
 			</div>
 			<div class="col text-end">
 				<div class=" text-dark">
 					<a class="dropdown-toggl py-3 px-3 text-decoration-none text-dark" type=""
-						data-bs-toggle="dropdown"><span class="text-dark ">MENU
+						data-bs-toggle="dropdown"><span class="text-dark fw-bold">MENU
 							<img src="../assets/arrow/drop-down.png" class="ps-5 pe-3" alt="">
 						</span>
 					</a>
 					<ul class="dropdown-menu align-items-start border-white row gy-1">
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/'"> HOME</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/'"> HOME</router-link>
 						</li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/see-job'"> JOBS</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold " :to="'/see-job'"> JOBS</router-link>
 						</li>
 
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/about'"> ABOUT US</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT US</router-link>
 						</li>
-						<li><a class="dropdown-item ms-1 text-white" href="#HomeEmployerComponent">EMPLOYER</a></li>
-						<li><a class="dropdown-item ms-1 text-white" href="#candidate">CANDIDATES</a></li>
+						<li><a class="dropdown-item ms-1 text-white fw-bold" href="#HomeEmployerComponent">EMPLOYER</a></li>
+						<li><a class="dropdown-item ms-1 text-white fw-bold" href="#candidate">CANDIDATES</a></li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/media'"> MEDIA</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'"> MEDIA</router-link>
 						</li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white" :to="'/blog'"> BLOG</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/blog'"> BLOG</router-link>
 						</li>
 						<li class="d-flex gap-1">
-							<a class="text-white dropdown-item ms-1" href="#">
+							<a class="text-white dropdown-item ms-1 fw-bold" href="#">
 								en
 							</a>
-							<a class=" text-white dropdown-item ms-1" href="#">
+							<a class=" text-white dropdown-item ms-1 fw-bold" href="#">
 								nl
 							</a>
 						</li>

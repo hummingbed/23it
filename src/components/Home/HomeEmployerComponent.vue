@@ -14,7 +14,7 @@
             <div class="row py-5 gy-3 gx-5">
                 <div class="col-lg-6 col-md-12 mt-2">
                     <div class="p-3">
-                        <div class="d-grid fs-5">
+                        <div class="d-grid fs-5 gotsek-font">
                             <p>Covering the Netherlands, Europe and the US, we combine marketing and recruitment
                                 technology </p>
                             <p>We creating a deep candidate pool meaning you have access to the best talent in the
@@ -32,7 +32,7 @@
                     <img src="../../assets/img/home-grp-img.png" class="img-fluid img-animation" alt="">
                 </div>
             </div>
-            <a class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 " href="#">GET IN TOUCH</a>
+            <a class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 gotsek-font" href="#">GET IN TOUCH</a>
         </div>
     </div>
 </template>
@@ -50,6 +50,10 @@ export default {
 @font-face{
   font-family: KyivTypeSerif-Bold3;
   src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
+}
+
+.gotsek-font{
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .container{

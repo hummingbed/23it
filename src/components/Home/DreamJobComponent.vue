@@ -4,10 +4,10 @@
             <div class="col ">
                 <div class="p-3 ">
                     <div
-                        class="border-bottom d-flex gap-2  my-3 fw-bolder text-white find-your-dream-job">
-                        <p>FIND YOUR</p>
-                        <p class="dream-job "> DREAM</p>
-                        <p class="">JOB</p>
+                        class="border-bottom d-flex gap-2  my-3 fw-bolder text-white bounce find-your-dream-job">
+                        <span><p id="dream-job">FIND YOUR</p></span>
+                        <span><p class="dream-job "> DREAM</p></span>
+                       <span> <p class="">JOB</p></span>
                     </div>
                     <form>
                         <input class="mainLoginInput text-white" style="width: 100%; height: 3.3rem;" type="text"
@@ -40,13 +40,13 @@
                             <div class="col-md-3 col-lg-2 form-check text-white">
                                 <input class="form-check-input border" type="checkbox">
                                 <label class="form-check-label">
-                                    PARTIME
+                                    PART TIME
                                 </label>
                             </div>
                             <div class="col-md-3 col-lg-2 form-check text-white">
                                 <input class="form-check-input border" type="checkbox">
                                 <label class="form-check-label">
-                                    TEMPOARY
+                                    TEMPORARY
                                 </label>
                             </div>
                         </div>
@@ -80,6 +80,28 @@ export default {
   font-family: KyivTypeSerif-Bold3;
   src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
 }
+
+
+.bounce span {
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+}
+
+.ten span:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+
+
 
 .container{
   font-family: KyivTypeSerif-Bold3;
