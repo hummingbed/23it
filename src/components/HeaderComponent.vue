@@ -19,16 +19,23 @@
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/'"> HOME</router-link>
 						</li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white fw-bold " :to="'/see-job'"> JOBS</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold " :to="'/see-job'">
+								JOBS</router-link>
 						</li>
 
 						<li>
-							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT US</router-link>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT
+								US</router-link>
 						</li>
-						<li><a class="dropdown-item ms-1 text-white fw-bold" href="#HomeEmployerComponent">EMPLOYER</a></li>
-						<li><a class="dropdown-item ms-1 text-white fw-bold" href="#candidate">CANDIDATES</a></li>
 						<li>
-							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'"> MEDIA</router-link>
+							<a class="dropdown-item ms-1 text-white fw-bold" href="/#HomeEmployerComponent">EMPLOYER</a>
+						</li>
+						<li>
+							<a class="dropdown-item ms-1 text-white fw-bold" href="/#candidate">CANDIDATES</a>
+						</li>
+						<li>
+							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'">
+								MEDIA</router-link>
 						</li>
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/blog'"> BLOG</router-link>
