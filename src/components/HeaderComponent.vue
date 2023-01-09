@@ -70,28 +70,11 @@ export default {
 	data() {
 		return {
 
-			path: ''
+			path: process.env.NODE_ENV
 
 		}
 	},
-	mounted() {
 	
-		this.$router.options.routes.forEach((element) => {
-			// console.log(`Current index: ${index}`);
-
-			if(element.name == '/home'){
-				this.path = element.name;
-
-				// this.$router.push("/path");
-				//window.location = "/home#HomeEmployerComponent";
-				
-				// console.log(element.name, window.location.href);
-			}
-			// console.log(element.name, 787);
-			
-		});
-
-	}
 }
 </script>
 
