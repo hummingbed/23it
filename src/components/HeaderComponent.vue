@@ -75,23 +75,16 @@ export default {
 		}
 	},
 	mounted() {
-		// pathHandler: function () {
-		// 	// теперь у нас есть доступ к нативному событию
+	
+		// this.$router.options.routes.forEach((element) => {
+		// 	// console.log(`Current index: ${index}`);
 
-		this.$router.options.routes.forEach((element) => {
-			// console.log(`Current index: ${index}`);
-
-			if(element.path == '/'){
-				this.path = element.path;
-				console.log(element.path);
-			}
+		// 	if(element.path == '/'){
+		// 		this.path = element.path;
+		// 		console.log(element.path);
+		// 	}
 			
-		});
-
-
-		//console.log(this.$router.options)
-		// 	window.location.href = '/#HomeEmployerComponent';
-		// },
+		// });
 
 	}
 }

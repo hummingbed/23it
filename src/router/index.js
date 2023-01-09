@@ -14,6 +14,7 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  
   {
     path: '/media',
     name: 'media',
