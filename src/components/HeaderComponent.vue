@@ -76,15 +76,20 @@ export default {
 	},
 	mounted() {
 	
-		// this.$router.options.routes.forEach((element) => {
-		// 	// console.log(`Current index: ${index}`);
+		this.$router.options.routes.forEach((element) => {
+			// console.log(`Current index: ${index}`);
 
-		// 	if(element.path == '/'){
-		// 		this.path = element.path;
-		// 		console.log(element.path);
-		// 	}
+			if(element.name == '/home'){
+				this.path = element.name;
+
+				// this.$router.push("/path");
+				//window.location = "/home#HomeEmployerComponent";
+				
+				// console.log(element.name, window.location.href);
+			}
+			// console.log(element.name, 787);
 			
-		// });
+		});
 
 	}
 }
