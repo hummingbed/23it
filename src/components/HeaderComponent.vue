@@ -28,7 +28,8 @@
 								US</router-link>
 						</li>
 						<li>
-							<a class="dropdown-item ms-1 text-white fw-bold" href="/#HomeEmployerComponent">EMPLOYER</a>
+							<a class="dropdown-item ms-1 text-white fw-bold"
+								:href="path + `#HomeEmployerComponent`">EMPLOYER</a>
 						</li>
 						<li>
 							<a class="dropdown-item ms-1 text-white fw-bold" href="/#candidate">CANDIDATES</a>
@@ -66,6 +67,33 @@
 <script>
 export default {
 	name: 'HeaderComponent',
+	data() {
+		return {
+
+			path: ''
+
+		}
+	},
+	mounted() {
+		// pathHandler: function () {
+		// 	// теперь у нас есть доступ к нативному событию
+
+		this.$router.options.routes.forEach((element) => {
+			// console.log(`Current index: ${index}`);
+
+			if(element.path == '/'){
+				this.path = element.path;
+				console.log(element.path);
+			}
+			
+		});
+
+
+		//console.log(this.$router.options)
+		// 	window.location.href = '/#HomeEmployerComponent';
+		// },
+
+	}
 }
 </script>
 
