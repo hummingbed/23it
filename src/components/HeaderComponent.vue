@@ -29,7 +29,7 @@
 						</li>
 						<li>
 							<a class="dropdown-item ms-1 text-white fw-bold"
-								:href="path + `#HomeEmployerComponent`">EMPLOYER</a>
+								:href="path + `/#HomeEmployerComponent`">EMPLOYER</a>
 						</li>
 						<li>
 							<a class="dropdown-item ms-1 text-white fw-bold" href="/home#candidate">CANDIDATES</a>
@@ -70,10 +70,13 @@ export default {
 	data() {
 		return {
 
-			path: process.env.NODE_ENV
+			path: window.location.origin
 
 		}
 	},
+	mounted(){
+		console.log(window.location.origin);
+	}
 	
 }
 </script>

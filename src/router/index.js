@@ -10,7 +10,7 @@ import MoreBlogsView from '../views/MoreBlogsView.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: HomeView
   },
