@@ -32,7 +32,8 @@
 								:href="path + `/#HomeEmployerComponent`">EMPLOYER</a>
 						</li>
 						<li>
-							<a class="dropdown-item ms-1 text-white fw-bold" href="/home#candidate">CANDIDATES</a>
+							<a class="dropdown-item ms-1 text-white fw-bold"
+							:href="path + `/#candidate`">CANDIDATES</a>
 						</li>
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'">
