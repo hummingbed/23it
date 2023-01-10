@@ -29,46 +29,13 @@
         </nav>
 
 
-        <div
-            class="row border-bottom row-cols-1 row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break pt-2 pb-5">
+        <div class="row border-bottom row-cols-1 row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break pt-2 pb-5">
             <div class="col text-white">
                 <div class="">
-                   
-                        <div class="col">
-                            <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
-                        </div>
-                        <p>
-                        <div>The best restaurant where for </div>
-                        <div>you will be comfy find a job</div>
-                        </p>
 
-                        <p>
-                        <div>Lorem ipsum dolor sit amet,</div>
-                        <div>consectetur adipiscing elit. Aliquam</div>
-                        <div>feugiat ac odio nec porta. Donec</div>
-                        <div>elementum pharetra ante eget auctor. </div>
-                        </p>
+                    <div class="col">
+                        <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
                     </div>
-
-            </div>
-            <div class="col text-white">
-                
-                    <span class="fw-bold text-center px-2 w-25" style="background-color: #72DDF7;">OTHERS</span>
-                    <p>
-                    <div>The best restaurant where for </div>
-                    <div>you will be comfy find a job</div>
-                    </p>
-
-                    <p>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                    <div>consectetur adipiscing elit. Aliquam</div>
-                    <div>feugiat ac odio nec porta. Donec</div>
-                    <div>elementum pharetra ante eget auctor. </div>
-                    </p>
-            </div>
-            <div class="col text-white">
-                
-                    <span class="fw-bold w-25 px-2" style="background-color: #B388EB;">TECH</span>
                     <p>
                     <div>The best restaurant where for </div>
                     <div>you will be comfy find a job</div>
@@ -81,6 +48,38 @@
                     <div>elementum pharetra ante eget auctor. </div>
                     </p>
                 </div>
+
+            </div>
+            <div class="col text-white">
+
+                <span class="fw-bold text-center px-2 w-25" style="background-color: #72DDF7;">OTHERS</span>
+                <p>
+                <div>The best restaurant where for </div>
+                <div>you will be comfy find a job</div>
+                </p>
+
+                <p>
+                <div>Lorem ipsum dolor sit amet,</div>
+                <div>consectetur adipiscing elit. Aliquam</div>
+                <div>feugiat ac odio nec porta. Donec</div>
+                <div>elementum pharetra ante eget auctor. </div>
+                </p>
+            </div>
+            <div class="col text-white">
+
+                <span class="fw-bold w-25 px-2" style="background-color: #B388EB;">TECH</span>
+                <p>
+                <div>The best restaurant where for </div>
+                <div>you will be comfy find a job</div>
+                </p>
+
+                <p>
+                <div>Lorem ipsum dolor sit amet,</div>
+                <div>consectetur adipiscing elit. Aliquam</div>
+                <div>feugiat ac odio nec porta. Donec</div>
+                <div>elementum pharetra ante eget auctor. </div>
+                </p>
+            </div>
             <div class="col">
                 <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
             </div>
@@ -111,9 +110,9 @@
                 <div>feugiat ac odio nec porta. Donec</div>
                 <div>elementum pharetra ante eget auctor. </div>
                 </p>
-                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                        class="bi bi-arrow-up-right"></i>
-                </span>
+                <a href="/more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ
+                    ARTICLE <i class="bi bi-arrow-up-right"></i>
+                </a>
             </div>
             <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-2.png" class="img-fluid" alt="">
@@ -145,9 +144,9 @@
                 <div>feugiat ac odio nec porta. Donec</div>
                 <div>elementum pharetra ante eget auctor. </div>
                 </p>
-                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
+                <a href="more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
                         class="bi bi-arrow-up-right"></i>
-                </span>
+                </a>
             </div>
             <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-3.png" class="img-fluid" alt="">
@@ -181,9 +180,10 @@
                 <div>feugiat ac odio nec porta. Donec</div>
                 <div>elementum pharetra ante eget auctor. </div>
                 </p>
-                <span href="" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                        class="bi bi-arrow-up-right"></i>
-                </span>
+                    <a href="/more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ
+                        ARTICLE <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
             </div>
             <div class="col-md-6 col-sm-12 col-lg-3 ">
                 <img src="../../assets/blog-img/blog-4.png" class="img-fluid" alt="">
