@@ -56,7 +56,7 @@
 
 
         <div class="row pt-5 kyiv-font">
-            <div class="col focused-recruiting">
+            <div class="col focused-recruiting" >
                 <p>We are <span style="color: #B388EB;"> focused</span> on <span
                         style="background-color: #F7AEF8;">recruiting</span> </p>
                 <p>and <span style="background-color: #B388EB;">selection </span> of permanent </p>
@@ -179,7 +179,7 @@ export default {
 
 @media only screen and (min-width: 1441px) {
     .focused-recruiting {
-        font-size: 90px;
+        font-size: 85px;
     }
 
     .about-us-lead-text {
