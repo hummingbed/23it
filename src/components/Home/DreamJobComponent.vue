@@ -16,25 +16,25 @@
             </div>
 
             <div class="col-md-6">
-                <input class="mainLoginInput text-white" style="width: 100%; height: 4.3rem;" type="text"
+                <input class="mainLoginInput border text-white" style="width: 100%; height: 4.3rem;" type="text"
                     placeholder="Search: &nbsp; Job title, Keyword or company" v-model="searchText"/>
             </div>
         </div>
 
 
 
-        <div class="row g-0 py-4 my-4" v-for="(jobs, index) in filteredItems" style="background: rgba(128, 147, 241, 0.52);">
-            <div class="col-md-2 p-3">
-                <img src="../../assets/blog-img/blog-sm-img.png" class="img-fluid rounded-start" alt="...">
+        <div class="row g-0  my-4" v-for="(jobs, index) in filteredItems" style="background: #4C417E;">
+            <div class="col-md-2 p-5 text-md-start text-sm-center">
+                <img src="../../assets/img/mc-donalds.png" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-10 ">
+            <div class="col-md-10 py-5">
                 <div class="card-body">
-                    <div class="card-text d-flex gap-3 text-white">
-                        <p class="card-title">{{ jobs['company-name'] }}</p>
-                        <p class="card-title text-end">Mc Donald`s</p>
+                    <div class="card-text row text-white">
+                        <p class="col card-title">{{ jobs['company-name'] }}</p>
+                        <p class="col card-title text-end me-3">2d ago</p>
                     </div>
-                    <p class="card-text text-white">{{ jobs['job-title'] }}</p>
-                    <p class="card-text d-flex gap-3 text-white">
+                    <p class="card-text text-white mt-3">{{ jobs['job-title'] }}</p>
+                    <p class="card-text d-flex gap-3 mt-3 text-white">
                         <small class="">{{ jobs['remote-location'] }}</small> |
                         <small class="">{{ jobs['country-location'] }}</small>
                         <small class="">{{ jobs['job-time'] }}</small>
@@ -42,6 +42,10 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="button text-dark float-end">
+            Find a Job
+            <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid" alt="">
         </div>
 
         <!-- <div>
@@ -108,13 +112,13 @@ export default {
 }
 
 .container {
-    font-family: KyivTypeSerif-Bold3;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 
 
 .button {
-    background: #fff;
+    background: #F0E4D9;
     /* border: none; */
     color: white;
     padding: 15px 32px;
