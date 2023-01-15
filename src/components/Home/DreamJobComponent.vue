@@ -17,7 +17,7 @@
 
             <div class="col-md-6">
                 <input class="mainLoginInput border text-white" style="width: 100%; height: 4.3rem;" type="text"
-                    placeholder="Search: &nbsp; Job title, Keyword or company" v-model="searchText"/>
+                    placeholder="Search: &nbsp; Job title, Keyword or company" v-model="searchText" />
             </div>
         </div>
 
@@ -66,6 +66,12 @@
 
 
 <script>
+
+import { collection, getDocs } from "firebase/firestore";
+import {db} from '../../firebase/config'
+
+
+
 export default {
     name: 'DreamJobComponent',
     data() {
@@ -99,6 +105,14 @@ export default {
             return filtered;
         },
     },
+    async mounted() {
+
+        const querySnapshot = await getDocs(collection(db, "jobs"));
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());
+        });
+    }
 }
 </script>
 
