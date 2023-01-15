@@ -13,7 +13,7 @@
             </ol>
         </nav>
 
-        <div class="job-openings">
+        <div class="job-openings fs-1">
             <p class="text-color-white ">Job <span class="px-2" style="background-color: #F7AEF8;">Openings</span></p>
         </div>
 
@@ -34,175 +34,355 @@
                         class="form-control border" aria-label="Text input with dropdown button">
                 </div>
             </div>
-            <div class="col-lg-7 ">
-
-                <div class="row g-2">
-                    <div class="col dropdown">
-                        <a class="button px-5 w-100 py-3 text-color-white border dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #070223;  ">
-                            Date Posted
-                        </a>
-                        <ul class="col dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col dropdown">
-                        <a class="button px-5 w-100 py-3 text-color-white border dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #070223;  ">
-                            Salary Estimate
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-12 col-md-3 dropdown">
-                        <a class="button px-5 py-3 w-100 text-color-white border dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #070223;  ">
-                            Job Type
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
         </div>
 
 
+        <hr class="text-white my-5">
 
         <div class="row g-5">
-            <div class="col-md-4">
-                <div class="py-5">
-                    <p class="text-color-white fw-bold">25.478 Offers Worldwide</p>
-                    <p class="text-color-white fw-bold">Sort by: relevance - <span style="color: #F7AEF8;"> date</span>
-                    </p>
+            <div class="col-md-3 text-white">
+                <p>Filter</p>
+                <div class="d-grid gap-2">
+                    <p>Date posted</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Anytime
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Past week
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Past 24 hours
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Past month
+                        </label>
+                    </div>
 
                 </div>
+
+                <div class="mt-3 d-grid gap-2">
+                    <p>Job type</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Full-time
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Part-time
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Contract
+                        </label>
+                    </div>
                 
-                <div class="py-2 border ">
-                    <div class="mx-auto col-9">
-                        <div>
-                            <p class="fs-3 text-color-white fw-bold">Azure DevOps
-                                Engineer</p>
-                            <div class="text-color-white fw-bold"><span><i class="bi bi-buildings"
-                                        style="color: #F7AEF8;"></i></span> Forever young</div>
-                            <div class="text-color-white "><span><i class="bi bi-geo-alt"
-                                        style="color: #F7AEF8;"></i></span> Kathmandu, Nepal</div>
-                            <div class="text-color-white mb-3"><span><i class="bi bi-cash"
-                                        style="color: #F7AEF8;"></i></span> 2000 EUR - 2500 EUR</div>
-                            <small class="text-color-white ">
-                                <ul>
-                                    <li>Ability to write code – HTML & CSS</li>
-                                    <li>Experience using Invision a plus</li>
-                                </ul>
-                            </small>
-                            <p class="text-color-white "><i class="bi bi-person-fill"
-                                    style="color: #F7AEF8;"></i> Fulltime</p>
-                            <small class="text-color-white">Posted 3 days ago</small>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="py-3 border ">
-                    <div class="mx-auto col-9">
-                        <div>
-                            <p class="fs-3 text-color-white fw-bold">Azure DevOps
-                                Engineer</p>
-                            <div class="text-color-white fw-bold"><span><i class="bi bi-buildings"
-                                        style="color: #F7AEF8;"></i></span> Forever young</div>
-                            <div class="text-color-white "><span><i class="bi bi-geo-alt"
-                                        style="color: #F7AEF8;"></i></span> Kathmandu, Nepal</div>
-                            <div class="text-color-white mb-3"><span><i class="bi bi-cash"
-                                        style="color: #F7AEF8;"></i></span> 2000 EUR - 2500 EUR</div>
-                            <small class="text-color-white ">
-                                <ul>
-                                    <li>Ability to write code – HTML & CSS</li>
-                                    <li>Experience using Invision a plus</li>
-                                </ul>
-                            </small>
-                            <p class="text-color-white "><i class="bi bi-person-fill"
-                                    style="color: #F7AEF8;"></i> Fulltime</p>
-                            <small class="text-color-white">Posted 3 days ago</small>
-                        </div>
+
+                <div class="mt-3 d-grid gap-2">
+                    <p>Salary estimate</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            0-50K
+                        </label>
                     </div>
-                </div>     
 
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                            50-100K
+                        </label>
+                    </div>
 
-                <div>
-                    <p class=" fw-bold" style="color: #F7AEF8;">
-                        <i class="bi bi-arrow-left"></i>
-                        1 <span class="opacity-25"> 234...789 </span>
-                        <i class="bi bi-arrow-right"></i>
-                    </p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            100-150K
+                        </label>
+                    </div>
+                    
                 </div>
 
             </div>
-            <div class="col-md-8">
-                <div class="pt-5">
-                    <div class="pt-5 px-5 border text-color-white">
-                        <p class="fs-2 ">Azure DevOps Engineer (Full time)</p>
-                        <p> Forever young</p>
-                        <p>2000 EUR - 2500 EUR</p>
-                        <p class="mb-4">Kathmandu, Nepal</p>
-                        <div class=" mb-5">
-                            <a href="" class=" text-dark px-5 py-3 fw-bold" style="background: #F0E4D9;">APPLY</a>
+
+
+
+
+
+
+
+
+
+            <div class="col-md-9">
+
+
+                <div class="gap-3 d-flex ps-3">
+                    <p class="text-color-white fw-bold">25.478 Offers Worldwide</p>
+                    <p class="text-color-white fw-bold">Sort by: relevance - <span style="color: #F7AEF8;"> date</span>
+                    </p>
+                </div>
+
+
+
+                <div class="container ">
+                    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2 g-lg-3">
+                        <div class="col">
+                            <div class="p-3 text-white rounded" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock" style="color: #F7AEF8;"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash" style="color: #F7AEF8;"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia" style="color: #F7AEF8;"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
                         </div>
-                        <hr>
 
-                        <p class="fw-bold">Description</p>
-                        <p>
-                            Description A friendly multi-disciplinary practice have just been awarded an exciting
-                            Residential and Commercial project and are now looking for the right Architectural
-                            Technician or
-                            Architectural Assistant to join their friendly team in Hertfordshire. This is an ideal
-                            opportunity for any technical Architectural Assistants and Technicians/ Technologists
-                            looking to
-                            work for a growing practice and be heavily involved in all aspects with long term career
-                            progression
-                        </p>
+                        <div class="col">
+                            <div class="p-3 text-white" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock"></i>
+                                    <p>Full-time</p>
+                                </div>
 
-                        <p class="fw-bold">Duties & Responsibilities</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash"></i>
+                                    <p>$110 - $150</p>
+                                </div>
 
-                        <ul class="opacity-50 text-color-white">
-                            <li> Ability to write code – HTML & CSS (SCSS flavor of SASS preferred when writing CSS)
-                            </li>
-                            <li>Proficient in Photoshop, Illustrator, bonus points for familiarity with Sketch (Sketch
-                                is
-                                our preferred concepting)</li>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
 
-                        </ul>
-                        <ul class="opacity-25 text-color-white">
-                            <li>Cross-browser and platform testing as standard practice</li>
-                            <li>Experience using Invision a plus </li>
-                            <li>Experience in video production a plus or, at a minimum, a willingness to learn</li>
-                        </ul>
+                        <div class="col">
+                            <div class="p-3 text-white" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock"></i>
+                                    <p>Full-time</p>
+                                </div>
 
-                        <p class="text-center">
-                            
-                            <router-link  style="color: #F7AEF8;" :to="'/job'"> 
-                                see more 
-                            <img class="img-fluid" style="height: 15px;" src="../../assets/arrow/arrow-down.png" alt="">
-                            </router-link>	
-                        </p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash"></i>
+                                    <p>$110 - $150</p>
+                                </div>
 
-                        <p class="fw-bold opacity-25 "> Skills & Experience</p>                   
-                       
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
 
 
-                        
+
+                        <div class="col">
+                            <div class="p-3 text-white" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="p-3 text-white" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="p-3 text-white" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="p-3 text-white rounded" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock" style="color: #F7AEF8;"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash" style="color: #F7AEF8;"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia" style="color: #F7AEF8;"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="p-3 text-white rounded" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock" style="color: #F7AEF8;"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash" style="color: #F7AEF8;"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia" style="color: #F7AEF8;"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="p-3 text-white rounded" style="background: #4C417E;">
+                                <div class="row">
+                                    <p class="col">McDonalds</p>
+                                    <p class="col text-end">1hr ago</p>
+                                </div>
+                                <p class="fw-bold fs-4">Senior Product Designer</p>
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-clock" style="color: #F7AEF8;"></i>
+                                    <p>Full-time</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-cash" style="color: #F7AEF8;"></i>
+                                    <p>$110 - $150</p>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <i class="bi bi-globe-asia-australia" style="color: #F7AEF8;"></i>
+                                    <p>Remote</p>
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>
                 </div>
+
+
+
+
             </div>
 
         </div>
@@ -221,8 +401,6 @@ export default {
 
 
 <style >
-
-
 .text-color-white {
     color: #F0E4D9;
 
