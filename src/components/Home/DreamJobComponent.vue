@@ -21,12 +21,13 @@
             </div>
         </div>
 
-        <router-link :to="'/'" class="row g-0  my-4 rounded text-decoration-none" v-for="(jobs, index) in filteredItems" style="background: #4C417E;">
+        <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems" >
             <div class="col-md-2 p-5 text-md-start text-sm-center">
                 <img src="../../assets/img/mc-donalds.png" class="img-fluid rounded-start" alt="...">
             </div>
 
-            <div class="col-md-10 py-5">
+            <router-link :to="{ name: 'job', params: { job_id: jobs.id } }"
+                class="col-md-10 py-5 text-decoration-none">
                 <div class="card-body">
                     <div class="card-text row text-white">
                         <p class="col card-title">{{ jobs.company_name }}</p>
@@ -38,10 +39,11 @@
                         <small class="">{{ jobs.location }}</small>
                         <small class="">{{ jobs.job_type }}</small>
                         <small class="">{{ jobs.salary }}</small>
+                        <small class="">{{ jobs.id }}</small>
                     </p>
                 </div>
-            </div>
-        </router-link>
+            </router-link>
+        </div>
 
         <div class="button text-dark float-end">
             Find a Job
@@ -53,7 +55,7 @@
 
 
 <script>
-import { collection, getDocs } from "firebase/firestore";
+import { collection,  doc, getDoc , getDocs } from "firebase/firestore";
 import { db } from '../../firebase/config'
 
 export default {
@@ -92,8 +94,11 @@ export default {
                 salary: doc.data().salary,
                 id: doc.id,
             }
+            
             this.jobData.push(data);
         });
+
+        
     }
 }
 </script>
@@ -109,6 +114,20 @@ export default {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+.jobs-card{
+    background: #4C417E;
+}
+
+.jobs-card:hover {
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        -webkit-box-shadow: 0 0 20px #fff;
+        box-shadow: 0 0 30px #fff;
+    }
+}
 
 
 .button {

@@ -31,7 +31,7 @@ const routes = [
     
   },
   {
-    path: '/job',
+    path: '/job/:job_id',
     name: 'job',
     component: JobView
     
