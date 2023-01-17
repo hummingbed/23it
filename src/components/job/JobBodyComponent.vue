@@ -5,18 +5,16 @@
                 <li class="breadcrumb-item mt-2">
                     <router-link style="color: #F7AEF8;" :to="'/'"> HOME</router-link>
                 </li>
-
-                <li class="breadcrumb-item"> <i class="bi bi-arrow-left fs-3" style="color: #F7AEF8;"></i></li>
+                <li class="breadcrumb-item">
+                    <i class="bi bi-arrow-left fs-3" style="color: #F7AEF8;"></i>
+                </li>
                 <li class="breadcrumb-item active mt-2" aria-current="page">
                     <a href="" style="color: #F7AEF8;">JOB BOARD</a>
                 </li>
             </ol>
         </nav>
 
-
         <div class="row g-5 pt-5 justify-content-space between border">
-
-
             <div class="col-md-8">
                 <div class="border">
                     <div class="p-4 text-color-white">
@@ -24,93 +22,52 @@
                             <p class="col fw-bold">JOB DESCRIPTION</p>
                             <p class="col text-end">Posted 1 hour ago</p>
                         </div>
+
                         <p class="fs-2 "> {{ job_title }}</p>
-                        
+
                         <div class="d-flex gap-3">
-                            <p class="  ">{{company_name}} </p>
+                            <p class="  ">{{ company_name }} </p>
                             <p class=" border-end "></p>
                             <p class="">{{ location }}</p>
                             <li class="">{{ job_type }}</li>
                             <li class="">{{ salary }}</li>
                         </div>
-                       
-                        
+
                         <div class=" my-5">
-                            <a href="#applyJob" class="text-decoration-none text-dark px-5 py-3 fw-bold" style="background: #F0E4D9;">APPLY FOR JOB</a>
+                            <a href="#applyJob" class="text-decoration-none text-dark px-5 py-3 fw-bold"
+                                style="background: #F0E4D9;">APPLY FOR JOB</a>
                         </div>
                         <hr>
 
                         <p class="fw-bold">Description</p>
-                        <p>
-                            Description A friendly multi-disciplinary practice have just been awarded an exciting
-                            Residential and Commercial project and are now looking for the right Architectural
-                            Technician or
-                            Architectural Assistant to join their friendly team in Hertfordshire. This is an ideal
-                            opportunity for any technical Architectural Assistants and Technicians/ Technologists
-                            looking to
-                            work for a growing practice and be heavily involved in all aspects with long term career
-                            progression
-                        </p>
+                        <p>{{ description }}</p>
 
-                        <p class="fw-bold">Duties & Responsibilities</p>
 
-                        <ul class="text-color-white">
-                            <li> Ability to write code – HTML & CSS (SCSS flavor of SASS preferred when writing CSS)
-                            </li>
-                            <li>Proficient in Photoshop, Illustrator, bonus points for familiarity with Sketch (Sketch
-                                is
-                                our preferred concepting)</li>
 
-                        </ul>
-                        <ul class=" text-color-white">
-                            <li>Cross-browser and platform testing as standard practice</li>
-                            <li>Experience using Invision a plus </li>
-                            <li>Experience in video production a plus or, at a minimum, a willingness to learn</li>
-                        </ul>
+                        <div class="responsibility">
+                            <p class="fw-bold">Duties & Responsibilities</p>
+                            <ul v-for="eachResponsibility in job_responsibility" class="text-color-white ">
+                                <li>{{ eachResponsibility }}</li>
+                            </ul>
+                        </div>
+
 
                         <p class="fw-bold"> Skills & Experience</p>
 
-                        <ul>
-                            <li>Advanced degree or equivalent experience in graphic and web design3 or more years of
-                                professional design experience
-                            </li>
-                            <li>Direct response email experience</li>
-                            <li>Ecommerce website design experience</li>
-                            <li>Familiarity with mobile and web apps preferred</li>
-                            <li>
-                                Excellent communication skills, most notably a demonstrated ability to solicit and
-                                address
-                                creative and design feedback
-                            </li>
-                            <li>
-                                Must be able to work under pressure and meet deadlines while maintaining a positive
-                                attitude
-                                and providing exemplary customer service
-                            </li>
-                            <li>
-                                Ability to work independently and to carry out assignments to completion within
-                                parameters
-                                of instructions given, prescribed routines, and standard accepted practices
-                            </li>
+                        <ul v-for="eachSkill in job_skills">
+                            <li>{{ eachSkill }}</li>
                         </ul>
+
                         <p class="fw-bold"> Benefits</p>
-                        <p>
-                            Company is a 2016 Iowa City-born start-up that develops consectetuer adipiscing elit.
-                            Phasellus
-                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id,
-                            mattis
-                            vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget
-                            blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-                        </p>
+                        <p> {{ job_benefit }}</p>
 
                         <p id="applyJob" style="color: #F7AEF8;">To The Job Details</p>
 
-
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Respond to the vacancy</label>
-                            <textarea  style="background-color: #070223; " placeholder="Write a cover letter..."
-                                class="form-control text-color-white" id="exampleFormControlTextarea1"
-                                rows="3"></textarea>
+                            <textarea style="background-color: #070223; " placeholder="Write a cover letter..."
+                                class="form-control text-color-white" id="exampleFormControlTextarea1" rows="3">
+                            </textarea>
                         </div>
 
                         <p class="pt-3" style="color: #F7AEF8; " data-bs-toggle="modal" href="#exampleModalToggle"
@@ -126,8 +83,6 @@
                         <div class=" mt-5">
                             <a href="" class=" text-dark px-5 py-3 fw-bold" style="background: #F0E4D9;">APPLY</a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -144,9 +99,7 @@
                     </p>
                     <p class="fs-5">Company Details</p>
                     <ul>
-                        <li>
-                            <small>201-500 employees</small>
-                        </li>
+                        <li><small>201-500 employees</small></li>
                     </ul>
                 </div>
             </div>
@@ -157,7 +110,7 @@
 </template>
 
 <script>
-import { collection,  doc, getDoc , getDocs } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { db } from '../../firebase/config'
 
 
@@ -172,26 +125,34 @@ export default {
             jobs_id: null,
             location: null,
             remotive: null,
-            salary: null
+            salary: null,
+            description: null,
+            job_benefit: null,
+            job_responsibility: [],
+            job_skills: []
         };
     },
-    mounted(){
+    mounted() {
 
         const jobId = this.$route.params.job_id;
         console.log(jobId)
 
         const docRef = doc(db, "jobs", jobId);
         getDoc(docRef)
-        .then((doc) => {
-            console.log(doc.data(), 'success')
-            this.company_name = doc.data().company_name;
-            this.job_title = doc.data().job_title;
-            this.job_type = doc.data().job_type;
-            this.salary = doc.data().salary;
-            this.location = doc.data().location;
-        });
+            .then((doc) => {
+                console.log(doc.data().job_responsibility, 'success')
+                this.company_name = doc.data().company_name;
+                this.job_title = doc.data().job_title;
+                this.job_type = doc.data().job_type;
+                this.salary = doc.data().salary;
+                this.location = doc.data().location;
+                this.description = doc.data().description;
+                this.job_benefit = doc.data().job_benefit;
+                this.job_responsibility = doc.data().job_responsibility;
+                this.job_skills = doc.data().job_skills;
+            });
     }
-    
+
 
 }
 </script>

@@ -21,26 +21,31 @@
             </div>
         </div>
 
-        <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems" >
+        <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems">
             <div class="col-md-2 p-5 text-md-start text-sm-center">
                 <img src="../../assets/img/mc-donalds.png" class="img-fluid rounded-start" alt="...">
             </div>
 
-            <router-link :to="{ name: 'job', params: { job_id: jobs.id } }"
-                class="col-md-10 py-5 text-decoration-none">
+            <router-link :to="{ name: 'job', params: { job_id: jobs.id } }" class="col-md-10 py-5 text-decoration-none">
                 <div class="card-body">
                     <div class="card-text row text-white">
                         <p class="col card-title">{{ jobs.company_name }}</p>
                         <p class="col card-title text-end me-3">2d ago</p>
                     </div>
                     <p class="card-text text-white mt-3">{{ jobs.job_title }}</p>
-                    <p class="card-text d-flex gap-3 mt-3 text-white">
-                        <small class="">{{ jobs.remotive }}</small> |
-                        <small class="">{{ jobs.location }}</small>
-                        <small class="">{{ jobs.job_type }}</small>
-                        <small class="">{{ jobs.salary }}</small>
-                        <small class="">{{ jobs.id }}</small>
-                    </p>
+                    <div class="row">
+                        <a class="col-md-10 border">
+                            <p class="card-text d-flex gap-3 mt-3 text-white">
+                                <small class="">{{ jobs.remotive }}</small> |
+                                <small class="">{{ jobs.location }}</small>
+                                <small class="">{{ jobs.job_type }}</small>
+                                <small class="">{{ jobs.salary }}</small>
+                            </p>
+                        </a>
+                        <div class="col div">
+                            <div class="button fw-bold text-dark">VIEW JOB</div>
+                        </div>
+                    </div>
                 </div>
             </router-link>
         </div>
@@ -55,7 +60,7 @@
 
 
 <script>
-import { collection,  doc, getDoc , getDocs } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { db } from '../../firebase/config'
 
 export default {
@@ -94,17 +99,48 @@ export default {
                 salary: doc.data().salary,
                 id: doc.id,
             }
-            
+
             this.jobData.push(data);
         });
 
-        
+
     }
 }
 </script>
 
 
 <style scoped>
+
+
+
+
+/* .banner-content {
+
+    display: none;
+}
+
+.card-img-top:hover+.banner-content {
+    display: block;
+} */
+
+
+.div {
+    /* display: none; */
+    z-index: -1;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+a:hover+ .div {
+    z-index: 1;
+    /* display: block; */
+} 
+
+
+
 @font-face {
     font-family: KyivTypeSerif-Bold3;
     src: url(../../assets/font/KyivTypeSerif-Bold3.ttf);
@@ -114,12 +150,21 @@ export default {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.jobs-card{
+.jobs-card {
     background: #4C417E;
 }
 
+.hide {
+    display: none;
+}
+
+.myDIV:hover+.hide {
+    display: block;
+    color: red;
+}
+
 .jobs-card:hover {
-    animation: mymove 5s infinite;
+    animation: mymove 3s infinite;
 }
 
 @keyframes mymove {
