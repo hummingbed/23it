@@ -6,10 +6,10 @@
                     <router-link style="color: rgba(247, 174, 248, 0.5);" :to="'/'"> HOME</router-link>
                 </li>
 
-                <li class="breadcrumb-item"> 
+                <li class="breadcrumb-item">
                     <img src="../../assets/arrow/arrow-left.png" class="img-fluid" style="height: 15px;" alt="">
                 </li>
-                
+
                 <li class="breadcrumb-item active " aria-current="page">
                     <a href="" style="color: #F7AEF8;">MEDIA</a>
                 </li>
@@ -19,7 +19,9 @@
         <div class="media-top-text pb-5">
             <div class="col fw-bold text-white font-uppercase mb-5">
                 <div>
-                    <span class="contour">Find some <span style="background-color: #8093F1; ">interestings</span> clips regarding our business</span></div>
+                    <span class="contour">Find some <span style="background-color: #8093F1; ">interestings</span> clips
+                        regarding our business</span>
+                </div>
                 <div> <span class="contour">or tips which can help you in your</span>
                     <span> career moves, </span>
                 </div>
@@ -28,350 +30,230 @@
             </div>
         </div>
 
-        <div class="container overflow-hidden fw-bold text-white">
-            <div class="row gx-5 g-y border-top border-bottom py-5">
-                <div class="row">
-                    <div class="col px-4">
-                        <div class="fs-4 px-3 text-center mb-4" style="background-color: #F7AEF8; width: 65px;">
-                            HR
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold fs-5 text-secondary active" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                    aria-selected="true">
+                    ALL
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                    aria-selected="false">
+                    HR
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="contact-tab" data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                    aria-selected="false">
+                    TECH
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="disabled-tab" data-bs-toggle="tab"
+                    data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
+                    aria-selected="false">
+                    OTHER
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+
+                <div class="container overflow-hidden fw-bold text-white">
+                    <div class="row gx-5 g-y py-5">
+                        
+                        <div class="col-md-6 col-lg-4 human-resource">
+                            <div class="row">
+                                <div class="col d-grid ">
+                                    <div>HR Manager</div>
+                                    <div> What are you doing?</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                        HR
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-16x9 ">
+                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
+                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
+                                    <div>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
+                                            MANAGER</small>
+                                    </div>
+                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                    </div>
+
+                                    <div class="col text-end">
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col text-end">
-                        <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
-                        </small>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>HR Manager</div>
-                        <div> What are you doing?</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR MANAGER</small>
+            </div>
+            
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                
+                <div class="container overflow-hidden fw-bold text-white">
+                    <div class="row gx-5 g-y py-5">
+                        
+                        <div class="col-md-6 col-lg-4 human-resource">
+                            <div class="row">
+                                <div class="col d-grid ">
+                                    <div>HR Manager</div>
+                                    <div> What are you doing?</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                        HR
+                                    </div>
+                                </div>
                             </div>
-                            <small class="col-md-10 bg-danger w-50">what are you doing?</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                            <div class="ratio ratio-16x9 ">
+                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
+                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
+                                    <div>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
+                                            MANAGER</small>
+                                    </div>
+                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                </div>
                             </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                    </div>
 
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>20 human resources terms</div>
-                        <div>Every HR hopeful showld know!</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10"
-                                    style="background: #8093F1; width: 40%;  opacity: 0.8; letter-spacing: .1rem;">20 HUMAN RESOURCE
-                                    TERMS</small>
-                            </div>
-                            <small class="col-md-10 bg-danger w-50">Every HR hopeful showld know!</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    <div class="col text-end">
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>Stop doing what doesn’t work </div>
-                        <div>in HR</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <!-- <div>
-                                <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR MANAGER</small>
-                            </div> -->
-                            <small class="col-md-10 bg-danger w-50 text-uppercase">stop doing what doesn’t work</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
-
-
-            <div class="row gx-5 g-y border-top border-bottom py-5">
-                <div class="row">
-                    <div class="col px-4">
-                        <div class="fs-4  text-center mb-4" style="background-color: #B388EB; width: 80px;">
-                            TECH
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
-                        </small>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>HR Manager</div>
-                        <div> What are you doing?</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10" style="background: #C987CA; width: 40%;">HR MANAGER</small>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                
+                <div class="container overflow-hidden fw-bold text-white">
+                    <div class="row gx-5 g-y py-5">
+                        
+                        <div class="col-md-6 col-lg-4 human-resource">
+                            <div class="row">
+                                <div class="col d-grid ">
+                                    <div>HR Manager</div>
+                                    <div> What are you doing?</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #B388EB; ">
+                                        TECH
+                                    </div>
+                                </div>
                             </div>
-                            <small class="col-md-10 w-50" style="background: #8561B3;">what are you doing?</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                            <div class="ratio ratio-16x9 ">
+                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
+                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
+                                    <div>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
+                                            MANAGER</small>
+                                    </div>
+                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                </div>
                             </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                    </div>
 
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>20 human resources terms</div>
-                        <div>Every HR hopeful showld know!</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10"
-                                    style="background: #8093F1; width: 40%; letter-spacing: .1rem;">20 HUMAN RESOURCE
-                                    TERMS</small>
-                            </div>
-                            <small class="col-md-10 w-50" style="background-color: #C987CA;">Every HR hopeful showld
-                                know!</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    <div class="col text-end">
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>Stop doing what doesn’t work </div>
-                        <div>in HR</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10 font-uppercase" style="background: #6878C6; width: 40%;">20
-                                    human resources terms</small>
-                            </div>
-                            <small class="col-md-10 w-50 text-uppercase" style="background: #56A7BB;">stop doing what
-                                doesn’t work</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">
 
+                <div class="container overflow-hidden fw-bold text-white">
+                    <div class="row gx-5 g-y py-5">
+                        
+                        <div class="col-md-6 col-lg-4 human-resource">
+                            <div class="row">
+                                <div class="col d-grid ">
+                                    <div>HR Manager</div>
+                                    <div> What are you doing?</div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #72DDF7; ">
+                                        OTHER
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-16x9 ">
+                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
+                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
+                                    <div>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
+                                            MANAGER</small>
+                                    </div>
+                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                    </div>
 
-            <div class="row gx-5 g-y pt-5">
-                <div class="row">
-                    <div class="col px-4">
-                        <div class="fs-4  text-center mb-4" style="background: #72DDF7; width: 95px;">
-                            OTHER
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <small class="  mb-4" style="color: #F7AEF8;">
-                            SEE ALL <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 23px;" alt="">
-                        </small>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>HR Manager</div>
-                        <div> What are you doing?</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR MANAGER</small>
-                            </div>
-                            <small class="col-md-10 w-50" style="background-color: #7B28E8;">what are you doing?</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>20 human resources terms</div>
-                        <div>Every HR hopeful showld know!</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <div>
-                                <small class="col-md-10"
-                                    style="background: #8093F1; width: 40%; letter-spacing: .1rem;">20 HUMAN RESOURCE
-                                    TERMS</small>
-                            </div>
-                            <small class="col-md-10 w-50" style="background: #11BFEA;">Every HR hopeful showld
-                                know!</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    <div class="col text-end">
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-md-6 col-lg-4 human-resource">
-                    <div class="d-grid ">
-                        <div>Stop doing what doesn’t work </div>
-                        <div>in HR</div>
-                    </div>
-                    <div class="ratio ratio-16x9 ">
-                        <iframe src="https://www.youtube.com/embed/yiGsizw3We8" title="VICTONY - PRAY (OFFICIAL VIDEO )"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
-                            <!-- <div>
-                                <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR MANAGER</small>
-                            </div> -->
-                            <small class="col-md-10 w-50 text-uppercase" style="background-color: #D417D7;">stop doing
-                                what doesn’t work</small>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
-                            </div>
-
-                            <div class="col text-end">
-                                <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+            
             </div>
         </div>
+
+
 
     </div>
 </template>
@@ -385,10 +267,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Slab:wght@200&family=Space+Grotesk:wght@300&display=swap');
 
-.contour{
-	color: black;
-	-webkit-text-stroke: 1px white;
-	-webkit-text-fill-color:  #070223;
+.contour {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: #070223;
 }
 
 .stacked-text {
@@ -409,6 +291,7 @@ export default {
     }
 
 }
+
 @media only screen and (max-width: 594px) {
     .media-top-text {
         font-size: 22px;
