@@ -65,6 +65,7 @@ import { db } from '../../firebase/config'
 
 export default {
     name: 'DreamJobComponent',
+    
     data() {
         return {
             searchText: '',
@@ -82,7 +83,7 @@ export default {
                 filtered = filtered.filter(item => Object.values(item).join('').toLowerCase().includes(this.searchText.toLowerCase()));
             }
 
-            return filtered;
+            return filtered.slice().reverse();;
         },
     },
     async mounted() {
