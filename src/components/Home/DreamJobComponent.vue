@@ -29,14 +29,14 @@
 
             <router-link :to="{ name: 'job', params: { job_id: jobs.id } }" class="col-md-10 py-5 text-decoration-none">
                 <div class="card-body">
-                    <div class="content">
+                    <div class="content px-2">
                         <div class="card-text row text-white">
                             <p class="col card-title fs-4">{{ jobs.company_name }}</p>
                             <p class="col card-title text-end me-3">2d ago</p>
                         </div>
-                        <p class="card-text text-white fs-3 mt-3">{{ jobs.job_title }}</p>
+                        <p class="card-text  text-white fs-3 mt-3">{{ jobs.job_title }}</p>
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-md-10 ">
                                 <p class="card-text fs-4 d-flex gap-3 mt-3 text-white">
                                     <small class="">{{ jobs.remotive }}</small> |
                                     <small class="">{{ jobs.location }}</small>

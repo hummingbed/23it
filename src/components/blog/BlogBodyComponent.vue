@@ -37,28 +37,28 @@
 
         <ul class="nav nav-tabs pt-5" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold fs-5 text-secondary active" id="home-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold fs-5 text-white active" id="home-tab" data-bs-toggle="tab"
                     data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                     aria-selected="true">
                     ALL
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="profile-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="profile-tab" data-bs-toggle="tab"
                     data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                     aria-selected="false">
                     HR
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="contact-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="contact-tab" data-bs-toggle="tab"
                     data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                     aria-selected="false">
                     TECH
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="disabled-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="disabled-tab" data-bs-toggle="tab"
                     data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
                     aria-selected="false">
                     OTHER
@@ -245,6 +245,14 @@ export default {
 
 
 <style scoped>
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
 .blog-banner {
     height: 35vh;
     position: relative;

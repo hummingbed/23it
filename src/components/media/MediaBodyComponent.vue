@@ -30,37 +30,37 @@
             </div>
         </div>
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold fs-5 text-secondary active" id="home-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold fs-5 text-white active" id="home-tab" data-bs-toggle="tab"
                     data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                     aria-selected="true">
                     ALL
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="profile-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="profile-tab" data-bs-toggle="tab"
                     data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                     aria-selected="false">
                     HR
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="contact-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="contact-tab" data-bs-toggle="tab"
                     data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                     aria-selected="false">
                     TECH
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="disabled-tab" data-bs-toggle="tab"
+                <button class="nav-link border-0 fw-bold text-white fs-5" id="disabled-tab" data-bs-toggle="tab"
                     data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
                     aria-selected="false">
                     OTHER
                 </button>
             </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
+        </ul> 
+         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
 
@@ -251,9 +251,7 @@
                 </div>
             
             </div>
-        </div>
-
-
+        </div> 
 
     </div>
 </template>
@@ -265,6 +263,19 @@ export default {
 </script>
 
 <style scoped>
+
+
+
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Slab:wght@200&family=Space+Grotesk:wght@300&display=swap');
 
 .contour {
