@@ -1,192 +1,234 @@
 <template>
-
-
     <div class="container pt-5">
-        <div class="col blog-banner mt-5">
-            <div class="banner-text text-white fw-bold">
-                <span class="p-1 me-2" style="background-color: #FDC5F5;">HR</span>
-                <small>Orelio Lopes. November11, 2022</small>
-                <div class="fs-1">
-                    <div>Chanhg Mai - the Thai city what is love IT people.</div>
-                    <div>Mountings, monks and prostitute</div>
+        <div class="row">
+            <div class="col-md-6 blog-banner mt-5">
+
+            </div>
+            <div class="col-md-6 mt-5 text-white fw-bold">
+                <div class="col d-flex my-3 gap-2">
+                    <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
+                    <span>November11, 2022</span>
+                </div>
+                <div class="fs-3">
+                    <p class="col-md-10">Chanhg Mai - the Thai city what is love IT people. Mountings, monks and prostitute</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <img src="../../assets/img/sm-orielo.png" style="width: 35px; height: 35px;" alt="">
+                    <p class="fs-5">Orelio Lopes</p>
                 </div>
             </div>
         </div>
 
-        <nav class="pt" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-            <ol class="breadcrumb fw-bold">
-                <li class="breadcrumb-item">
-                    <router-link style="color: rgba(247, 174, 248, 0.5);" :to="'/'"> HOME</router-link>
-                </li>
+        <div class="col pt-5">
+            <div class="fs-3 fw-bold text-white">Latest Articles</div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <p class="fs-3 text-white">Explore best articles on Human resource, Technology & other topics</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="button fs-4 text-dark float-end">
+                        VIEW ALL
+                        <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <li class="breadcrumb-item">
-                    <img src="../../assets/arrow/arrow-left.png" class="img-fluid" style="height: 15px;" alt="">
-                </li>
-                <li class="breadcrumb-item active " aria-current="page">
-                    <a href="" style="color: #F7AEF8;">BLOG</a>
-                </li>
-            </ol>
-        </nav>
+        <ul class="nav nav-tabs pt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold fs-5 text-secondary active" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                    aria-selected="true">
+                    ALL
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                    aria-selected="false">
+                    HR
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="contact-tab" data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                    aria-selected="false">
+                    TECH
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 fw-bold text-secondary fs-5" id="disabled-tab" data-bs-toggle="tab"
+                    data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
+                    aria-selected="false">
+                    OTHER
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">.
 
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fw-bold fs-5">
+                                        The best restaurant where for you will be comfy find a job
+                                    </div>
 
-        <div class="row border-bottom row-cols-1 row-cols-lg-4 row-cols-md-2 g-5 g-lg-3 text-break pt-2 pb-5">
-            <div class="col text-white">
-                <div class="">
+                                    <div class="mt-2 ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam feugiat ac odio nec porta. Donec
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col">
-                        <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fs-5 fw-bold">
+                                        The best restaurant where for you will be comfy find a job
+                                    </div>
+
+                                    <div class="mt-2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam feugiat ac odio nec porta. Donec
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                    <div>The best restaurant where for </div>
-                    <div>you will be comfy find a job</div>
-                    </p>
-
-                    <p>
-                    <div>Lorem ipsum dolor sit amet,</div>
-                    <div>consectetur adipiscing elit. Aliquam</div>
-                    <div>feugiat ac odio nec porta. Donec</div>
-                    <div>elementum pharetra ante eget auctor. </div>
-                    </p>
-                </div>
-
-            </div>
-            <div class="col text-white">
-
-                <span class="fw-bold text-center px-2 w-25" style="background-color: #72DDF7;">OTHERS</span>
-                <p>
-                <div>The best restaurant where for </div>
-                <div>you will be comfy find a job</div>
-                </p>
-
-                <p>
-                <div>Lorem ipsum dolor sit amet,</div>
-                <div>consectetur adipiscing elit. Aliquam</div>
-                <div>feugiat ac odio nec porta. Donec</div>
-                <div>elementum pharetra ante eget auctor. </div>
-                </p>
-            </div>
-            <div class="col text-white">
-
-                <span class="fw-bold w-25 px-2" style="background-color: #B388EB;">TECH</span>
-                <p>
-                <div>The best restaurant where for </div>
-                <div>you will be comfy find a job</div>
-                </p>
-
-                <p>
-                <div>Lorem ipsum dolor sit amet,</div>
-                <div>consectetur adipiscing elit. Aliquam</div>
-                <div>feugiat ac odio nec porta. Donec</div>
-                <div>elementum pharetra ante eget auctor. </div>
-                </p>
-            </div>
-            <div class="col">
-                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
-            </div>
-        </div>
-
-        <div class="row border-bottom row-cols-1 gx-5 g-lg-3 text-break py-5">
-            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
-                <div class="">
-                    <span class="fw-bold py-2 px-4" style="background-color: #F7AEF8;">HR</span>
-                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
-                            style="color: #F7AEF8;">SEE
-                            ALL
-                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
-                                alt="">
-                        </span>
-                    </p>
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
-                <p>
-                <div>The best restaurant where for </div>
-                <div>you will be comfy find a job</div>
-                </p>
-                <p>
-                <div>Lorem ipsum dolor sit amet,</div>
-                <div>consectetur adipiscing elit. Aliquam</div>
-                <div>feugiat ac odio nec porta. Donec</div>
-                <div>elementum pharetra ante eget auctor. </div>
-                </p>
-                <a href="/more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ
-                    ARTICLE <i class="bi bi-arrow-up-right"></i>
-                </a>
-            </div>
-            <div class="col-md-6 col-sm-12 col-lg-3 ">
-                <img src="../../assets/blog-img/blog-2.png" class="img-fluid" alt="">
-            </div>
-        </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fw-bold fs-5">
+                                        The best restaurant where for you will be comfy find a job
+                                    </div>
 
-        <div class="row row-cols-1 gx-5 g-lg-3 text-break py-5">
-            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
-                <div class="">
-                    <span class="fw-bold py-2 px-4" style="background-color: #B388EB;">TECH</span>
-                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
-                            style="color: #F7AEF8;">SEE
-                            ALL
-                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
-                                alt="">
-                        </span>
-                    </p>
+                                    <div class="mt-2 ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam feugiat ac odio nec porta. Donec
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                
             </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fw-bold fs-5">
+                                        The best restaurant where for you will be comfy find a job
+                                    </div>
 
-            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
-                <p>
-                <div>The best restaurant where for </div>
-                <div>you will be comfy find a job</div>
-                </p>
-                <p>
-                <div>Lorem ipsum dolor sit amet,</div>
-                <div>consectetur adipiscing elit. Aliquam</div>
-                <div>feugiat ac odio nec porta. Donec</div>
-                <div>elementum pharetra ante eget auctor. </div>
-                </p>
-                <a href="more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ ARTICLE <i
-                        class="bi bi-arrow-up-right"></i>
-                </a>
-            </div>
-            <div class="col-md-6 col-sm-12 col-lg-3 ">
-                <img src="../../assets/blog-img/blog-3.png" class="img-fluid" alt="">
-            </div>
-        </div>
+                                    <div class="mt-2 ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam feugiat ac odio nec porta. Donec
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                </div>
+                            </div>
 
+                            <div class="col-md-6">
+                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-
-        <div class="row border-top row-cols-1 gx-5 g-lg-3 text-break py-5">
-            <div class="col-lg-6 col-sm-12 col-md-12 text-white">
-                <div class="">
-                    <span class="fw-bold py-2 px-4" style="background-color: #72DDF7;">OTHERS</span>
-                    <p class="mt-3 " style="font-size: 12px;"><span href="" class="fw-bolder text-decoration-underline"
-                            style="color: #F7AEF8;">SEE
-                            ALL
-                            <img src="../../assets/arrow/top-right-arrow.png" class="img-fluid" style="height: 15px;"
-                                alt="">
-                        </span>
-                    </p>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-sm-12 col-lg-3 text-white">
-                <p>
-                <div>The best restaurant where for </div>
-                <div>you will be comfy find a job</div>
-                </p>
-                <p>
-                <div>Lorem ipsum dolor sit amet,</div>
-                <div>consectetur adipiscing elit. Aliquam</div>
-                <div>feugiat ac odio nec porta. Donec</div>
-                <div>elementum pharetra ante eget auctor. </div>
-                </p>
-                    <a href="/more-blogs" class="fw-bolder text-decoration-underline" style="color: #B388EB;">READ
-                        ARTICLE <i class="bi bi-arrow-up-right"></i>
-                    </a>
 
             </div>
-            <div class="col-md-6 col-sm-12 col-lg-3 ">
-                <img src="../../assets/blog-img/blog-4.png" class="img-fluid" alt="">
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">
+
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fw-bold fs-5">
+                                        The best restaurant where for you will be comfy find a job
+                                    </div>
+
+                                    <div class="mt-2 ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam feugiat ac odio nec porta. Donec
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -211,40 +253,15 @@ export default {
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 991px) {
-    .blog-banner {
-        height: 52vh;
-    }
 
-    .banner-text {
-        position: absolute;
-        top: 25%;
-        left: 8%;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-
-    .blog-banner {
-        height: 42vh;
-    }
-
-    .banner-text {
-        position: absolute;
-        top: 20%;
-        left: 8%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .blog-banner {
-        height: 35vh;
-    }
-
-    .banner-text {
-        position: absolute;
-        top: 30%;
-        left: 8%;
-    }
+.button {
+    background: #F0E4D9;
+    /* border: none; */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 </style>
