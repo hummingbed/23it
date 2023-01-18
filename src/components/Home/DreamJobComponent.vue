@@ -21,11 +21,6 @@
             </div>
         </div>
 
-
-       
-
-
-
         <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems">
 
             <div class="col-md-2 p-5 text-md-start text-sm-center">
