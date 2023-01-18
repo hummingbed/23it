@@ -21,28 +21,37 @@
             </div>
         </div>
 
+
+       
+
+
+
         <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems">
+
             <div class="col-md-2 p-5 text-md-start text-sm-center">
                 <img src="../../assets/img/mc-donalds.png" class="img-fluid rounded-start" alt="...">
             </div>
 
             <router-link :to="{ name: 'job', params: { job_id: jobs.id } }" class="col-md-10 py-5 text-decoration-none">
                 <div class="card-body">
-                    <div class="card-text row text-white">
-                        <p class="col card-title">{{ jobs.company_name }}</p>
-                        <p class="col card-title text-end me-3">2d ago</p>
-                    </div>
-                    <p class="card-text text-white mt-3">{{ jobs.job_title }}</p>
-                    <div class="row">
-                        <a class="col-md-10 border">
-                            <p class="card-text d-flex gap-3 mt-3 text-white">
-                                <small class="">{{ jobs.remotive }}</small> |
-                                <small class="">{{ jobs.location }}</small>
-                                <small class="">{{ jobs.job_type }}</small>
-                                <small class="">{{ jobs.salary }}</small>
-                            </p>
-                        </a>
-                        <div class="col div">
+                    <div class="content">
+                        <div class="card-text row text-white">
+                            <p class="col card-title fs-4">{{ jobs.company_name }}</p>
+                            <p class="col card-title text-end me-3">2d ago</p>
+                        </div>
+                        <p class="card-text text-white fs-3 mt-3">{{ jobs.job_title }}</p>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <p class="card-text fs-4 d-flex gap-3 mt-3 text-white">
+                                    <small class="">{{ jobs.remotive }}</small> |
+                                    <small class="">{{ jobs.location }}</small>
+                                    <small class="">{{ jobs.job_type }}</small>
+                                    <small class="">{{ jobs.salary }}</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content-details fadeIn-bottom d-none d-md-inline offset-lg-2">
                             <div class="button fw-bold text-dark">VIEW JOB</div>
                         </div>
                     </div>
@@ -50,12 +59,15 @@
             </router-link>
         </div>
 
-        <div class="button text-dark float-end">
+         <div class="button text-dark float-end">
             Find a Job
             <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid" alt="">
         </div>
-
     </div>
+
+
+
+
 </template>
 
 
@@ -65,7 +77,7 @@ import { db } from '../../firebase/config'
 
 export default {
     name: 'DreamJobComponent',
-    
+
     data() {
         return {
             searchText: '',
@@ -111,35 +123,56 @@ export default {
 
 
 <style scoped>
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 
 
-
-/* .banner-content {
-
-    display: none;
+.content {
+    position: relative;
 }
 
-.card-img-top:hover+.banner-content {
-    display: block;
-} */
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
 
-
-.div {
-    /* display: none; */
-    z-index: -1;
+.content:hover .content-overlay {
+    opacity: 1
 }
 
 
-a {
-    cursor: pointer;
+.content-details {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(90%, 50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
 }
 
-a:hover+ .div {
-    z-index: 1;
-    /* display: block; */
-} 
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
 
+
+.fadeIn-bottom {
+    top: 60%
+}
 
 
 @font-face {
