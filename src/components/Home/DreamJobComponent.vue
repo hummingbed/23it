@@ -24,9 +24,9 @@
         <div class="row g-0  my-4 rounded jobs-card" v-for="(jobs, index) in filteredItems">
 
             <div class="col-md-2 p-5 text-md-start text-sm-center">
-                <img src="../../assets/img/mc-donalds.png" class="img-fluid rounded-start" alt="...">
+                <img v-bind:src="jobs.job_img" class="img-fluid rounded-start" alt="...">
             </div>
-
+            
             <router-link :to="{ name: 'job', params: { job_id: jobs.id } }" class="col-md-10 py-5 text-decoration-none">
                 <div class="card-body">
                     <div class="content px-2">
@@ -54,7 +54,7 @@
             </router-link>
         </div>
 
-         <div class="button text-dark float-end">
+        <div class="button text-dark float-end">
             Find a Job
             <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid" alt="">
         </div>
@@ -105,13 +105,13 @@ export default {
                 location: doc.data().location,
                 remotive: doc.data().remotive,
                 salary: doc.data().salary,
+                job_img: doc.data().job_img,
                 id: doc.id,
             }
+            console.log(doc.data())
 
             this.jobData.push(data);
         });
-
-
     }
 }
 </script>

@@ -10,7 +10,8 @@
                     <span>November11, 2022</span>
                 </div>
                 <div class="fs-3">
-                    <p class="col-md-10">Chanhg Mai - the Thai city what is love IT people. Mountings, monks and prostitute</p>
+                    <p class="col-md-10">Chanhg Mai - the Thai city what is love IT people. Mountings, monks and
+                        prostitute</p>
                 </div>
                 <div class="d-flex gap-3">
                     <img src="../../assets/img/sm-orielo.png" style="width: 35px; height: 35px;" alt="">
@@ -65,71 +66,43 @@
                 </button>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content" id="myTabContent" >
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">.
+                tabindex="0" v-for="(blog, index) in blogsData">.
 
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5" >
                     <div class="col">
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{ blog.blog_category }}</span>
                                     <span>November11, 2022</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
-                                        The best restaurant where for you will be comfy find a job
+                                       {{ blog.blog_header }}
                                     </div>
 
                                     <div class="mt-2 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquam feugiat ac odio nec porta. Donec
+                                        {{ blog.blog_body }}
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                                <img v-bind:src="blog.blog_img" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="row g-3">
-                            <div class="col-md-6 text-white d-grid gap-2">
-                                <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #FDC5F5;">HR</span>
-                                    <span>November11, 2022</span>
-                                </div>
-                                <div>
-                                    <div class="mt-2 fs-5 fw-bold">
-                                        The best restaurant where for you will be comfy find a job
-                                    </div>
-
-                                    <div class="mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquam feugiat ac odio nec porta. Donec
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
+                    <!-- #FDC5F5 -->
                 </div>
             </div>
 
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                
+
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
                     <div class="col">
                         <div class="row g-3">
@@ -160,10 +133,10 @@
                     </div>
 
                 </div>
-                
+
             </div>
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                
+
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
                     <div class="col">
                         <div class="row g-3">
@@ -237,15 +210,40 @@
 </template>
 
 <script>
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
+import { db } from '../../firebase/config';
 
 export default {
     name: 'BlogBodyComponent',
+    data() {
+        return {
+            blogsData: [],
+        };
+    },
+    async mounted() {
+
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        querySnapshot.forEach((doc) => {
+            let data = {
+                blog_body: doc.data().blog_body,
+                blog_category: doc.data().blog_category,
+                blog_date_posted: doc.data().blog_date_posted,
+                blog_header: doc.data().blog_header,
+                blog_id: doc.data().blog_id,
+                blog_img: doc.data().blog_img,
+            }
+            console.log(doc.data())
+
+            this.blogsData.push(data);
+        });
+    }
 }
 </script>
 
 
 <style scoped>
- .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     color: #f3f3f3;
     background-color: transparent;
     border-color: transparent transparent #f3f3f3;
@@ -253,6 +251,7 @@ export default {
     font-size: 20px;
     font-weight: bold;
 }
+
 .blog-banner {
     height: 35vh;
     position: relative;

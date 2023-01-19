@@ -164,7 +164,7 @@
                             <div class="p-3 jobs-card text-white rounded" style="background: #4C417E;">
                                 <div class="row ">
                                     <div class="col-md-8 gap-2 d-flex">
-                                        <img src="../../assets/img/sm-mc-donalds.png" style="height: 35px; width: 35px;"
+                                        <img v-bind:src="jobData.job_img" style="height: 35px; width: 35px;"
                                             class="img-fluid" alt="">
                                         <p class="col"> {{ jobData.company_name }} </p>
                                     </div>
@@ -259,6 +259,7 @@ export default {
                 location: doc.data().location,
                 remotive: doc.data().remotive,
                 salary: doc.data().salary,
+                job_img: doc.data().job_img,
                 id: doc.id,
             }
             this.jobData.push(data);

@@ -89,7 +89,7 @@
 
             <div class="col-md-3 mt-5">
                 <div class="p-3 text-white" style="background: #8093F1;">
-                    <img src="../../assets/img/mc-donalds.png" class="img-fluid mb-4" alt="">
+                    <img v-bind:src="job_img" class="img-fluid mb-4" alt="">
                     <p class="fs-3">McDonalds</p>
                     <p class="col-11">
                         McDonald’s U.S. leadership team draws from a proud history and set of values that made the
@@ -129,7 +129,8 @@ export default {
             description: null,
             job_benefit: null,
             job_responsibility: [],
-            job_skills: []
+            job_skills: [],
+            job_img: null
         };
     },
     mounted() {
@@ -150,6 +151,7 @@ export default {
                 this.job_benefit = doc.data().job_benefit;
                 this.job_responsibility = doc.data().job_responsibility;
                 this.job_skills = doc.data().job_skills;
+                this.job_img = doc.data().job_img
             });
     }
 
