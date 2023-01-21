@@ -30,7 +30,7 @@
             </div>
         </div>
 
-         <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link border-0 fw-bold fs-5 text-white active" id="home-tab" data-bs-toggle="tab"
                     data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
@@ -59,214 +59,318 @@
                     OTHER
                 </button>
             </li>
-        </ul> 
-         <div class="tab-content" id="myTabContent">
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
 
                 <div class="container overflow-hidden fw-bold text-white">
                     <div class="row gx-5 g-y py-5">
-                        
-                        <div class="col-md-6 col-lg-4 human-resource">
+
+                        <div class="col-md-6 col-lg-4 human-resource"
+                            v-for="(eachMedia, index) in mediaData.slice(0, showMoreMediaNum)">
                             <div class="row">
                                 <div class="col d-grid ">
-                                    <div>HR Manager</div>
-                                    <div> What are you doing?</div>
+                                    <div>{{ eachMedia.media_title }}</div>
+                                    <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
                                     <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
-                                        HR
+                                        {{ eachMedia.media_category }}
                                     </div>
                                 </div>
                             </div>
                             <div class="ratio ratio-16x9 ">
-                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
-                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe class="embed-responsive-item" :src="eachMedia.media_url"
                                     allowfullscreen></iframe>
                                 <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
                                     <div>
-                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
-                                            MANAGER</small>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">
+                                            {{ eachMedia.media_title }} </small>
                                     </div>
-                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                    <small class="col-md-10 bg-danger w-50">{{ eachMedia.media_subtitle }}</small>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;({{
+                                            eachMedia.media_likes
+                                        }})
                                     </div>
 
                                     <div class="col text-end">
-                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;({{
+                                            eachMedia.media_views
+                                        }}) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;({{
+                                            eachMedia.media_uploads
+                                        }})
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="" v-if="showMoreMediaNum < mediaData.length">
+                        <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                            v-on:click="loadMoreMediaHandler">LOAD MORE</div>
+                    </div>
+
+
                 </div>
             </div>
-            
+
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                
+
                 <div class="container overflow-hidden fw-bold text-white">
                     <div class="row gx-5 g-y py-5">
-                        
-                        <div class="col-md-6 col-lg-4 human-resource">
+
+                        <div class="col-md-6 col-lg-4 human-resource"
+                            v-for="(eachMedia, index) in hrMedia.slice(0, showMoreHrMediaNum)">
                             <div class="row">
                                 <div class="col d-grid ">
-                                    <div>HR Manager</div>
-                                    <div> What are you doing?</div>
+                                    <div>{{ eachMedia.media_title }}</div>
+                                    <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
                                     <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
-                                        HR
+                                        {{ eachMedia.media_category }}
                                     </div>
                                 </div>
                             </div>
                             <div class="ratio ratio-16x9 ">
-                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
-                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe class="embed-responsive-item" :src="eachMedia.media_url"
                                     allowfullscreen></iframe>
                                 <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
                                     <div>
-                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
-                                            MANAGER</small>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">
+                                            {{ eachMedia.media_title }} </small>
                                     </div>
-                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                    <small class="col-md-10 bg-danger w-50">{{ eachMedia.media_subtitle }}</small>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;({{
+                                            eachMedia.media_likes
+                                        }})
                                     </div>
 
                                     <div class="col text-end">
-                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;({{
+                                            eachMedia.media_views
+                                        }}) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;({{
+                                            eachMedia.media_uploads
+                                        }})
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="" v-if="showMoreHrMediaNum < hrMedia.length">
+                        <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                            v-on:click="loadMoreHrMediaHandler">LOAD MORE</div>
+                    </div>
                 </div>
 
             </div>
+
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                
+
                 <div class="container overflow-hidden fw-bold text-white">
                     <div class="row gx-5 g-y py-5">
-                        
-                        <div class="col-md-6 col-lg-4 human-resource">
+
+                        <div class="col-md-6 col-lg-4 human-resource"
+                            v-for="(eachMedia, index) in techMedia.slice(0, showMoreTechMediaNum)">
                             <div class="row">
                                 <div class="col d-grid ">
-                                    <div>HR Manager</div>
-                                    <div> What are you doing?</div>
+                                    <div>{{ eachMedia.media_title }}</div>
+                                    <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
-                                    <div class="fs-4 px-4 float-end " style="background-color: #B388EB; ">
-                                        TECH
+                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                        {{ eachMedia.media_category }}
                                     </div>
                                 </div>
                             </div>
                             <div class="ratio ratio-16x9 ">
-                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
-                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe class="embed-responsive-item" :src="eachMedia.media_url"
                                     allowfullscreen></iframe>
                                 <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
                                     <div>
-                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
-                                            MANAGER</small>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">
+                                            {{ eachMedia.media_title }} </small>
                                     </div>
-                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                    <small class="col-md-10 bg-danger w-50">{{ eachMedia.media_subtitle }}</small>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;({{
+                                            eachMedia.media_likes
+                                        }})
                                     </div>
 
                                     <div class="col text-end">
-                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;({{
+                                            eachMedia.media_views
+                                        }}) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;({{
+                                            eachMedia.media_uploads
+                                        }})
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
+                    <div class="" v-if="showMoreTechMediaNum < techMedia.length">
+                        <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                            v-on:click="loadMoreTechMediaHandler">LOAD MORE</div>
+                    </div>
+
                 </div>
 
             </div>
+
             <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
                 tabindex="0">
 
                 <div class="container overflow-hidden fw-bold text-white">
                     <div class="row gx-5 g-y py-5">
-                        
-                        <div class="col-md-6 col-lg-4 human-resource">
+
+                        <div class="col-md-6 col-lg-4 human-resource"
+                            v-for="(eachMedia, index) in otherMedia.slice(0, showMoreOtherMediaNum)">
                             <div class="row">
                                 <div class="col d-grid ">
-                                    <div>HR Manager</div>
-                                    <div> What are you doing?</div>
+                                    <div>{{ eachMedia.media_title }}</div>
+                                    <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
-                                    <div class="fs-4 px-4 float-end " style="background-color: #72DDF7; ">
-                                        OTHER
+                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                        {{ eachMedia.media_category }}
                                     </div>
                                 </div>
                             </div>
                             <div class="ratio ratio-16x9 ">
-                                <iframe src="https://www.youtube.com/embed/yiGsizw3We8"
-                                    title="VICTONY - PRAY (OFFICIAL VIDEO )" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe class="embed-responsive-item" :src="eachMedia.media_url"
                                     allowfullscreen></iframe>
                                 <div class="col text-white position-absolute px-3 stacked-text" style="z-index: 1;">
                                     <div>
-                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">HR
-                                            MANAGER</small>
+                                        <small class="col-md-10" style="background: #FDC5F5; width: 40%;">
+                                            {{ eachMedia.media_title }} </small>
                                     </div>
-                                    <small class="col-md-10 bg-danger w-50">what are you doing?</small>
+                                    <small class="col-md-10 bg-danger w-50">{{ eachMedia.media_subtitle }}</small>
                                 </div>
                             </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;(25)
+                                        <small><i class="text-end bi bi-heart"></i></small> &nbsp;({{
+                                            eachMedia.media_likes
+                                        }})
                                     </div>
 
                                     <div class="col text-end">
-                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;(25) &nbsp;
-                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;(25)
+                                        <small><i class="text-end bi bi-eye"></i></small>&nbsp;({{
+                                            eachMedia.media_views
+                                        }}) &nbsp;
+                                        <small><i class="text-end bi bi-upload"></i></small>&nbsp;({{
+                                            eachMedia.media_uploads
+                                        }})
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-            
+
+                <div class="" v-if="showMoreOtherMediaNum < otherMedia.length">
+                    <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                        v-on:click="loadMoreOtherMediaHandler">LOAD MORE</div>
+                </div>
+
             </div>
-        </div> 
+
+        </div>
 
     </div>
 </template>
 
 <script>
+import { collection, getDocs } from "firebase/firestore";
+import { db } from '../../firebase/config';
+
 export default {
     name: 'MediaBodyComponent',
+    data() {
+        return {
+            mediaData: [],
+            hrMedia: [],
+            techMedia: [],
+            otherMedia: [],
+            showMoreMediaNum: 2,
+            showMoreHrMediaNum: 0,
+            showMoreTechMediaNum: 0,
+            showMoreOtherMediaNum: 0,
+        };
+    },
+    methods: {
+        loadMoreMediaHandler: function () {
+            this.showMoreMediaNum = this.mediaData.length;
+        },
+        loadMoreHrMediaHandler: function () {
+            this.showMoreHrMediaNum = this.hrMedia.length;
+        },
+        loadMoreTechMediaHandler: function () {
+            this.showMoreTechMediaNum = this.techMedia.length;
+        },
+        loadMoreOtherMediaHandler: function () {
+            this.showMoreOtherMediaNum = this.otherMedia.length;
+        },
+    },
+    async mounted() {
+
+        const querySnapshot = await getDocs(collection(db, "media"));
+        querySnapshot.forEach((doc) => {
+            console.log(doc.data().media_url)
+
+            let data = {
+                media_category: doc.data().media_category,
+                media_color: doc.data().media_color,
+                media_id: doc.data().media_id,
+                media_likes: doc.data().media_likes,
+                media_subtitle: doc.data().media_subtitle,
+                media_title: doc.data().media_title,
+                media_uploads: doc.data().media_uploads,
+                media_views: doc.data().media_views,
+                media_url: doc.data().media_url,
+            }
+            if (doc.data().media_category == 'HR') {
+                this.hrMedia.push(data);
+            }
+            if (doc.data().media_category == 'TECH') {
+                this.techMedia.push(data);
+            }
+            if (doc.data().media_category == 'OTHER') {
+                this.otherMedia.push(data);
+            }
+            this.mediaData.push(data);
+        });
+    }
 }
 </script>
 
 <style scoped>
-
-
-
- .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     color: #f3f3f3;
     background-color: transparent;
     border-color: transparent transparent #f3f3f3;
