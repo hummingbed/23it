@@ -27,7 +27,7 @@
                     <p class="fs-3 text-white">Explore best articles on Human resource, Technology & other topics</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="button fs-4 text-dark float-end">
+                    <div class="button fs-5 text-dark float-md-end">
                         VIEW ALL
                         <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid"
                             alt="">
@@ -66,21 +66,61 @@
                 </button>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent" >
+        <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0" v-for="(blog, index) in blogsData">.
+                tabindex="0">.
 
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5" >
-                    <div class="col">
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-5 text-break pt-5 pb-5">
+                    <div class="col" v-for="(blog, index) in blogsData.slice(0, showMoreBlogNum)">
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{ blog.blog_category }}</span>
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                        blog.blog_category
+                                    }}</span>
                                     <span>November11, 2022</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
-                                       {{ blog.blog_header }}
+                                        {{ blog.blog_header }}
+                                    </div>
+
+                                    <div class="mt-2 ">
+                                        {{ blog.blog_body }}
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img v-bind:src="blog.blog_img" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="" v-if="showMoreBlogNum < blogsData.length">
+                    <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                        v-on:click="loadMoreBlogsHandler">LOAD MORE</div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
+                    <div class="col" v-for="(blog, index) in hrBlog.slice(0, showMoreHrBlogNum)">
+                        <div class="row g-3">
+                            <div class="col-md-6 text-white d-grid gap-2">
+                                <div class="col d-flex gap-2">
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                        blog.blog_category
+                                    }}</span>
+                                    <span>November11, 2022</span>
+                                </div>
+                                <div>
+                                    <div class="mt-2 fw-bold fs-5">
+                                        {{ blog.blog_header }}
                                     </div>
 
                                     <div class="mt-2 ">
@@ -99,73 +139,49 @@
                     </div>
                     <!-- #FDC5F5 -->
                 </div>
-            </div>
-
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
-                    <div class="col">
-                        <div class="row g-3">
-                            <div class="col-md-6 text-white d-grid gap-2">
-                                <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
-                                    <span>November11, 2022</span>
-                                </div>
-                                <div>
-                                    <div class="mt-2 fw-bold fs-5">
-                                        The best restaurant where for you will be comfy find a job
-                                    </div>
-
-                                    <div class="mt-2 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquam feugiat ac odio nec porta. Donec
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="" v-if="showMoreHrBlogNum < hrBlog.length">
+                    <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                        v-on:click="loadMoreHrBlogsHandler">LOAD MORE</div>
                 </div>
 
             </div>
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
-                    <div class="col">
+                    <div class="col" v-for="(blog, index) in techBlog.slice(0, showMoreTechBlogNum)">
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                        blog.blog_category
+                                    }}</span>
                                     <span>November11, 2022</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
-                                        The best restaurant where for you will be comfy find a job
+                                        {{ blog.blog_header }}
                                     </div>
 
                                     <div class="mt-2 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquam feugiat ac odio nec porta. Donec
+                                        {{ blog.blog_body }}
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                                <img v-bind:src="blog.blog_img" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
+                    <!-- #FDC5F5 -->
+                </div>
 
+                <div class="" v-if="showMoreTechBlogNum < techBlog.length">
+                    <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                        v-on:click="loadMoreTechBlogsHandler">LOAD MORE</div>
                 </div>
 
             </div>
@@ -173,35 +189,42 @@
                 tabindex="0">
 
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-5 g-lg-4 text-break pt-5 pb-5">
-                    <div class="col">
+                    <div class="col" v-for="(blog, index) in otherBlog.slice(0, showMoreOtherBlogNum)">
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">TECH</span>
+                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                        blog.blog_category
+                                    }}</span>
                                     <span>November11, 2022</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
-                                        The best restaurant where for you will be comfy find a job
+                                        {{ blog.blog_header }}
                                     </div>
 
                                     <div class="mt-2 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquam feugiat ac odio nec porta. Donec
+                                        {{ blog.blog_body }}
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: #F7AEF8;">READ ARTICLE</a>
+                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <img src="../../assets/blog-img/copernico-1.png" class="img-fluid" alt="">
+                                <img v-bind:src="blog.blog_img" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
-
+                    <!-- #FDC5F5 -->
                 </div>
+
+                <div class="" v-if="showMoreOtherBlogNum < otherBlog.length">
+                    <div class="fs-5 text-center user-select-none text-decoration-underline" style="color: #F7AEF8;"
+                        v-on:click="loadMoreOtherBlogsHandler">LOAD MORE</div>
+                </div>
+
             </div>
         </div>
 
@@ -218,7 +241,28 @@ export default {
     data() {
         return {
             blogsData: [],
+            hrBlog: [],
+            techBlog: [],
+            otherBlog: [],
+            showMoreBlogNum: 8,
+            showMoreHrBlogNum: 8,
+            showMoreTechBlogNum: 8,
+            showMoreOtherBlogNum: 8,
         };
+    },
+    methods: {
+        loadMoreBlogsHandler: function () {
+            this.showMoreBlogNum = this.blogsData.length;
+        },
+        loadMoreHrBlogsHandler: function () {
+            this.showMoreHrBlogNum = this.hrBlog.length;
+        },
+        loadMoreTechBlogsHandler: function () {
+            this.showMoreTechBlogNum = this.techBlog.length;
+        },
+        loadMoreOtherBlogsHandler: function () {
+            this.showMoreOtherBlogNum = this.otherBlog.length;
+        },
     },
     async mounted() {
 
@@ -232,8 +276,15 @@ export default {
                 blog_id: doc.data().blog_id,
                 blog_img: doc.data().blog_img,
             }
-            console.log(doc.data())
-
+            if (doc.data().blog_category == 'HR') {
+                this.hrBlog.push(data);
+            }
+            if (doc.data().blog_category == 'TECH') {
+                this.techBlog.push(data);
+            }
+            if (doc.data().blog_category == 'OTHER') {
+                this.otherBlog.push(data);
+            }
             this.blogsData.push(data);
         });
     }

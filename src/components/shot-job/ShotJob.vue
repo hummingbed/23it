@@ -242,7 +242,7 @@ export default {
                 filtered = filtered.filter(item => Object.values(item).join('').toLowerCase().includes(this.checkedJobType[0].toLowerCase()));
             }
 
-            return filtered.slice().reverse();;
+            return filtered.slice().reverse();
         },
     },
     async mounted() {
