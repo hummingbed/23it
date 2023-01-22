@@ -27,17 +27,17 @@
                             <label for="exampleFormControlInput1" class="form-label fw-bold text-white">What’s your
                                 name?</label>
                             <input class="mainLoginInput text-white" style="width: 100%; height: 5rem;" type="text"
-                                placeholder="Capitan America" name="name" /> <br />
+                                placeholder="Capitan America" v-model="name" name="name" required/> <br />
                             <label for="exampleFormControlInput1" class="form-label fw-bold text-white">What’s your
                                 email?</label>
                             <input class="mainLoginInput text-white" style="width: 100%; height: 5rem;" type="text"
-                                placeholder="Capitan.america@mail.com" name="user_email" /> <br />
+                                placeholder="Capitan.america@mail.com" name="user_email" required/> <br />
                             <label for="exampleFormControlInput1" class="form-label fw-bold text-white">What are your
                                 qustion?</label>
                             <input class="mainLoginInput text-white" style="width: 100%; height: 5rem;" type="text"
-                                placeholder="Tell us everything" name="message" />
+                                placeholder="Tell us everything" name="message" required/>
 
-                                <label for="exampleFormControlInput1" class="form-label fw-bold text-white">cv
+                            <!-- <label for="exampleFormControlInput1" class="form-label fw-bold text-white">cv
                                 qustion?</label>
                             <input class="mainLoginInput text-white" style="width: 100%; height: 5rem;" type="file"
                                 placeholder="Tell us everything" name="cv" />
@@ -45,7 +45,8 @@
                                 <label for="exampleFormControlInput1" class="form-label fw-bold text-white">What are your
                                 qustion?</label>
                             <input class="mainLoginInput text-white" style="width: 100%; height: 5rem;" type="file"
-                                placeholder="Tell us everything" name="cover_letter" />
+                                placeholder="Tell us everything" name="cover_letter" /> -->
+                                
                         </div>
                     </div>
                     <input class="fw-bold text-dark get-in-touch-btn mt-2" type="submit" value="Send">
@@ -55,17 +56,6 @@
                     </a> -->
                 </form>
             </div>
-
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong>Hey Captain America,</strong> your message has beend successfuly delivered.
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </template>
@@ -75,29 +65,19 @@
 
 export default {
     name: 'ContactBodyComponent',
+    data() {
+        return {
+            name: ''
+        }
+    },
     methods: {
         sendEmail() {
-            console.log('FAILED...')
             emailjs.sendForm('service_ylxu3ro', 'template_fa4ysa5', this.$refs.form, '3NvocUzIR52-_Il9l')
-                .then((result) => {
-
-                    // let message = "good";
-                    // let type = 'success';
-
-
-                    // const wrapper = [
-                    //     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                    //     `   <div>${message}</div>`,
-                    //     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                    //     '</div>'
-                    // ]
-
-                    // alertPlaceholder.append(wrapper)
-
-                    console.log('SUCCESS!', result.text);
-                }, (error) => {
-                    console.log('FAILED...', error.text);
-                });
+            .then((result) => {
+                this.$swal(`Hello, ${this.name} <br> Your message was sent successfully`);
+            }, (error) => {
+                this.$swal(`Hello, ${this.name} <br> Your message failed`);
+            });
         }
     },
     mounted() {
@@ -136,8 +116,6 @@ input {
 }
 
 
-
-
 input[type="text"] {
     background-color: #070223;
 }
@@ -157,7 +135,7 @@ input[type="text"] {
     .mainLoginInput {
         margin: 5px 0px;
         letter-spacing: 5px;
-        font-size: 3.7vw;
+        font-size: 3vw;
     }
 
 }

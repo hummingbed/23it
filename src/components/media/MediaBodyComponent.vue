@@ -316,10 +316,10 @@ export default {
             hrMedia: [],
             techMedia: [],
             otherMedia: [],
-            showMoreMediaNum: 2,
-            showMoreHrMediaNum: 0,
-            showMoreTechMediaNum: 0,
-            showMoreOtherMediaNum: 0,
+            showMoreMediaNum: 8,
+            showMoreHrMediaNum: 8,
+            showMoreTechMediaNum: 8,
+            showMoreOtherMediaNum: 8,
         };
     },
     methods: {
@@ -334,6 +334,7 @@ export default {
         },
         loadMoreOtherMediaHandler: function () {
             this.showMoreOtherMediaNum = this.otherMedia.length;
+            // this.$swal('Hello Vue world!!!');
         },
     },
     async mounted() {

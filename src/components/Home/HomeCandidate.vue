@@ -57,7 +57,8 @@
                     </div>
                 </div>
             </div>
-            <a class="fw-bold text-dark mt-4 get-in-touch-btn float-end " href="#">GET IN TOUCH</a>
+          
+            <router-link :to="'/contact'" class="fw-bold text-dark mt-4 get-in-touch-btn float-end ">GET IN TOUCH</router-link>
         </div>
     </div>
 </template>

@@ -24,14 +24,14 @@
                 <div class="input-group mb-3">
                     <div class="text-color-white border px-4 py-3" style="background-color: #070223;">WHAT</div>
                     <input style="background-color: #070223; " placeholder="Job title, keywords, or company" type="text"
-                        class="form-control" v-model="searchText" aria-label="Text input with dropdown button">
+                        class="form-control text-white" v-model="searchText" aria-label="Text input with dropdown button">
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="input-group mb-3">
                     <div class="text-color-white border px-4 py-3 border" style="background-color: #070223;">WHERE</div>
                     <input style="background-color: #070223;" placeholder="Country, City" type="text"
-                        class="form-control border" v-model="searchCategory"
+                        class="form-control text-white border" v-model="searchCategory"
                         aria-label="Text input with dropdown button">
                 </div>
             </div>
@@ -43,7 +43,7 @@
         <div class="row g-5">
             <div class="col-md-3 text-white">
                 <p>Filter</p>
-                <div class="d-grid gap-2">
+                <!-- <div class="d-grid gap-2">
                     <p>Date posted</p>
 
                     <div class="form-check">
@@ -74,7 +74,7 @@
                         </label>
                     </div>
 
-                </div>
+                </div> -->
 
                 <div class="mt-3 d-grid gap-2">
                     <p>Job type</p>
@@ -146,15 +146,11 @@
 
 
             <div class="col-md-9">
-
-
                 <div class="gap-3 d-flex ps-3">
                     <p class="text-color-white fw-bold">25.478 Offers Worldwide</p>
                     <p class="text-color-white fw-bold">Sort by: relevance - <span style="color: #F7AEF8;"> date</span>
                     </p>
                 </div>
-
-
 
                 <div class="container ">
                     <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2 g-lg-3">
@@ -228,8 +224,9 @@ export default {
                 filtered = filtered.filter(item => Object.values(item.location).join('')
                     .toLowerCase().includes(this.searchCategory.toLowerCase()));
 
-                if (filtered.length == 0 && this.searchCategory.length > 0) {
-                    alert(`country: ${this.searchCategory} not found`)
+                if (filtered.length == 0 && this.searchCategory.length > 3) {
+                    // alert(`country: ${this.searchCategory} not found`)
+                    this.$swal(`country: ${this.searchCategory} not found`);
                 }
             }
             if (this.searchText) {

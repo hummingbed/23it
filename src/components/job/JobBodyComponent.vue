@@ -14,9 +14,9 @@
             </ol>
         </nav>
 
-        <div class="row g-5 pt-5 justify-content-space between border">
+        <div class="row g-5 pt-5 justify-content-space between">
             <div class="col-md-8">
-                <div class="border">
+                <form class="border" ref="form" @submit.prevent="sendEmail">
                     <div class="p-4 text-color-white">
                         <div class="row">
                             <p class="col fw-bold">JOB DESCRIPTION</p>
@@ -66,36 +66,33 @@
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Respond to the vacancy</label>
                             <textarea style="background-color: #070223; " placeholder="Write a cover letter..."
-                                class="form-control text-color-white" id="exampleFormControlTextarea1" rows="3">
+                                class="form-control text-white text-color-white" name="message" id="exampleFormControlTextarea1" >
                             </textarea>
                         </div>
 
                         <p class="pt-3" style="color: #F7AEF8; " data-bs-toggle="modal" href="#exampleModalToggle"
                             role="button">Upload Cover Letter <i class="bi bi-arrow-up-right"></i><br>
-                            <input class="" type="file" id="formFile">
+                            <input name="cv" class="" type="file" id="formFile">
                         </p>
 
                         <p class="pt-3" style="color: #F7AEF8; " data-bs-toggle="modal" href="#exampleModalToggle"
                             role="button">Upload CV <i class="bi bi-arrow-up-right"></i><br>
-                            <input class="" type="file" id="formFile">
+                            <input name="cover_letter" class="" type="file" id="formFile">
                         </p>
 
                         <div class=" mt-5">
-                            <a href="" class=" text-dark px-5 py-3 fw-bold" style="background: #F0E4D9;">APPLY</a>
+                            <input href="" class=" text-dark px-5 py-3 fw-bold border-0" type="submit" value="APPLY" style="background: #F0E4D9;"/>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div class="col-md-3 mt-5">
                 <div class="p-3 text-white" style="background: #8093F1;">
                     <img v-bind:src="job_img" class="img-fluid mb-4" alt="">
-                    <p class="fs-3">McDonalds</p>
+                    <p class="fs-3">{{ company_name }}</p>
                     <p class="col-11">
-                        McDonald’s U.S. leadership team draws from a proud history and set of values that made the
-                        company an icon of American business. Meet our President and CEO, as well as other McDonald’s
-                        U.S. executive team members who continue to build our legacy and ensure our Golden Arches shine
-                        bright.
+                        {{ description }}
                     </p>
                     <p class="fs-5">Company Details</p>
                     <ul>
@@ -118,6 +115,7 @@ export default {
     name: 'JobBodyComponent',
     data() {
         return {
+            name: '',
             company_name: null,
             id: null,
             job_title: null,
@@ -132,6 +130,16 @@ export default {
             job_skills: [],
             job_img: null
         };
+    },
+    methods: {
+        sendEmail() {
+            emailjs.sendForm('service_ylxu3ro', 'template_fa4ysa5', this.$refs.form, '3NvocUzIR52-_Il9l')
+            .then((result) => {
+                this.$swal(`Hello, ${this.name} <br> Your message was sent successfully`);
+            }, (error) => {
+                this.$swal(`Hello, ${this.name} <br> Your message failed`);
+            });
+        }
     },
     mounted() {
 

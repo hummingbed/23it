@@ -12,11 +12,13 @@
             </div>
             <div class="col-md-7">
                 <div class="p-5 ">
-                    <h1 class="col lh-1 text-white fw-bold business-text-body">
+                    <h1 class="col lh-1  text-white fw-bold business-text-body">
                         Let`s get down
                         <div class="d-flex gap-2">
                             to
-                            <p class="business-text">business.</p>
+                            <p class="business-text">
+                                <span class="px-2" style="background: #F7AEF8;"> business.</span>
+                            </p>
                         </div>
                     </h1>
                 </div>
@@ -86,16 +88,16 @@ export default {
 
     .business-text {
         transform: rotateZ(352deg);
-        background: #F7AEF8;
-        width: 20rem;
+        /* background: #F7AEF8; */
+        /* width: 20rem; */
     }
 }
 
 @media screen and (max-width: 1023px) {
     .business-text {
         transform: rotateZ(352deg);
-        background: #F7AEF8;
-        width: 11rem;
+        /* background: #F7AEF8;
+        width: 11rem; */
     }
 }
 

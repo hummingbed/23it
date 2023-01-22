@@ -7,7 +7,10 @@
                         <p id="dream-job">FIND YOUR</p>
                     </span>
                     <span>
-                        <p class="dream-job "> DREAM</p>
+                        <p class="dream-job px-2" > 
+                        <span class="px-1" style="background: #F7AEF8;">
+                            DREAM
+                        </span > </p>
                     </span>
                     <span>
                         <p class="">JOB</p>
@@ -17,7 +20,7 @@
 
             <div class="col-md-6">
                 <input class="mainLoginInput border text-white" style="width: 100%; height: 4.3rem;" type="text"
-                    placeholder="Search: &nbsp; Job title, Keyword or company" v-model="searchText" />
+                    placeholder=" Search: &nbsp; Job title, Keyword or company" v-model="searchText" />
             </div>
         </div>
 
@@ -54,10 +57,10 @@
             </router-link>
         </div>
 
-        <div class="button text-dark float-end">
+        <router-link :to="'/see-job'" class="button text-dark float-md-end">
             Find a Job
             <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid" alt="">
-        </div>
+        </router-link>
     </div>
 
 
@@ -223,8 +226,8 @@ export default {
 
     .dream-job {
         transform: rotateZ(352deg);
-        background: #F7AEF8;
-        width: 180px;
+        /* background: #F7AEF8;
+        width: 180px; */
     }
 }
 
@@ -235,8 +238,8 @@ export default {
 
     .dream-job {
         transform: rotateZ(352deg);
-        background: #F7AEF8;
-        width: 13vw;
+        /* background: #F7AEF8;
+        width: 13vw; */
     }
 }
 
@@ -269,6 +272,7 @@ input[type="text"] {
     overflow: visible;
     vertical-align: top;
     display: inline-block !important;
+    color: #fff;
 }
 
 .mainLoginInput::-moz-placeholder {

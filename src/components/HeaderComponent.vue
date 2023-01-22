@@ -3,7 +3,7 @@
 		<div class="row align-items-start">
 			<div class="col text-start">
 				<router-link class="dropdown-item ms-1 text-white" :to="'/'">
-					<img src="../assets/logo/23it-logo.png" class="img-fluid mt-2 " style="width: 100px;" alt="">
+					<img src="../assets/logo/23it-logo.png" class="img-fluid mt-2 " style="width: 80px;" alt="">
 				</router-link>
 
 			</div>

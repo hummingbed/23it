@@ -2,7 +2,7 @@
     <div class="container py-5 px-4">
         <div class="col-lg-12">
             <div class="row gx-5  mt-5">
-                <b><small class="gotsek-font  pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
+                <b><small class="gotsek-font fs-5 pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
                 <div class="col-md-11 mt-5 ">
                     <h2>
                         <div class="text-white fw-bolder lh-sm home-head-text">
@@ -78,9 +78,6 @@ span:nth-child(4) {
   animation: fade-in 4s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-
-
-
 @keyframes fade-in {
   100% {
     opacity: 1;
@@ -117,7 +114,7 @@ span:nth-child(4) {
     color: #F7AEF8;
 }
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
     .home-head-text {
         font-size: 90px;
         letter-spacing: .3rem;
@@ -128,9 +125,9 @@ span:nth-child(4) {
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1439px) {
     .home-head-text {
-        font-size: 6.6vw;
+        font-size: 85px;
         letter-spacing: .3rem;
     }
 
@@ -141,7 +138,14 @@ span:nth-child(4) {
 
 @media only screen and (max-width: 1399px) {
     .home-head-text {
-        font-size: 6vw;
+        font-size: 80px;
+        letter-spacing: .3rem;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .home-head-text {
+        font-size: 60px;
         letter-spacing: .3rem;
     }
 
@@ -152,7 +156,7 @@ span:nth-child(4) {
 
 @media only screen and (max-width: 991px) {
     .home-head-text {
-        font-size: 5vw;
+        font-size: 45px;
         letter-spacing: .3rem;
     }
     .employers-btn{
@@ -160,6 +164,36 @@ span:nth-child(4) {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .home-head-text {
+        font-size: 35px;
+        letter-spacing: .3rem;
+    }
+    .employers-btn{
+        margin-right: 5vw;
+    }
+}
+
+
+@media only screen and (max-width: 515px) {
+    .home-head-text {
+        font-size: 30px;
+        /* letter-spacing: .3rem; */
+    }
+    .employers-btn{
+        margin-right: 5vw;
+        padding: 10px 28px;
+    }
+}
+
+@media only screen and (max-width: 462px) {
+    .home-head-text {
+        font-size: 20px;
+        /* letter-spacing: .3rem; */
+    }
+    
+}
+/*  */
 
 .cloud-cyber-text {
     background: #8093F1;

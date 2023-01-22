@@ -32,7 +32,8 @@
                     <img src="../../assets/img/home-grp-img.png" class="img-fluid img-animation" alt="">
                 </div>
             </div>
-            <a class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 gotsek-font" href="#">GET IN TOUCH</a>
+              <!-- <router-link :to="'/contact'"> Contact Us</router-link> -->
+            <router-link :to="'/contact'" class="fw-bold text-dark mt-4 get-in-touch-btn offset-md-2 gotsek-font">GET IN TOUCH</router-link>
         </div>
     </div>
 </template>
