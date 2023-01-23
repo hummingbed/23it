@@ -8,8 +8,8 @@
                         <div class="text-white fw-bolder lh-sm home-head-text">
                             <span><div class="slide-left">We are a recruitment</div> </span>
                             <span><div class="slide-left">agency with a focus</div></span>
-                             on <span class="cloud-cyber-text">Cloud,
-                                cyber</span> and,
+                              <span >on <span class="px-1" style="background: #8093F1;"> Cloud,</span> 
+                                </span>cyber and,
                             <span>
                                 <div class="d-flex slide-up">
                                 <p class="dev-ops">Dev-ops</p>
@@ -21,12 +21,13 @@
                 </div>
             </div>
             <div class="d-flex gap-5 align-items-center float-end">
-                <a class="text-dark fw-bolder employers-btn" href="#HomeEmployerComponent">EMPLOYERS
-                    <i class=" employers-icon bi bi-arrow-right"></i></a>
+                <a class="text-dark fs-5 fw-bolder employers-btn" href="#HomeEmployerComponent" style="background: #F0E4D9;">EMPLOYERS
+                    <img src="../../assets/arrow/dark-arrow-right.png"  style="width: 20px; height: 20px;" alt="">
+                </a>
                 <b>
-                    <a class="mt-1 job-btn text-decoration-none" href="#dream-job">
+                    <a class="mt-1 fs-5 job-btn text-decoration-none" href="#dream-job">
                         FIND A JOB
-                        <i class="bi bi-arrow-down"></i>
+                        <img src="../../assets/arrow/purple-down-arrow.png" style="width: 20px; height: 20px;" alt="">
                     </a>
                 </b>
             </div>
@@ -196,7 +197,7 @@ span:nth-child(4) {
 /*  */
 
 .cloud-cyber-text {
-    background: #8093F1;
+    /* background: #8093F1; */
 }
 
 

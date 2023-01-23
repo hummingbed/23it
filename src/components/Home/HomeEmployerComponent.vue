@@ -3,7 +3,7 @@
     <div id="HomeEmployerComponent">
 
         <div class="container text-white py-5">
-            <div class="col fw-bold" style="color: #F7AEF8;">
+            <div class="col fw-bold fs-5" style="color: #F7AEF8; font-family: 'Space Grotesk';">
                 EMPLOYER
             </div>
             <div class="col  fw-bold pb-5 putting-right-people">

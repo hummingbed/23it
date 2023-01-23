@@ -2,18 +2,18 @@
     <div class="container py-5  ">
         <div class="row gx-5">
             <div class="col-md-6">
-                <div class="d-flex mt-3 fs-1 gap-2 fw-bolder text-white find-your-dream-job">
+                <div class="d-flex mt-3 fs-1 font-monospace gap-2 fw-bolder text-white find-your-dream-job" style="font-family: 'Kyiv*Type Serif';">
                     <span>
-                        <p id="dream-job">FIND YOUR</p>
+                        <p style="font-family: KyivTypeSerif-Bold3;" id="dream-job">FIND YOUR</p>
                     </span>
                     <span>
                         <p class="dream-job px-2" > 
-                        <span class="px-1" style="background: #F7AEF8;">
+                        <span class="px-1" style="background: #F7AEF8; font-family: KyivTypeSerif-Bold3;">
                             DREAM
                         </span > </p>
                     </span>
                     <span>
-                        <p class="">JOB</p>
+                        <p style="font-family: KyivTypeSerif-Bold3;" class="">JOB</p>
                     </span>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             </router-link>
         </div>
 
-        <router-link :to="'/see-job'" class="button text-dark float-md-end">
+        <router-link :to="'/see-job'" class="button fs-5 text-dark float-md-end">
             Find a Job
             <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid" alt="">
         </router-link>
@@ -222,6 +222,7 @@ export default {
 @media only screen and (min-width: 1440px) {
     .find-your-dream-job {
         font-size: 48px;
+        font-family: 'Kyiv*Type Serif';
     }
 
     .dream-job {
@@ -234,6 +235,7 @@ export default {
 @media only screen and (max-width: 1439px) {
     .find-your-dream-job {
         font-size: 3.5vw;
+        font-family: 'Kyiv*Type Serif';
     }
 
     .dream-job {

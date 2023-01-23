@@ -1,7 +1,7 @@
 <template>
     <div id="candidate">
         <div class="container py-5 overflow-hidden">
-            <div class="p-3 col fw-bold" style="color: #F7AEF8;">
+            <div class="p-3 col fs-5 fw-bold" style="color: #F7AEF8; font-family: 'Space Grotesk';">
                 CANDIDATE
             </div>
             <div class="row justify-content-between text-white g-5">
