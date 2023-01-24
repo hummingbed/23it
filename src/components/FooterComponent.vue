@@ -5,7 +5,7 @@
                 <div class="p-3 d-grid gap-3 grotesk-font">
                     <router-link class="text-white text-decoration-none fs-4" :to="'/about'"> About Us</router-link>
                     <a :href="path + `/#HomeEmployerComponent`" class="text-white text-decoration-none fs-4"> Employer</a>
-                    <!-- <router-link class="text-white text-decoration-none fs-4" :to="'/#HomeEmployerComponent'"> Employer</router-link> -->
+                    <!-- <router-link  :to="'/#HomeEmployerComponent'"> Employer</router-link> -->
                     <a href="#" class="text-white text-decoration-none fs-4"> Newsletter</a>
                     <router-link class="text-white text-decoration-none fs-4" :to="'/contact'"> Contact Us</router-link>	
                 </div>

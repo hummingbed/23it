@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
+                                    <router-link  :to="'/more-blogs'" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
                                 </div>
                             </div>
 
@@ -128,7 +128,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
+                                    <router-link  :to="'/more-blogs'" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
                                 </div>
                             </div>
 
@@ -167,7 +167,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
+                                    <router-link  :to="'/more-blogs'" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
                                 </div>
                             </div>
 
@@ -208,7 +208,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="" style="color: `${blog.blog_color}`;">READ ARTICLE</a>
+                                    <router-link  :to="'/more-blogs'" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
                                 </div>
                             </div>
 
