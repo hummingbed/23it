@@ -164,7 +164,7 @@
                                             class="img-fluid" alt="">
                                         <p class="col"> {{ jobData.company_name }} </p>
                                     </div>
-                                    <p class="col text-end">1hr ago</p>
+                                    <!-- <p class="col text-end">1hr ago</p> -->
                                 </div>
                                 <p class="fw-bold fs-4">{{ jobData.job_title }}</p>
                                 <div class="d-flex gap-2">

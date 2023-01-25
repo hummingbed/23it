@@ -35,7 +35,7 @@
                     <div class="content px-2">
                         <div class="card-text row text-white">
                             <p class="col card-title fs-4">{{ jobs.company_name }}</p>
-                            <p class="col card-title text-end me-3">2d ago</p>
+                            <!-- <p class="col card-title text-end me-3">2d ago</p> -->
                         </div>
                         <p class="card-text  text-white fs-3 mt-3">{{ jobs.job_title }}</p>
                         <div class="row">

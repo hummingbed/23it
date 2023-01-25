@@ -1,7 +1,7 @@
 <template>
     <div class="container pt-5">
-        <div class="row">
-            <div class="col-md-6 blog-banner mt-5">
+        <div class="row justify-content-between">
+            <div class="col-md-5 blog-banner mt-5">
 
             </div>
             <div class="col-md-6 mt-5 text-white fw-bold">
