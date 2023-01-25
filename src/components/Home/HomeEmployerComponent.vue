@@ -80,7 +80,7 @@ export default {
 
 @media only screen and (max-width: 1439px) {
     .putting-right-people {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 }
 
