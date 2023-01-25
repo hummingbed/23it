@@ -12,12 +12,12 @@
             </div>
             <div class="col-md-7">
                 <div class="p-5 ">
-                    <h1 class="col lh-1  text-white fw-bold business-text-body">
+                    <h1 class="col lh-sm  text-white fw-bold business-text-body">
                         Let`s get down
                         <div class="d-flex gap-2">
                             to
                             <p class="business-text">
-                                <span class="px-2" style="background: #F7AEF8;"> business.</span>
+                                <span class="px-1" style="background: #F7AEF8;"> business.</span>
                             </p>
                         </div>
                     </h1>

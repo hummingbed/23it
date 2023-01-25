@@ -64,14 +64,15 @@
                         <p id="applyJob" style="color: #F7AEF8;">To The Job Details</p>
 
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Respond to the vacancy</label>
-                            <textarea style="background-color: #070223; " placeholder="Write a cover letter..."
-                                class="form-control text-white text-color-white" name="message" id="exampleFormControlTextarea1" >
+                            <label for="exampleFormControlTextarea1">Respond to the vacancy </label>
+                            <textarea style="background-color: #070223; " v-model="message"
+                                placeholder="Write a cover letter..." class="form-control text-white text-color-white"
+                                name="message" id="exampleFormControlTextarea1">
                             </textarea>
                         </div>
 
                         <p class="pt-3" style="color: #F7AEF8; " data-bs-toggle="modal" href="#exampleModalToggle"
-                            role="button">Upload Cover Letter <i class="bi bi-arrow-up-right"></i><br>
+                            role="button" @change="changeFile">Upload Cover Letter <i class="bi bi-arrow-up-right"></i><br>
                             <input name="cv" class="" type="file" id="formFile">
                         </p>
 
@@ -81,7 +82,8 @@
                         </p>
 
                         <div class=" mt-5">
-                            <input href="" class=" text-dark px-5 py-3 fw-bold border-0" type="submit" value="APPLY" style="background: #F0E4D9;"/>
+                            <input href="" class=" text-dark px-5 py-3 fw-bold border-0" type="submit" value="APPLY"
+                                style="background: #F0E4D9;" />
                         </div>
                     </div>
                 </form>
@@ -128,17 +130,30 @@ export default {
             job_benefit: null,
             job_responsibility: [],
             job_skills: [],
-            job_img: null
+            job_img: null,
+            message: '',
+            cv: null
         };
     },
     methods: {
         sendEmail() {
-            emailjs.sendForm('service_ylxu3ro', 'template_fa4ysa5', this.$refs.form, '3NvocUzIR52-_Il9l')
-            .then((result) => {
-                this.$swal(`Hello, ${this.name} <br> Your message was sent successfully`);
-            }, (error) => {
-                this.$swal(`Hello, ${this.name} <br> Your message failed`);
-            });
+            if (this.message.length <= 1 && this.cv == 1) {
+                this.$swal(`Please, fill in the input field tp continue`);
+            } else {
+
+                emailjs.sendForm('service_ylxu3ro', 'template_fa4ysa5', this.$refs.form, '3NvocUzIR52-_Il9l')
+                    .then((result) => {
+                        console.log(this.message)
+                        this.$swal(`Your application was sent successfully`);
+                    }, (error) => {
+                        this.$swal(`Hello, ${this.name} <br> Your application failed`);
+                    });
+
+            }
+
+        },
+        changeFile(e){
+            this.cv = e.target.files.length;
         }
     },
     mounted() {

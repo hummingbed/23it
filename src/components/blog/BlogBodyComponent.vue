@@ -75,9 +75,15 @@
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
-                                        blog.blog_category
-                                    }}</span>
+                                    <span v-if="blog.blog_category == 'HR'" class="fw-bold px-2" style="background-color: #FDC5F5;">
+                                    {{ blog.blog_category }}
+                                    </span>
+                                    <span v-if="blog.blog_category == 'OTHER'" class="fw-bold px-2" style="background-color: #72DDF7;">
+                                    {{ blog.blog_category }}
+                                    </span>
+                                    <span v-if="blog.blog_category == 'TECH'" class="fw-bold px-2" style="background-color: #B388EB;">
+                                    {{ blog.blog_category }}
+                                    </span>
                                     <span>November11, 2022</span>
                                 </div>
                                 <div>
@@ -113,7 +119,7 @@
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                    <span class="fw-bold px-2" style="background-color: #FDC5F5;">{{
                                         blog.blog_category
                                     }}</span>
                                     <span>November11, 2022</span>
@@ -193,7 +199,7 @@
                         <div class="row g-3">
                             <div class="col-md-6 text-white d-grid gap-2">
                                 <div class="col d-flex gap-2">
-                                    <span class="fw-bold px-2" style="background-color: #B388EB;">{{
+                                    <span class="fw-bold px-2" style="background-color: #72DDF7;">{{
                                         blog.blog_category
                                     }}</span>
                                     <span>November11, 2022</span>

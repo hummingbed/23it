@@ -3,16 +3,16 @@
         <div class="col-lg-12">
             <div class="row gx-5  mt-5">
                 <b><small class="gotsek-font fs-5 pb-5" style="color: #F7AEF8;">THIS IS 23IT</small></b>
-                <div class="col-md-11 mt-5 ">
+                <div class="col-md-11 mt-3 ">
                     <h2>
-                        <div class="text-white fw-bolder lh-sm home-head-text">
+                        <div class="text-white fw-bolder lh-base home-head-text">
                             <span><div class="slide-left">We are a recruitment</div> </span>
                             <span><div class="slide-left">agency with a focus</div></span>
                               <span >on <span class="px-1" style="background: #8093F1;"> Cloud,</span> 
                                 </span>cyber and,
                             <span>
                                 <div class="d-flex slide-up">
-                                <p class="dev-ops">Dev-ops</p>
+                                <p class="dev-ops mt-1">Dev-ops</p>
                                 <p>positions.</p>
                             </div>
                             </span>

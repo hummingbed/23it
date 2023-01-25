@@ -76,7 +76,13 @@
                                     <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
-                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                    <div v-if="eachMedia.media_category == 'HR'" class="fs-4 px-4 float-end " style="background-color: #FDC5F5; ">
+                                        {{ eachMedia.media_category }}
+                                    </div>
+                                    <div v-if="eachMedia.media_category == 'TECH'" class="fs-4 px-4 float-end " style="background-color: #B388EB; ">
+                                        {{ eachMedia.media_category }}
+                                    </div>
+                                    <div v-if="eachMedia.media_category == 'OTHER'" class="fs-4 px-4 float-end " style="background-color: #72DDF7; ">
                                         {{ eachMedia.media_category }}
                                     </div>
                                 </div>
@@ -192,7 +198,7 @@
                                     <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
-                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #B388EB; ">
                                         {{ eachMedia.media_category }}
                                     </div>
                                 </div>
@@ -253,7 +259,7 @@
                                     <div> {{ eachMedia.media_subtitle }}</div>
                                 </div>
                                 <div class="col">
-                                    <div class="fs-4 px-4 float-end " style="background-color: #F7AEF8; ">
+                                    <div class="fs-4 px-4 float-end " style="background-color: #72DDF7; ">
                                         {{ eachMedia.media_category }}
                                     </div>
                                 </div>
@@ -383,11 +389,11 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Slab:wght@200&family=Space+Grotesk:wght@300&display=swap');
 
-.contour {
+/* .contour {
     color: black;
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: #070223;
-}
+} */
 
 .stacked-text {
     top: 60%;
