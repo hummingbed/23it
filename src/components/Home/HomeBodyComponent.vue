@@ -109,10 +109,12 @@ span:nth-child(4) {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .job-btn {
     color: #F7AEF8;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 @media only screen and (min-width: 1440px) {

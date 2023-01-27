@@ -72,7 +72,8 @@
                         </div>
 
                         <p class="pt-3" style="color: #F7AEF8; " data-bs-toggle="modal" href="#exampleModalToggle"
-                            role="button" @change="changeFile">Upload Cover Letter <i class="bi bi-arrow-up-right"></i><br>
+                            role="button" @change="changeFile">Upload Cover Letter <i
+                                class="bi bi-arrow-up-right"></i><br>
                             <input name="cv" class="" type="file" id="formFile">
                         </p>
 
@@ -132,27 +133,25 @@ export default {
             job_skills: [],
             job_img: null,
             message: '',
-            cv: null
+            cv: ''
         };
     },
     methods: {
         sendEmail() {
-            if (this.message.length <= 1 && this.cv == 1) {
-                this.$swal(`Please, fill in the input field tp continue`);
+            if (this.message.length <= 1 && this.cv != 1) {
+                this.$swal(`Please, fill in the input field to continue`);
             } else {
-
                 emailjs.sendForm('service_ylxu3ro', 'template_fa4ysa5', this.$refs.form, '3NvocUzIR52-_Il9l')
                     .then((result) => {
                         console.log(this.message)
                         this.$swal(`Your application was sent successfully`);
                     }, (error) => {
                         this.$swal(`Hello, ${this.name} <br> Your application failed`);
-                    });
-
+                });
             }
 
         },
-        changeFile(e){
+        changeFile(e) {
             this.cv = e.target.files.length;
         }
     },

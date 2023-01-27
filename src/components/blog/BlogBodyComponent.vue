@@ -27,11 +27,11 @@
                     <p class="fs-3 text-white">Explore best articles on Human resource, Technology & other topics</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="button fs-5 text-dark float-md-end">
+                    <!-- <div class="button fs-5 text-dark float-md-end">
                         VIEW ALL
                         <img src="../../assets/arrow/dark-arrow-right.png" style="height: 20px;" class="img-fluid"
                             alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
