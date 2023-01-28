@@ -37,7 +37,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-12 ">
+                        <div v-on:click="nextBlogsHandler" class="col-lg-6 col-md-12 ">
                             <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
 
                                 <div class="d-grid mt-3 ms-2">
@@ -138,6 +138,17 @@ export default {
             blogData: [],
         };
     },
+    methods: {
+        nextBlogsHandler: function () {
+           
+            // let currentBlogId = this.$route.params.blog_id;
+            // console.log('nextBlogsHandler', currentBlogId)
+            
+            // this.blogData.forEach(data =>{
+            //     console.log(data.blog_id,'data')
+            // })
+        },
+    },
     async mounted() {
 
         const blog_id = this.$route.params.blog_id;
@@ -168,7 +179,7 @@ export default {
                 blog_id: doc.id,
                 blog_img: doc.data().blog_img,
             }
-            console.log(datas)
+           
             this.blogData.push(datas);
         });
     }
