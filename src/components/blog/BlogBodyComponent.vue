@@ -84,7 +84,7 @@
                                     <span v-if="blog.blog_category == 'TECH'" class="fw-bold px-2" style="background-color: #B388EB;">
                                     {{ blog.blog_category }}
                                     </span>
-                                    <span>November11, 2022</span>
+                                    <span>{{ blog.blog_date_posted }}</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
@@ -123,7 +123,7 @@
                                     <span class="fw-bold px-2" style="background-color: #FDC5F5;">{{
                                         blog.blog_category
                                     }}</span>
-                                    <span>November11, 2022</span>
+                                    <span>{{ blog.blog_date_posted }}</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
@@ -162,7 +162,7 @@
                                     <span class="fw-bold px-2" style="background-color: #B388EB;">{{
                                         blog.blog_category
                                     }}</span>
-                                    <span>November11, 2022</span>
+                                    <span>{{ blog.blog_date_posted }}</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
@@ -203,7 +203,7 @@
                                     <span class="fw-bold px-2" style="background-color: #72DDF7;">{{
                                         blog.blog_category
                                     }}</span>
-                                    <span>November11, 2022</span>
+                                    <span>{{ blog.blog_date_posted }}</span>
                                 </div>
                                 <div>
                                     <div class="mt-2 fw-bold fs-5">
@@ -282,6 +282,8 @@ export default {
                 blog_header: doc.data().blog_header,
                 blog_id: doc.id,
                 blog_img: doc.data().blog_img,
+                blog_date_posted: doc.data().blog_date_posted,
+
             }
             if (doc.data().blog_category == 'HR') {
                 this.hrBlog.push(data);
