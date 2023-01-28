@@ -1,8 +1,8 @@
 <template>
     <div class="container pt-5">
         <div class="row justify-content-between">
-            <div class="col-md-5 blog-banner mt-5">
-
+            <div class="col-md-6 pe-lg-5 blog-banner mt-5">
+                <img src="../../assets/blog-img/blog-banner.png" class="img-fluid h-100" alt="">
             </div>
             <div class="col-md-6 mt-5 text-white fw-bold">
                 <div class="col d-flex my-3 gap-2">
@@ -310,13 +310,13 @@ export default {
     font-weight: bold;
 }
 
-.blog-banner {
+/* .blog-banner {
     height: 35vh;
     position: relative;
 
     background-image: url("../../assets/blog-img/blog-banner.png");
     background-repeat: no-repeat;
-}
+} */
 
 
 .button {
