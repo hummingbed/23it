@@ -20,7 +20,7 @@
                     <div class="p-4 text-color-white">
                         <div class="row">
                             <p class="col fw-bold">JOB DESCRIPTION</p>
-                            <p class="col text-end">Posted 1 hour ago</p>
+                            <!-- <p class="col text-end">Posted 1 hour ago</p> -->
                         </div>
 
                         <p class="fs-2 "> {{ job_title }}</p>
@@ -111,7 +111,7 @@
 
 <script>
 import { collection, doc, getDoc, getDocs } from "firebase/firestore";
-import { db } from '../../firebase/config'
+import { db } from '../../firebase/config';
 
 
 export default {

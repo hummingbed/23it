@@ -55,7 +55,7 @@ const routes = [
     
   },
   {
-    path: '/more-blogs',
+    path: '/more-blogs/:blog_id',
     name: 'more-blogs',
     component: MoreBlogsView
     

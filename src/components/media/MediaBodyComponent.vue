@@ -79,7 +79,7 @@
                                     <div v-if="eachMedia.media_category == 'HR'" class="fs-4 px-4 float-end " style="background-color: #FDC5F5; ">
                                         {{ eachMedia.media_category }}
                                     </div>
-                                    <div v-if="eachMedia.media_category == 'TECH'" class="fs-4 px-4 float-end " style="background-color: #B388EB; ">
+                                    <div v-if="eachMedia.media_category == 'TECH'" class="fs-4 px-4 float-end " style="background-color: #B388EB; "> 
                                         {{ eachMedia.media_category }}
                                     </div>
                                     <div v-if="eachMedia.media_category == 'OTHER'" class="fs-4 px-4 float-end " style="background-color: #72DDF7; ">

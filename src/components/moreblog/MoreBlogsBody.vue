@@ -2,65 +2,26 @@
     <div class="container mt-5">
         <div class="row justify-content-between py-5">
             <div class="mb-3">
-                <span class="px-2 text-white fs-5 " style="background: #FDC5F5;">HR</span>
+                <span v-if="blog_category == 'HR'" class="px-2 text-white fs-5 " style="background: #FDC5F5;">{{ blog_category }}</span>
+                <span v-if="blog_category == 'TECH'" class="px-2 text-white fs-5 " style="background: #B388EB;">{{ blog_category }}</span>
+                <span v-if="blog_category == 'OTHER'" class="px-2 text-white fs-5 " style="background: #72DDF7;">{{ blog_category }}</span>
             </div>
             <div class="col-lg-7 col-md-6 fw-bold text-white">
-                <p class="text-uppercase">Maintaining Mental Health while Job Hunt</p>
+                <p class="text-uppercase">{{ blog_header }}</p>
                 <div class="d-flex gap-3">
-                    <p class="text-uppercase">2 mins read</p>
-                    <p class="text-uppercase">0 Comments</p>
+                    <p class="text-uppercase">{{ read_time }} mins read</p>
+                    <p class="text-uppercase">{{ comment }} Comments</p>
                 </div>
                 <div>
-                    <img src="../../assets/blog-img/more-blog-img-1.png" class="img-fluid" alt="">
+                    <img v-bind:src="blog_large_img" class="img-fluid" alt="">
                 </div>
 
                 <div class="col">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat ac odio nec porta.
-                        Donec elementum pharetra ante eget auctor. Quisque elementum orci ac diam molestie mattis. Etiam
-                        facilisis egestas ex, nec sodales dui sagittis id. Mauris feugiat enim in sapien semper, ac
-                        maximus nibh placerat. Etiam porttitor pretium venenatis. Suspendisse eu felis sem. Quisque
-                        placerat, nulla et porta gravida, justo est feugiat ligula, vel semper lacus sapien sagittis
-                        nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Duis purus lorem, facilisis eget convallis a, condimentum id ex. Nullam id condimentum velit, ac
-                        pulvinar ex. Sed vitae orci vel ipsum scelerisque laoreet. Ut accumsan scelerisque nibh. Etiam
-                        enim lectus, dictum id tempor nec, fringilla id augue. Aenean a urna ac velit dictum tincidunt.
-                        Phasellus quis sagittis risus. Etiam ullamcorper dictum auctor. Donec ultricies orci nec tempus
-                        eleifend. Donec facilisis efficitur porttitor. Ut bibendum blandit sem, a pellentesque purus
-                        ultricies vitae. Mauris viverra auctor ante, vitae accumsan nunc maximus et. Aliquam porttitor
-                        tincidunt cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Sed pulvinar, elit semper placerat consectetur, justo tortor laoreet justo,
-                        egestas semper justo nulla et felis. Nam et sapien mollis nulla faucibus sagittis non quis
-                        dolor. Ut luctus ultricies erat, in consectetur nulla vestibulum a. Integer imperdiet, purus sit
-                        amet fermentum tristique, risus quam ullamcorper felis, ultrices tempor urna velit eu nisi.
-                        Pellentesque libero nibh, egestas vel ultrices in, ultrices sit amet odio.
-                    </p>
+                    <p> {{ blog_body }} </p>
 
-                    <p class="fs-3">Orelio, I nedd article ;)</p>
+                    <p class="fs-3">{{ blog_subHead }}</p>
 
-                    <p>
-                        Duis interdum dignissim purus. Nulla volutpat elit at vestibulum ullamcorper. Proin quis orci
-                        non nunc faucibus maximus. Etiam nec pharetra urna, at cursus magna. Morbi sed diam ac lectus
-                        viverra faucibus. Sed ac tortor in sem fringilla bibendum at mollis felis. Vivamus in justo
-                        tincidunt, vulputate lorem nec, consequat mi. Pellentesque gravida tincidunt enim, a mattis
-                        tortor blandit pharetra. Nam tempor purus non orci dignissim porta. Cras vitae est finibus,
-                        ultrices leo quis, scelerisque odio. Aliquam ut tellus tellus. Proin feugiat sed leo in
-                        porttitor. Aenean et pharetra tellus, id efficitur lectus. Quisque tincidunt, urna eget accumsan
-                        mollis, lacus magna accumsan tortor, quis hendrerit nisl justo feugiat quam. Suspendisse
-                        eleifend sodales dolor, ac euismod ipsum facilisis quis.
-                    </p>
-
-                    <p>
-                        Suspendisse nulla ligula, eleifend eu felis eu, maximus semper felis. Donec et nisi non libero
-                        euismod efficitur. Phasellus fringilla metus a risus tincidunt luctus. Pellentesque consectetur
-                        ante nec sem dapibus, vel convallis ex pulvinar. Mauris porttitor massa nulla, vel placerat
-                        magna iaculis sit amet. Morbi dapibus sem ante, eget convallis nunc porttitor ut. Morbi est
-                        turpis, rutrum vitae libero a, pulvinar mollis sapien. Donec at purus ut massa aliquam
-                        consectetur. Morbi suscipit erat a sapien mattis, vitae semper neque efficitur. Sed tristique
-                        egestas nisl, in bibendum nulla dignissim ultrices. Duis convallis placerat urna, eget commodo
-                        sem. Nulla dapibus blandit tempor. Fusce condimentum posuere eros ac sagittis. Integer a mattis
-                        neque.
-                    </p>
+                    <p class="text-break"> {{ blog_subHead_body }}</p>
 
                     <div class="row gy-2">
                         <div class="col-lg-6 col-md-12 ">
@@ -70,7 +31,7 @@
                                 <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;"
                                     class="img-fluid mt-3" alt="">
                                 <div class="d-grid mt-3">
-                                    <p>Previus post</p>
+                                    <p>Prevous post</p>
                                     <p>Way to Better <br> Project Management</p>
                                 </div>
                             </div>
@@ -80,7 +41,7 @@
                             <div class="d-flex gap-3" style="background: rgba(128, 147, 241, 0.5);">
 
                                 <div class="d-grid mt-3 ms-2">
-                                    <p>Previus post</p>
+                                    <p>Next post</p>
                                     <p>Way to Better <br> Project Management</p>
                                 </div>
                                 <img src="../../assets/blog-img/blog-sm-img.png" style="height: 80px;"
@@ -141,11 +102,12 @@
                     <p>RECENT POST</p>
 
                     <ul class="text-uppercase d-grid gap-3">
-                        <li>Maintaining Mental Health while Job Hunt</li>
-                        <li>How To Find the Job that Fits You the Most</li>
-                        <li>What is the Real Future of Virtual Work</li>
-                        <li>Way to Better Project Management</li>
-                        <li>The Guide to Employee On-boarding</li>
+                        <li v-for="eachData in blogData.slice(0, 5)">
+                            <router-link  :to="{ name: 'more-blogs', params: { blog_id: eachData.blog_id } }" class="text-decoration-none text-white">
+                                {{ eachData.blog_header }}
+                            </router-link>
+                            
+                        </li>
                     </ul>
 
                 </div>
@@ -155,10 +117,61 @@
 </template>
 
 <script>
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
+import { db } from '../../firebase/config';
 
 
 export default {
     name: 'MoreBlogsBody',
+    data() {
+        return {
+            blog_body: '',
+            blog_category: '',
+            blog_date_posted: '',
+            blog_header: '',
+            blog_id: '',
+            blog_img: '',
+            blog_subHead: '',
+            blog_subHead_body: '',
+            read_time: '',
+            comment: '',
+            blogData: [],
+        };
+    },
+    async mounted() {
+
+        const blog_id = this.$route.params.blog_id;
+
+        const docRef = doc(db, "blogs", blog_id);
+        getDoc(docRef).then((doc) => {
+            this.blog_body = doc.data().blog_body;
+            this.blog_category = doc.data().blog_category;
+            this.blog_date_posted = doc.data().blog_date_posted;
+            this.blog_header = doc.data().blog_header;
+            this.blog_id = doc.id;
+            this.blog_img = doc.data().blog_img;
+            this.blog_subHead = doc.data().blog_subHead;
+            this.blog_subHead_body = doc.data().blog_subHead_body;
+            this.read_time = doc.data().read_time,
+            this.comment = doc.data().comment,
+            this.blog_large_img = doc.data().blog_large_img
+        });
+
+
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        querySnapshot.forEach((doc) => {
+            let datas = {
+                blog_body: doc.data().blog_body.substring(0, 97),
+                blog_category: doc.data().blog_category,
+                blog_date_posted: doc.data().blog_date_posted,
+                blog_header: doc.data().blog_header,
+                blog_id: doc.id,
+                blog_img: doc.data().blog_img,
+            }
+            console.log(datas)
+            this.blogData.push(datas);
+        });
+    }
 
 }
 </script>

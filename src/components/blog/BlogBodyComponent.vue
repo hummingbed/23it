@@ -96,7 +96,8 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <router-link  :to="'/more-blogs'" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
+                                    <!-- router-link :to="{ name: 'more-blogs', params: { blog_id: blogData.id } }" -->
+                                    <router-link  :to="{ name: 'more-blogs', params: { blog_id: blog.blog_id } }" href="" style="color: `${blog.blog_color}`;">READ ARTICLE</router-link >
                                 </div>
                             </div>
 
@@ -275,11 +276,11 @@ export default {
         const querySnapshot = await getDocs(collection(db, "blogs"));
         querySnapshot.forEach((doc) => {
             let data = {
-                blog_body: doc.data().blog_body,
+                blog_body: doc.data().blog_body.substring(0, 97),
                 blog_category: doc.data().blog_category,
                 blog_date_posted: doc.data().blog_date_posted,
                 blog_header: doc.data().blog_header,
-                blog_id: doc.data().blog_id,
+                blog_id: doc.id,
                 blog_img: doc.data().blog_img,
             }
             if (doc.data().blog_category == 'HR') {
