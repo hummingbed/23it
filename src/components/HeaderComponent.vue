@@ -3,13 +3,13 @@
 		<div class="row align-items-start">
 			<div class="col text-start">
 				<router-link class="dropdown-item ms-1 text-white" :to="'/'">
-					<img src="../assets/logo/23it-transparent.png" class="img-fluid mt-2 " style="width: 100px;" alt="">
+					<img src="../assets/logo/23it-transparent.png" class="img-fluid mt-2 " style="width: 70px;" alt="">
 				</router-link>
 
 			</div>
-			<div class="col text-end">
+			<!-- <div class="col text-end">
 				<div class=" text-dark">
-					<a class="dropdown-toggl py-3 px-3 text-decoration-none text-dark" type=""
+					<a class="dropdown-toggl py-2 px-3 text-decoration-none text-dark" type=""
 						data-bs-toggle="dropdown"><span class="text-dark fw-bold">MENU
 							<img src="../assets/arrow/drop-down.png" class="ps-5 pe-3" alt="">
 						</span>
@@ -18,19 +18,7 @@
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/'"> HOME</router-link>
 						</li>
-						<!-- <li>
-							<router-link class="dropdown-item ms-1 text-white fw-bold " :to="'/see-job'">
-								JOBS</router-link>
-						</li> -->
-
-						<!-- <li>
-							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT
-								US</router-link>
-						</li> -->
-						<!-- <li>
-							<a class="dropdown-item ms-1 text-white fw-bold"
-								:href="path + `/#HomeEmployerComponent`">EMPLOYER</a>
-						</li> -->
+						
 						
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'">
@@ -41,7 +29,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>

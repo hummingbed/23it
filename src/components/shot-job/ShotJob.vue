@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="100K" v-model="checkedSalary"
+                        <input class="form-check-input" type="checkbox" value="100k" v-model="checkedSalary"
                             id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
                             50 - 100K
@@ -201,10 +201,10 @@ export default {
         },
     },
     async mounted() {
-
-
-
+        console.log(db)
         const querySnapshot = await getDocs(collection(db, "jobs"));
+        console.log('db')
+        console.log(querySnapshot)
         querySnapshot.forEach((doc) => {
             let data = {
                 company_name: doc.data().company_name,
@@ -218,6 +218,7 @@ export default {
                 id: doc.id,
             }
             this.jobData.push(data);
+            console.log(data)
         });
     }
 }

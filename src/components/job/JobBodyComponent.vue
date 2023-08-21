@@ -95,7 +95,7 @@
                     <img v-bind:src="job_img" class="img-fluid mb-4" alt="">
                     <p class="fs-3">{{ company_name }}</p>
                     <p class="col-11">
-                        {{ description }}
+                        {{ about_company }}
                     </p>
                     <p class="fs-5">Company Details</p>
                     <ul>
@@ -133,7 +133,8 @@ export default {
             job_skills: [],
             job_img: null,
             message: '',
-            cv: ''
+            cv: '',
+            about_company: ''
         };
     },
     methods: {
@@ -173,7 +174,8 @@ export default {
                 this.job_benefit = doc.data().job_benefit;
                 this.job_responsibility = doc.data().job_responsibility;
                 this.job_skills = doc.data().job_skills;
-                this.job_img = doc.data().job_img
+                this.job_img = doc.data().job_img,
+                this.about_company = doc.data().about_company
             });
     }
 

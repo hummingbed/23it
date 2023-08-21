@@ -28,8 +28,8 @@
             <hr>
             <div class="col">
                 <div class="px-5  d-flex fs-5 gap-4">
-                    <a href="https://www.linkedin.com/company/80849894"><i class="bi bi-linkedin py-1 px-2 text-dark"></i></a>
-                    <a href="https://www.instagram.com/23it_company/"><i class="bi bi-instagram py-1 px-2 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/oyinbrakemi-michael-menebraye-74083b17b"><i class="bi bi-linkedin py-1 px-2 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/oyinbrakemi-michael-menebraye-74083b17b"><i class="bi bi-instagram py-1 px-2 text-dark"></i></a>
                 </div>
             </div>
             <div class="col grotesk-font">
