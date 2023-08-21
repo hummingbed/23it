@@ -18,10 +18,10 @@
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/'"> HOME</router-link>
 						</li>
-						<li>
+						<!-- <li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold " :to="'/see-job'">
 								JOBS</router-link>
-						</li>
+						</li> -->
 
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT

@@ -9,11 +9,11 @@ import AboutUsView from '../views/AboutUsView.vue'
 import MoreBlogsView from '../views/MoreBlogsView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: HomeView
+  // },
   
   {
     path: '/media',
@@ -37,7 +37,7 @@ const routes = [
     
   },
   {
-    path: '/see-job',
+    path: '/',
     name: 'see-job',
     component: ShotJobComponent
     
