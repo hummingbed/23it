@@ -1,23 +1,20 @@
 <template>
     <div class="container">
-        <nav class="pt-5" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-            <ol class="breadcrumb fw-bold mt-5">
-                <li class="breadcrumb-item mt-2">
-                    <router-link style="color: #F7AEF8;" :to="'/'"> HOME</router-link>
-                </li>
-
-                <li class="breadcrumb-item"> <i class="bi bi-arrow-left fs-3" style="color: #F7AEF8;"></i></li>
-                <li class="breadcrumb-item active mt-2" aria-current="page">
-                    <a href="" style="color: #F7AEF8;">JOB BOARD</a>
-                </li>
-            </ol>
-        </nav>
-
-        <div class="job-openings fs-1">
-            <p class="text-color-white ">Job <span class="px-2" style="background-color: #F7AEF8;">Openings</span></p>
+        <div style="height: 100vh;"
+            class="position-relative w-100">
+            <div class="position-absolute text-white d-flex flex-column align-items-center justify-content-center"
+                style="top: 0; right: 0; bottom: 0; left: 0; ">
+                <h1 class="mb-4 mt-2 font-weight-bold text-center">The official job board for developers</h1>
+                <div class="text-center">
+                    <a href="#jobSearch" id="" class="btn px-5 py-3 text-white mt-3 mt-sm-0 mx-1"
+                        style="border-radius: 30px; background-color: #9B5DE5;">Get Started</a>                   
+                </div>
+            </div>
         </div>
 
-
+        <div class="job-openings fs-1"  id="jobSearch">
+            <p class="text-color-white ">Job <span class="px-2" style="background-color: #F7AEF8;">Openings</span></p>
+        </div>
 
         <div class="row g-2">
             <div class="col-md-6 col-sm-12">
@@ -43,38 +40,6 @@
         <div class="row g-5">
             <div class="col-md-3 text-white">
                 <p>Filter</p>
-                <!-- <div class="d-grid gap-2">
-                    <p>Date posted</p>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Anytime
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Past week
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Past 24 hours
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Past month
-                        </label>
-                    </div>
-
-                </div> -->
 
                 <div class="mt-3 d-grid gap-2">
                     <p>Job type</p>
@@ -137,14 +102,6 @@
 
             </div>
 
-
-
-
-
-
-
-
-
             <div class="col-md-9">
                 <div class="gap-3 d-flex ps-3">
                     <p class="text-color-white fw-bold">25.478 Offers Worldwide</p>
@@ -155,7 +112,8 @@
                 <div class="container ">
                     <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2 g-lg-3">
 
-                        <router-link :to="{ name: 'job', params: { job_id: jobData.id } }" v-for="jobData in filteredItems.slice(0, 5)" class="col text-decoration-none">
+                        <router-link :to="{ name: 'job', params: { job_id: jobData.id } }"
+                            v-for="jobData in filteredItems.slice(0, 5)" class="col text-decoration-none">
                             <!-- <router-link :to="{ name: 'job', params: { job_id: jobs.id } }"></router-link> -->
                             <div class="p-3 jobs-card text-white rounded" style="background: #4C417E;">
                                 <div class="row ">
@@ -268,7 +226,6 @@ export default {
 
 
 <style >
-
 .jobs-card:hover {
     animation: mymove 3s infinite;
 }
@@ -294,5 +251,4 @@ export default {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-</style>
+}</style>

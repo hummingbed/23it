@@ -23,18 +23,15 @@
 								JOBS</router-link>
 						</li> -->
 
-						<li>
+						<!-- <li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/about'"> ABOUT
 								US</router-link>
-						</li>
-						<li>
+						</li> -->
+						<!-- <li>
 							<a class="dropdown-item ms-1 text-white fw-bold"
 								:href="path + `/#HomeEmployerComponent`">EMPLOYER</a>
-						</li>
-						<li>
-							<a class="dropdown-item ms-1 text-white fw-bold"
-							:href="path + `/#candidate`">CANDIDATES</a>
-						</li>
+						</li> -->
+						
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/media'">
 								MEDIA</router-link>
@@ -42,22 +39,6 @@
 						<li>
 							<router-link class="dropdown-item ms-1 text-white fw-bold" :to="'/blog'"> BLOG</router-link>
 						</li>
-						<li class="d-flex gap-1">
-							<a class="text-white dropdown-item ms-1 fw-bold" href="#">
-								en
-							</a>
-							<a class=" text-white dropdown-item ms-1 fw-bold" href="#">
-								nl
-							</a>
-						</li>
-
-						<li class="py-3">
-							<label class="switch ms-3">
-								<input type="checkbox" checked>
-								<span class="slider round"></span>
-							</label>
-						</li>
-
 					</ul>
 				</div>
 			</div>

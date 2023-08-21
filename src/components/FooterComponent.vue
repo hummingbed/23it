@@ -1,11 +1,10 @@
 <template>
     <div class="container py-5">
-        <div class="row border-top border-secondary">
+        <!-- <div class="row border-top border-secondary">
             <div class="col-md-5 px-5">
                 <div class="p-3 d-grid gap-3 grotesk-font">
                     <router-link class="text-white text-decoration-none fs-4" :to="'/about'"> About Us</router-link>
                     <a :href="path + `/#HomeEmployerComponent`" class="text-white text-decoration-none fs-4"> Employer</a>
-                    <!-- <router-link  :to="'/#HomeEmployerComponent'"> Employer</router-link> -->
                     <a href="#" class="text-white text-decoration-none fs-4"> Newsletter</a>
                     <router-link class="text-white text-decoration-none fs-4" :to="'/contact'"> Contact Us</router-link>	
                 </div>
@@ -23,9 +22,10 @@
                     </h1>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row g-5 py-5 ">
+            <hr>
             <div class="col">
                 <div class="px-5  d-flex fs-5 gap-4">
                     <a href="https://www.linkedin.com/company/80849894"><i class="bi bi-linkedin py-1 px-2 text-dark"></i></a>
